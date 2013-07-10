@@ -1,0 +1,235 @@
+<MusicThemeLibrary Name="SDK_Music" SandboxVersion="3.4.5.5266">
+ <Theme Name="menu" Id="{17238BF0-CFD3-411D-9036-7EFDA2CD00E2}" Library="SDK_Music" DefaultMood="" DefaultMoodTimeout="0">
+  <Moods>
+   <Mood Name="menu" PlaySingle="0" Priority="0" FadeOutTime="3">
+    <PatternSet MaxTimeout="120" MinTimeout="60" IncidentalLayerProbability="0" RhythmicLayerProbability="0" MaxSimultaneousIncidentalPatterns="1" MaxSimultaneousRhythmicPatterns="1">
+     <MainLayer>
+      <Pattern Name="menu_pattern" ProbabilityPoints="1" LayeringVolume="1" Filename="music/menu/menu.wav" PreFadeIn="0"/>
+     </MainLayer>
+     <RhythmicLayer />
+     <IncidentalLayer />
+     <StartLayer />
+     <EndLayer />
+     <StingerLayer />
+    </PatternSet>
+   </Mood>
+  </Moods>
+ </Theme>
+ <Theme Name="sdk_fight" Id="{99BDC8EC-60CB-48C5-844F-2862771F0AD8}" Library="SDK_Music" DefaultMood="relaxed" DefaultMoodTimeout="0">
+  <Moods>
+   <Mood Name="apprehensive" PlaySingle="0" Priority="0" FadeOutTime="3">
+    <PatternSet MaxTimeout="120" MinTimeout="60" IncidentalLayerProbability="0" RhythmicLayerProbability="0" MaxSimultaneousIncidentalPatterns="1" MaxSimultaneousRhythmicPatterns="1">
+     <MainLayer>
+      <Pattern Name="sdk_fight_apprehenisve_main" ProbabilityPoints="0.80000001" LayeringVolume="0.5" Filename="music/sdk/sdk_02_apprehensive_looping.wav" PreFadeIn="80000" FadePoints="187000,420000,666000,853000,1147000,1322000,1505000,1668000,1800000,2097000,2375000,2644000,2855000,3053000,3266000,3475000,3768000"/>
+     </MainLayer>
+     <RhythmicLayer />
+     <IncidentalLayer>
+      <Pattern Name="sdk_fight_app_inc_1" ProbabilityPoints="1" LayeringVolume="0.25" Filename="music/sdk/sdk_02_apprehensive_incidental_01.wav" PreFadeIn="0"/>
+      <Pattern Name="sdk_fight_app_inc_2" ProbabilityPoints="1" LayeringVolume="0.25" Filename="music/sdk/sdk_02_apprehensive_incidental_02.wav" PreFadeIn="0"/>
+      <Pattern Name="sdk_fight_app_inc_3" ProbabilityPoints="1" LayeringVolume="0.25" Filename="music/sdk/sdk_02_apprehensive_incidental_03.wav" PreFadeIn="0"/>
+     </IncidentalLayer>
+     <StartLayer>
+      <Pattern Name="sdk_fight_app_start" ProbabilityPoints="1" LayeringVolume="0.40000001" Filename="music/sdk/sdk_02_apprehensive_start.wav" PreFadeIn="0"/>
+     </StartLayer>
+     <EndLayer>
+      <Pattern Name="sdk_fight_app_end" ProbabilityPoints="1" LayeringVolume="0.40000001" Filename="music/sdk/sdk_02_apprehensive_end.wav" PreFadeIn="0"/>
+     </EndLayer>
+     <StingerLayer>
+      <Pattern Name="sdk_fight_app_stinger_1" ProbabilityPoints="1" LayeringVolume="0.25" Filename="music/sdk/sdk_02_apprehensive_incidental_01.wav" PreFadeIn="0"/>
+      <Pattern Name="sdk_fight_app_stinger_2" ProbabilityPoints="1" LayeringVolume="0.25" Filename="music/sdk/sdk_02_apprehensive_incidental_02.wav" PreFadeIn="0"/>
+      <Pattern Name="sdk_fight_app_stinger_3" ProbabilityPoints="1" LayeringVolume="0.25" Filename="music/sdk/sdk_02_apprehensive_incidental_03.wav" PreFadeIn="0"/>
+     </StingerLayer>
+    </PatternSet>
+   </Mood>
+   <Mood Name="captured" PlaySingle="0" Priority="0" FadeOutTime="3">
+    <PatternSet MaxTimeout="120" MinTimeout="60" IncidentalLayerProbability="0" RhythmicLayerProbability="0" MaxSimultaneousIncidentalPatterns="1" MaxSimultaneousRhythmicPatterns="1">
+     <MainLayer>
+      <Pattern Name="sdk_fight_captured_main" ProbabilityPoints="1" LayeringVolume="0.40000001" Filename="music/sdk/sdk_04_captured_looping.wav" PreFadeIn="80000" FadePoints="187000,420000,666000,853000,1147000,1322000,1505000,1668000,1800000,2097000,2375000,2644000,2855000,3053000,3266000,3475000,3768000"/>
+     </MainLayer>
+     <RhythmicLayer />
+     <IncidentalLayer>
+      <Pattern Name="sdk_fight_captured_inc_1" ProbabilityPoints="1" LayeringVolume="0.12" Filename="music/sdk/sdk_04_captured_incidental_01.wav" PreFadeIn="0"/>
+      <Pattern Name="sdk_fight_captured_inc_2" ProbabilityPoints="1" LayeringVolume="0.12" Filename="music/sdk/sdk_04_captured_incidental_02.wav" PreFadeIn="0"/>
+      <Pattern Name="sdk_fight_captured_inc_3" ProbabilityPoints="1" LayeringVolume="0.12" Filename="music/sdk/sdk_04_captured_incidental_03.wav" PreFadeIn="0"/>
+     </IncidentalLayer>
+     <StartLayer>
+      <Pattern Name="sdk_fight_captured_start" ProbabilityPoints="1" LayeringVolume="0.40000001" Filename="music/sdk/sdk_04_captured_start.wav" PreFadeIn="0"/>
+     </StartLayer>
+     <EndLayer>
+      <Pattern Name="sdk_fight_captured_end" ProbabilityPoints="1" LayeringVolume="0.40000001" Filename="music/sdk/sdk_04_captured_end.wav" PreFadeIn="0"/>
+     </EndLayer>
+     <StingerLayer>
+      <Pattern Name="sdk_fight_captured_stinger_1" ProbabilityPoints="1" LayeringVolume="0.40000001" Filename="music/sdk/sdk_04_captured_incidental_01.wav" PreFadeIn="0"/>
+      <Pattern Name="sdk_fight_captured_stinger_2" ProbabilityPoints="1" LayeringVolume="0.40000001" Filename="music/sdk/sdk_04_captured_incidental_02.wav" PreFadeIn="0"/>
+      <Pattern Name="sdk_fight_captured_stinger_3" ProbabilityPoints="1" LayeringVolume="0.40000001" Filename="music/sdk/sdk_04_captured_incidental_03.wav" PreFadeIn="0"/>
+     </StingerLayer>
+    </PatternSet>
+   </Mood>
+   <Mood Name="relaxed" PlaySingle="0" Priority="0" FadeOutTime="3">
+    <PatternSet MaxTimeout="120" MinTimeout="60" IncidentalLayerProbability="10" RhythmicLayerProbability="0" MaxSimultaneousIncidentalPatterns="1" MaxSimultaneousRhythmicPatterns="1">
+     <MainLayer>
+      <Pattern Name="sdk_relaxed_silence" ProbabilityPoints="1" LayeringVolume="0.40000001" Filename="music/sdk/sdk_01_relaxed.wav" PreFadeIn="80000" FadePoints="187000,420000,666000,853000,1147000,1322000,1505000,1668000,1800000,2097000,2375000,2644000,2855000,3053000,3266000,3475000,3768000"/>
+     </MainLayer>
+     <RhythmicLayer />
+     <IncidentalLayer>
+      <Pattern Name="sdk_fight_relaxed_inc_1" ProbabilityPoints="1" LayeringVolume="0.25" Filename="music/sdk/sdk_navigational_inc_1.wav" PreFadeIn="0"/>
+      <Pattern Name="sdk_fight_relaxed_inc_2" ProbabilityPoints="1" LayeringVolume="0.25" Filename="music/sdk/sdk_navigational_inc_2.wav" PreFadeIn="0"/>
+      <Pattern Name="sdk_fight_relaxed_inc_3" ProbabilityPoints="1" LayeringVolume="0.25" Filename="music/sdk/sdk_navigational_inc_3.wav" PreFadeIn="0"/>
+     </IncidentalLayer>
+     <StartLayer />
+     <EndLayer />
+     <StingerLayer>
+      <Pattern Name="sdk_fight_relaxed_stinger_1" ProbabilityPoints="1" LayeringVolume="0.25" Filename="music/sdk/sdk_navigational_inc_1.wav" PreFadeIn="0"/>
+      <Pattern Name="sdk_fight_relaxed_stinger_2" ProbabilityPoints="1" LayeringVolume="0.25" Filename="music/sdk/sdk_navigational_inc_2.wav" PreFadeIn="0"/>
+      <Pattern Name="sdk_fight_relaxed_stinger_3" ProbabilityPoints="1" LayeringVolume="0.25" Filename="music/sdk/sdk_navigational_inc_3.wav" PreFadeIn="0"/>
+     </StingerLayer>
+    </PatternSet>
+   </Mood>
+   <Mood Name="silence" PlaySingle="0" Priority="0" FadeOutTime="3">
+    <PatternSet MaxTimeout="120" MinTimeout="60" IncidentalLayerProbability="0" RhythmicLayerProbability="0" MaxSimultaneousIncidentalPatterns="1" MaxSimultaneousRhythmicPatterns="1">
+     <MainLayer>
+      <Pattern Name="sdk_fight_silence" ProbabilityPoints="1" LayeringVolume="0.89999998" Filename="music/silence/silence.wav" PreFadeIn="120000"/>
+     </MainLayer>
+     <RhythmicLayer />
+     <IncidentalLayer />
+     <StartLayer />
+     <EndLayer />
+     <StingerLayer />
+    </PatternSet>
+   </Mood>
+   <Mood Name="threat" PlaySingle="0" Priority="0" FadeOutTime="3">
+    <PatternSet MaxTimeout="120" MinTimeout="60" IncidentalLayerProbability="0" RhythmicLayerProbability="0" MaxSimultaneousIncidentalPatterns="1" MaxSimultaneousRhythmicPatterns="1">
+     <MainLayer>
+      <Pattern Name="sdk_fight_threat_main" ProbabilityPoints="1" LayeringVolume="0.40000001" Filename="music/sdk/sdk_03_threat_looping.wav" PreFadeIn="80000" FadePoints="187000,420000,666000,853000,1147000,1322000,1505000,1668000,1800000,2097000,2375000,2644000,2855000,3053000,3266000,3475000,3768000"/>
+     </MainLayer>
+     <RhythmicLayer />
+     <IncidentalLayer>
+      <Pattern Name="sdk_fight_threat_inc_1" ProbabilityPoints="1" LayeringVolume="0.12" Filename="music/sdk/sdk_03_threat_incidental_01.wav" PreFadeIn="0"/>
+      <Pattern Name="sdk_fight_threat_inc_2" ProbabilityPoints="1" LayeringVolume="0.12" Filename="music/sdk/sdk_03_threat_incidental_02.wav" PreFadeIn="0"/>
+      <Pattern Name="sdk_fight_threat_inc_3" ProbabilityPoints="1" LayeringVolume="0.12" Filename="music/sdk/sdk_03_threat_incidental_03.wav" PreFadeIn="0"/>
+     </IncidentalLayer>
+     <StartLayer>
+      <Pattern Name="sdk_fight_threat_start" ProbabilityPoints="1" LayeringVolume="0.40000001" Filename="music/sdk/sdk_03_threat_start.wav" PreFadeIn="0"/>
+     </StartLayer>
+     <EndLayer>
+      <Pattern Name="sdk_fight_threat_end" ProbabilityPoints="1" LayeringVolume="0.40000001" Filename="music/sdk/sdk_03_threat_end.wav" PreFadeIn="0"/>
+     </EndLayer>
+     <StingerLayer>
+      <Pattern Name="sdk_fight_threat_stinger_1" ProbabilityPoints="1" LayeringVolume="0.40000001" Filename="music/sdk/sdk_03_threat_incidental_01.wav" PreFadeIn="0"/>
+      <Pattern Name="sdk_fight_threat_stinger_2" ProbabilityPoints="1" LayeringVolume="0.40000001" Filename="music/sdk/sdk_03_threat_incidental_02.wav" PreFadeIn="0"/>
+      <Pattern Name="sdk_fight_threat_stinger_3" ProbabilityPoints="1" LayeringVolume="0.40000001" Filename="music/sdk/sdk_03_threat_incidental_03.wav" PreFadeIn="0"/>
+     </StingerLayer>
+    </PatternSet>
+   </Mood>
+  </Moods>
+ </Theme>
+ <Theme Name="cutscenes" Id="{7B64CE43-381D-45D4-828A-6E946316567A}" Library="SDK_Music" DefaultMood="" DefaultMoodTimeout="0">
+  <Moods>
+   <Mood Name="cutscenes" PlaySingle="0" Priority="0" FadeOutTime="3">
+    <PatternSet MaxTimeout="120" MinTimeout="60" IncidentalLayerProbability="0" RhythmicLayerProbability="0" MaxSimultaneousIncidentalPatterns="1" MaxSimultaneousRhythmicPatterns="1">
+     <MainLayer>
+      <Pattern Name="cut_kicklog" ProbabilityPoints="1" LayeringVolume="1" Filename="music/sdk/sdk_cut_01_kicklog.wav" PreFadeIn="0"/>
+      <Pattern Name="cut_logfall" ProbabilityPoints="1" LayeringVolume="1" Filename="music/sdk/sdk_cut_03_log_fall.wav" PreFadeIn="0"/>
+     </MainLayer>
+     <RhythmicLayer />
+     <IncidentalLayer />
+     <StartLayer />
+     <EndLayer />
+     <StingerLayer />
+    </PatternSet>
+   </Mood>
+  </Moods>
+ </Theme>
+ <Theme Name="forest" Id="{9281D955-F871-4083-AD90-C22D84161303}" Library="SDK_Music" DefaultMood="" DefaultMoodTimeout="0">
+  <Moods>
+   <Mood Name="01_start_scene_silenced" PlaySingle="0" Priority="0" FadeOutTime="7">
+    <PatternSet MaxTimeout="120" MinTimeout="60" IncidentalLayerProbability="0" RhythmicLayerProbability="0" MaxSimultaneousIncidentalPatterns="1" MaxSimultaneousRhythmicPatterns="1">
+     <MainLayer>
+      <Pattern Name="01_start_scene_silenced" ProbabilityPoints="1" LayeringVolume="1" Filename="music/forest/01_start_scene_silenced.wav" PreFadeIn="0"/>
+     </MainLayer>
+     <RhythmicLayer />
+     <IncidentalLayer />
+     <StartLayer />
+     <EndLayer />
+     <StingerLayer />
+    </PatternSet>
+   </Mood>
+   <Mood Name="02_main_forest" PlaySingle="0" Priority="0" FadeOutTime="7">
+    <PatternSet MaxTimeout="120" MinTimeout="60" IncidentalLayerProbability="0" RhythmicLayerProbability="0" MaxSimultaneousIncidentalPatterns="1" MaxSimultaneousRhythmicPatterns="1">
+     <MainLayer>
+      <Pattern Name="02_main_forest" ProbabilityPoints="1" LayeringVolume="1" Filename="music/forest/02_main_forest.wav" PreFadeIn="0"/>
+     </MainLayer>
+     <RhythmicLayer />
+     <IncidentalLayer />
+     <StartLayer />
+     <EndLayer />
+     <StingerLayer />
+    </PatternSet>
+   </Mood>
+   <Mood Name="02_main_forest_winter" PlaySingle="0" Priority="0" FadeOutTime="7">
+    <PatternSet MaxTimeout="120" MinTimeout="60" IncidentalLayerProbability="0" RhythmicLayerProbability="0" MaxSimultaneousIncidentalPatterns="1" MaxSimultaneousRhythmicPatterns="1">
+     <MainLayer>
+      <Pattern Name="02_main_forest_winter" ProbabilityPoints="1" LayeringVolume="1" Filename="music/forest/02_main_forest_winter.wav" PreFadeIn="0"/>
+     </MainLayer>
+     <RhythmicLayer />
+     <IncidentalLayer />
+     <StartLayer />
+     <EndLayer />
+     <StingerLayer />
+    </PatternSet>
+   </Mood>
+   <Mood Name="03_first_tutorial_100" PlaySingle="0" Priority="0" FadeOutTime="7">
+    <PatternSet MaxTimeout="120" MinTimeout="60" IncidentalLayerProbability="0" RhythmicLayerProbability="0" MaxSimultaneousIncidentalPatterns="1" MaxSimultaneousRhythmicPatterns="1">
+     <MainLayer>
+      <Pattern Name="03_first_tutorial_100" ProbabilityPoints="1" LayeringVolume="1" Filename="music/forest/03_first_tutorial_100.wav" PreFadeIn="0"/>
+     </MainLayer>
+     <RhythmicLayer />
+     <IncidentalLayer />
+     <StartLayer />
+     <EndLayer />
+     <StingerLayer />
+    </PatternSet>
+   </Mood>
+   <Mood Name="06_start_scene" PlaySingle="0" Priority="0" FadeOutTime="7">
+    <PatternSet MaxTimeout="120" MinTimeout="60" IncidentalLayerProbability="0" RhythmicLayerProbability="0" MaxSimultaneousIncidentalPatterns="1" MaxSimultaneousRhythmicPatterns="1">
+     <MainLayer>
+      <Pattern Name="06_start_scene" ProbabilityPoints="1" LayeringVolume="1" Filename="music/forest/06_start_scene.wav" PreFadeIn="0"/>
+     </MainLayer>
+     <RhythmicLayer />
+     <IncidentalLayer />
+     <StartLayer />
+     <EndLayer />
+     <StingerLayer />
+    </PatternSet>
+   </Mood>
+  </Moods>
+ </Theme>
+ <Theme Name="cave" Id="{96AFCE53-8F30-483B-84BE-37AB150F7B0E}" Library="SDK_Music" DefaultMood="" DefaultMoodTimeout="0">
+  <Moods>
+   <Mood Name="04_cave_01" PlaySingle="0" Priority="0" FadeOutTime="7">
+    <PatternSet MaxTimeout="120" MinTimeout="60" IncidentalLayerProbability="0" RhythmicLayerProbability="0" MaxSimultaneousIncidentalPatterns="1" MaxSimultaneousRhythmicPatterns="1">
+     <MainLayer>
+      <Pattern Name="04_cave_01" ProbabilityPoints="1" LayeringVolume="1" Filename="music/forest/04_cave_01.wav" PreFadeIn="0"/>
+     </MainLayer>
+     <RhythmicLayer />
+     <IncidentalLayer />
+     <StartLayer />
+     <EndLayer />
+     <StingerLayer />
+    </PatternSet>
+   </Mood>
+   <Mood Name="05_cave_02" PlaySingle="0" Priority="0" FadeOutTime="7">
+    <PatternSet MaxTimeout="120" MinTimeout="60" IncidentalLayerProbability="0" RhythmicLayerProbability="0" MaxSimultaneousIncidentalPatterns="1" MaxSimultaneousRhythmicPatterns="1">
+     <MainLayer>
+      <Pattern Name="05_cave_02" ProbabilityPoints="1" LayeringVolume="1" Filename="music/forest/05_cave_02.wav" PreFadeIn="0"/>
+     </MainLayer>
+     <RhythmicLayer />
+     <IncidentalLayer />
+     <StartLayer />
+     <EndLayer />
+     <StingerLayer />
+    </PatternSet>
+   </Mood>
+  </Moods>
+ </Theme>
+</MusicThemeLibrary>
