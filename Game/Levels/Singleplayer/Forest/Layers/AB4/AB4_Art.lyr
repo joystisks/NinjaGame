@@ -1,0 +1,119 @@
+<ObjectLayer>
+ <Layer Name="AB4_Art" GUID="{7FBA5302-EE27-469E-983E-74DCB80A1BBC}" FullName="AB4/AB4_Art" External="1" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" Expanded="0" IsDefaultColor="0" Color="1644900" ParentGUID="{553D7148-307E-4BA3-97AC-8432C93C2FB3}">
+  <LayerObjects>
+   <Object Type="Rope" Layer="AB4_Art" LayerGUID="{7FBA5302-EE27-469E-983E-74DCB80A1BBC}" Id="{4E591911-EFE9-457D-BED4-F4F274F31B46}" Name="lamp_Rope2" Pos="708.19568,388.38269,170.64023" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65280" Material="materials/black" MatLayersMask="0" EntityClass="RopeEntity">
+    <Rope flags="3" radius="0.0099999998" anchor_radius="0.0099999998" num_seg="8" num_sides="4" texu="1" texv="10" ph_num_seg="8" ph_sub_vtxs="3" mass="1" friction="2" friction_pull="2" wind="0,0,0" wind_var="0" air_resist="1" water_resist="0" joint_lim="0" max_force="0" tension="0.1" maxTimeStep="0.02" minEnergy="0.0016" damping="0.1" gravity="0,0,-13">
+     <Sound Name="Sounds/physics:ropes:oil_lamp" SegmentToAttachTo="1" Offset="0"/>
+    </Rope>
+    <Points>
+     <Point Pos="0.0020751953,-0.010894775,-0.16159058"/>
+     <Point Pos="-0.0020751953,0.010894775,0.14201355"/>
+    </Points>
+    <SoundData Side1="0" Side2="0" Roof="0" Floor="0"/>
+   </Object>
+   <Object Type="Rope" Layer="AB4_Art" LayerGUID="{7FBA5302-EE27-469E-983E-74DCB80A1BBC}" Id="{1EF9B627-59C9-4CF2-8108-0EC0FE3C7A17}" Name="lamp_Rope4" Pos="698.39111,392.71875,167.99777" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65280" Material="materials/black" MatLayersMask="0" EntityClass="RopeEntity">
+    <Rope flags="3" radius="0.0099999998" anchor_radius="0.0099999998" num_seg="8" num_sides="4" texu="1" texv="10" ph_num_seg="8" ph_sub_vtxs="3" mass="1" friction="2" friction_pull="2" wind="0,0,0" wind_var="0" air_resist="1" water_resist="0" joint_lim="0" max_force="0" tension="0.1" maxTimeStep="0.02" minEnergy="0.0016" damping="0.1" gravity="0,0,-13"/>
+    <Points>
+     <Point Pos="-0.010498047,-0.0035095215,-0.28677368"/>
+     <Point Pos="0.010437012,0.0035400391,0.28678894"/>
+    </Points>
+    <SoundData Side1="0" Side2="0" Roof="0" Floor="0"/>
+   </Object>
+   <Object Type="Rope" Layer="AB4_Art" LayerGUID="{7FBA5302-EE27-469E-983E-74DCB80A1BBC}" Id="{5D96542D-2D2C-400A-8C5A-DC5BA0282390}" Name="lamp_Rope6" Pos="669.2384,404.60898,167.47755" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65280" Material="materials/black" MatLayersMask="0" EntityClass="RopeEntity">
+    <Rope flags="3" radius="0.0099999998" anchor_radius="0.0099999998" num_seg="8" num_sides="4" texu="1" texv="10" ph_num_seg="8" ph_sub_vtxs="3" mass="1" friction="2" friction_pull="2" wind="0,0,0" wind_var="0" air_resist="1" water_resist="0" joint_lim="0" max_force="0" tension="0.1" maxTimeStep="0.02" minEnergy="0.0016" damping="0.1" gravity="0,0,-13"/>
+    <Points>
+     <Point Pos="-0.0083007813,0.0080871582,-0.38394165"/>
+     <Point Pos="0.0083618164,-0.027038574,0.38394165"/>
+    </Points>
+    <SoundData Side1="0" Side2="0" Roof="0" Floor="0"/>
+   </Object>
+   <Object Type="Entity" Layer="AB4_Art" LayerGUID="{7FBA5302-EE27-469E-983E-74DCB80A1BBC}" Id="{BD3EC72D-D25F-4281-8A75-B0402D155D5D}" Name="RigidBodyEx15" Pos="699.79041,425.16104,177.27554" FloorNumber="-1" Rotate="0.77704465,0.036804389,0.0038682974,-0.6283567" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" LodRatio="100" ViewDistRatio="100" GlobalInSegmentedWorld="0" HiddenInGame="0" RecvWind="0" Bending="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="RigidBodyEx">
+    <Properties bCanTriggerAreas="0" bDamagesPlayerOnCollisionSP="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="objects/props/storage/civil/basic_box.cgf" bPickable="0" bSerialize="0" soclasses_SmartObjectClass="" bUsable="0" UseText="">
+     <Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+      <vOffset x="0" y="0" z="0"/>
+     </Interest>
+     <Physics bActivateOnDamage="0" bCanBreakOthers="0" Density="-1" Mass="35" bPhysicalize="1" bPushableByPlayers="1" bResting="1" bRigidBody="1" bRigidBodyActive="1">
+      <Buoyancy water_damping="0" water_density="1000" water_resistance="1000"/>
+      <CGFPropsOverride player_can_break="">
+       <Constraint constraint_collides="" constraint_damping="" constraint_limit="" constraint_maxang="" constraint_minang=""/>
+       <Deformable explosion_scale="" hardness="" max_impulse="" max_stretch="" skin_dist="" stiffness="" thickness=""/>
+       <Joint bend="" limit="" pull="" push="" shift="" twist=""/>
+      </CGFPropsOverride>
+      <MP bClientOnly="0"/>
+      <Simulation damping="0" bFixedDamping="0" max_time_step="0.02" sleep_speed="0.04" bUseSimpleSolver="0"/>
+     </Physics>
+    </Properties>
+    <Properties2>
+     <Interest soaction_Action="" bInteresting="0" InterestLevel="-1" bOverrideArchetype="0" Pause="-1" Radius="-1" bShared="0"/>
+    </Properties2>
+   </Object>
+   <Object Type="Rope" Layer="AB4_Art" LayerGUID="{7FBA5302-EE27-469E-983E-74DCB80A1BBC}" Id="{AAA6C335-4376-4238-A893-6EF8A4A09F1F}" Name="lamp_Rope3" Pos="689.80957,400.35361,167.29169" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65280" Material="materials/black" MatLayersMask="0" EntityClass="RopeEntity">
+    <Rope flags="3" radius="0.0099999998" anchor_radius="0.0099999998" num_seg="8" num_sides="4" texu="1" texv="10" ph_num_seg="8" ph_sub_vtxs="3" mass="1" friction="2" friction_pull="2" wind="0,0,0" wind_var="0" air_resist="1" water_resist="0" joint_lim="0" max_force="0" tension="0.1" maxTimeStep="0.02" minEnergy="0.0016" damping="0.1" gravity="0,0,-13"/>
+    <Points>
+     <Point Pos="-0.0018920898,0.0012512207,-0.25982666"/>
+     <Point Pos="0.0018920898,-0.0012512207,0.25984192"/>
+    </Points>
+    <SoundData Side1="0" Side2="0" Roof="0" Floor="0"/>
+   </Object>
+   <Object Type="Entity" Layer="AB4_Art" LayerGUID="{7FBA5302-EE27-469E-983E-74DCB80A1BBC}" Id="{F8937D6F-2BD5-4B26-86AF-A5CDD715703C}" Name="RigidBodyEx16" Pos="698.90607,423.65515,177.03716" FloorNumber="-1" Rotate="0.96937245,0.018315915,-0.076291271,0.23272571" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" LodRatio="100" ViewDistRatio="100" GlobalInSegmentedWorld="0" HiddenInGame="0" RecvWind="0" Bending="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="RigidBodyEx">
+    <Properties bCanTriggerAreas="0" bDamagesPlayerOnCollisionSP="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="objects/props/storage/civil/basic_box.cgf" bPickable="0" bSerialize="0" soclasses_SmartObjectClass="" bUsable="0" UseText="">
+     <Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+      <vOffset x="0" y="0" z="0"/>
+     </Interest>
+     <Physics bActivateOnDamage="0" bCanBreakOthers="0" Density="-1" Mass="35" bPhysicalize="1" bPushableByPlayers="1" bResting="1" bRigidBody="1" bRigidBodyActive="1">
+      <Buoyancy water_damping="0" water_density="1000" water_resistance="1000"/>
+      <CGFPropsOverride player_can_break="">
+       <Constraint constraint_collides="" constraint_damping="" constraint_limit="" constraint_maxang="" constraint_minang=""/>
+       <Deformable explosion_scale="" hardness="" max_impulse="" max_stretch="" skin_dist="" stiffness="" thickness=""/>
+       <Joint bend="" limit="" pull="" push="" shift="" twist=""/>
+      </CGFPropsOverride>
+      <MP bClientOnly="0"/>
+      <Simulation damping="0" bFixedDamping="0" max_time_step="0.02" sleep_speed="0.04" bUseSimpleSolver="0"/>
+     </Physics>
+    </Properties>
+    <Properties2>
+     <Interest soaction_Action="" bInteresting="0" InterestLevel="-1" bOverrideArchetype="0" Pause="-1" Radius="-1" bShared="0"/>
+    </Properties2>
+   </Object>
+   <Object Type="Entity" Layer="AB4_Art" LayerGUID="{7FBA5302-EE27-469E-983E-74DCB80A1BBC}" Id="{3C368075-99B6-4EA0-A136-F0436984181E}" Name="RigidBodyEx14" Pos="700.76422,423.46741,177.2029" FloorNumber="-1" Rotate="0.92050487,0,0,-0.39073113" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" LodRatio="100" ViewDistRatio="100" GlobalInSegmentedWorld="0" HiddenInGame="0" RecvWind="0" Bending="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0" EntityClass="RigidBodyEx">
+    <Properties bCanTriggerAreas="0" bDamagesPlayerOnCollisionSP="0" DmgFactorWhenCollidingAI="1" bExcludeCover="0" esFaction="" bHeavyObject="0" bInteractLargeObject="0" bMissionCritical="0" object_Model="objects/props/storage/civil/basic_box.cgf" bPickable="0" bSerialize="0" soclasses_SmartObjectClass="" bUsable="0" UseText="">
+     <Health bInvulnerable="1" MaxHealth="500" bOnlyEnemyFire="1"/>
+     <Interest soaction_Action="" bInteresting="0" InterestLevel="1" Pause="15" Radius="20" bShared="0">
+      <vOffset x="0" y="0" z="0"/>
+     </Interest>
+     <Physics bActivateOnDamage="0" bCanBreakOthers="0" Density="-1" Mass="35" bPhysicalize="1" bPushableByPlayers="1" bResting="1" bRigidBody="1" bRigidBodyActive="1">
+      <Buoyancy water_damping="0" water_density="1000" water_resistance="1000"/>
+      <CGFPropsOverride player_can_break="">
+       <Constraint constraint_collides="" constraint_damping="" constraint_limit="" constraint_maxang="" constraint_minang=""/>
+       <Deformable explosion_scale="" hardness="" max_impulse="" max_stretch="" skin_dist="" stiffness="" thickness=""/>
+       <Joint bend="" limit="" pull="" push="" shift="" twist=""/>
+      </CGFPropsOverride>
+      <MP bClientOnly="0"/>
+      <Simulation damping="0" bFixedDamping="0" max_time_step="0.02" sleep_speed="0.04" bUseSimpleSolver="0"/>
+     </Physics>
+    </Properties>
+    <Properties2>
+     <Interest soaction_Action="" bInteresting="0" InterestLevel="-1" bOverrideArchetype="0" Pause="-1" Radius="-1" bShared="0"/>
+    </Properties2>
+   </Object>
+   <Object Type="Rope" Layer="AB4_Art" LayerGUID="{7FBA5302-EE27-469E-983E-74DCB80A1BBC}" Id="{E6EA5877-C4A5-4784-BA54-4065A2246AC7}" Name="lamp_Rope7" Pos="676.40637,419.49445,166.21246" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65280" Material="materials/black" MatLayersMask="0" EntityClass="RopeEntity">
+    <Rope flags="3" radius="0.0099999998" anchor_radius="0.0099999998" num_seg="8" num_sides="4" texu="1" texv="10" ph_num_seg="8" ph_sub_vtxs="3" mass="1" friction="2" friction_pull="2" wind="0,0,0" wind_var="0" air_resist="1" water_resist="0" joint_lim="0" max_force="0" tension="0.1" maxTimeStep="0.02" minEnergy="0.0016" damping="0.1" gravity="0,0,-13"/>
+    <Points>
+     <Point Pos="0.0062866211,0.0018920898,-0.60406494"/>
+     <Point Pos="-0.0061645508,-0.0018920898,0.60404968"/>
+    </Points>
+    <SoundData Side1="0" Side2="0" Roof="0" Floor="0"/>
+   </Object>
+   <Object Type="Rope" Layer="AB4_Art" LayerGUID="{7FBA5302-EE27-469E-983E-74DCB80A1BBC}" Id="{86389AA1-B6B8-4B16-9169-90ED5D7CE143}" Name="lamp_Rope8" Pos="686.80011,409.43533,169.35794" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65280" Material="materials/black" MatLayersMask="0" EntityClass="RopeEntity">
+    <Rope flags="3" radius="0.0099999998" anchor_radius="0.0099999998" num_seg="8" num_sides="4" texu="1" texv="10" ph_num_seg="8" ph_sub_vtxs="3" mass="1" friction="2" friction_pull="2" wind="0,0,0" wind_var="0" air_resist="0" water_resist="0" joint_lim="0" max_force="0" tension="0.1" maxTimeStep="0.02" minEnergy="0.0016" damping="0.1" gravity="0,0,-13"/>
+    <Points>
+     <Point Pos="0.0042724609,0.0062561035,-0.10769653"/>
+     <Point Pos="0.00091552734,-0.0056152344,0.11035156"/>
+    </Points>
+    <SoundData Side1="0" Side2="0" Roof="0" Floor="0"/>
+   </Object>
+  </LayerObjects>
+ </Layer>
+</ObjectLayer>
