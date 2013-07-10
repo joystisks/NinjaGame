@@ -1,0 +1,67 @@
+   ResourceCompiler  32-bit
+   Version 3.4.5.6666  Feb 27 2013 02:22:01
+   
+   Copyright (c) 2001-2011 Crytek GmbH. All rights reserved.
+   
+   Exe directory:
+     "E:\CryENGINE_PC_v3_4_5_6666_freesdk\Bin32\rc\"
+   Temp directory:
+     "C:\Users\mvaluyko\AppData\Local\Temp\"
+   Current directory:
+     "E:\CryENGINE_PC_v3_4_5_6666_freesdk\Bin32\rc\"
+   
+   
+   Command line:
+     "E:\CryENGINE_PC_v3_4_5_6666_freesdk/Bin32/rc/rc.exe"
+     "C:\Users\mvaluyko\Documents\$tmp2_lokatsia3.cgf"
+     "/userdialog=1"
+     "/threads=1"
+     "/refresh"
+     "/SplitLODs=1"
+   
+   Platforms specified in rc.ini:
+     pc (little-endian)
+     x360 (big-endian)
+     ps3 (big-endian)
+     wiiu (big-endian)
+   
+   Started at: Mon Jun 24 19:03:01 2013
+    0:00 Memory: working set 3.5Mb (peak 3.5Mb), pagefile 2.2Mb (peak 2.2Mb)
+    0:00 Registering sub compilers (ResourceCompiler*.dll)
+    0:00 Searching for E:\CryENGINE_PC_v3_4_5_6666_freesdk\Bin32\rc\ResourceCompiler*.dll
+    0:00 Loading "E:\CryENGINE_PC_v3_4_5_6666_freesdk\Bin32\rc\ResourceCompilerImage.dll"
+    0:00   Loaded "ResourceCompilerImage.dll"
+    0:00     Registered convertor for tif
+    0:00     Registered convertor for srf
+    0:00     Registered convertor for dds
+    0:00 Loading "E:\CryENGINE_PC_v3_4_5_6666_freesdk\Bin32\rc\ResourceCompilerPC.dll"
+    0:00   Loaded "ResourceCompilerPC.dll"
+    0:00     Registered convertor for cga, cgf
+    0:00     Registered convertor for chunk
+    0:00     Registered convertor for chr
+    0:00     Registered convertor for caf, cba
+    0:00     Registered convertor for dae, dae.zip
+    0:00 Loading "E:\CryENGINE_PC_v3_4_5_6666_freesdk\Bin32\rc\ResourceCompilerXML.dll"
+    0:00   Loaded "ResourceCompilerXML.dll"
+    0:00     Registered convertor for xml
+    0:00 
+    0:00 CryCompressorRC.dll loaded
+    0:00     Registered convertor for pak, zip
+    0:00 Memory: working set 7.2Mb (peak 7.2Mb), pagefile 5.2Mb (peak 5.2Mb)
+    0:00 
+    0:00 CPU cores: 2 available (2 in system).
+    0:00 Logical processors: 2 available (2 in system).
+    0:00 /processes was not specified. Not spawning processes.
+    0:00 /threads specified with value 1: '1'. Using up to 1 thread.
+    0:00 
+    0:00 Memory: working set 7.2Mb (peak 7.2Mb), pagefile 5.2Mb (peak 5.2Mb)
+    0:00 Spawning 1 thread
+    0:00 
+   1>  0:00 -------------------------------------------------------
+   1>  0:00 File='$tmp2_lokatsia3.cgf'
+   
+   1 file processed in 0.0 sec.
+   
+   Memory: working set 7.8Mb (peak 9.3Mb), pagefile 6.1Mb (peak 8.0Mb)
+   
+   Finished at: Mon Jun 24 19:03:01 2013
