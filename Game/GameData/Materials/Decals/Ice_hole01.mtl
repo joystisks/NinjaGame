@@ -1,0 +1,9 @@
+<Material MtlFlags="524288" Shader="Illum" GenMask="10C090800" StringGenMask="%DECAL%ENVIRONMENT_MAP%GLOSS_MAP%OFFSETBUMPMAPPING%PARALLAX_OCCLUSION_MAPPING%TESSELLATION" SurfaceType="" MatTemplate="" Diffuse="0.12752977,0.25084025,0.44232297" Specular="0.42050794,0.42050794,0.42050794" Emissive="0,0,0" Shininess="255" Opacity="0.74000001">
+ <Textures>
+  <Texture Map="Diffuse" File="textures/decals/ice_hole_withwater_diff.tif"/>
+  <Texture Map="Specular" File="textures/decals/ice_hole_withwater_spec.tif"/>
+  <Texture Map="Bumpmap" File="textures/decals/ice_hole_withwater_ddn.tif"/>
+  <Texture Map="Environment" File="textures/cubemaps/forest/cubemap_forest_a_cm.tif"/>
+ </Textures>
+ <PublicParams SpecMapChannelB="0" SpecMapChannelR="0" FresnelPower="4" GlossMapChannelB="0" PomDisplacement="0.0093" SpecMapChannelG="0" FresnelScale="2.78" FresnelBias="1" SelfShadowStrength="0" ObmDisplacement="0.025" HeightBias="0.5" IndirectColor="0.25,0.25,0.25"/>
+</Material>

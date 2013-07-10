@@ -1,0 +1,31 @@
+<Graph isModule="1" moduleName="FlowgraphModule_LevelOnly" Description="" Group="" enabled="1" MultiPlayer="ClientServer">
+ <Nodes>
+  <Node Id="1" Class="Module:Start_FlowgraphModule_LevelOnly" pos="80,10,0" flags="0"/>
+  <Node Id="2" Class="Module:End_FlowgraphModule_LevelOnly" pos="670,10,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="4" Class="HUD:DisplayDebugMessage" pos="360,0,0" flags="0">
+   <Inputs entityId="0" message="Flowgraph Module Test Level:" DisplayTime="0" posX="50" posY="10" fontSize="4" clr_Color="0.899384,0.000804658,0.000804658" centered="0"/>
+  </Node>
+  <Node Id="13" Class="System:ExecuteString" pos="360,-90,0" flags="0">
+   <Inputs String="sys_flash 0" NextFrame="1"/>
+  </Node>
+  <Node Id="16" Class="System:ExecuteString" pos="360,-180,0" flags="0">
+   <Inputs String="gfx_uiaction_enable 0" NextFrame="0"/>
+  </Node>
+  <Node Id="17" Class="HUD:DisplayDebugMessage" pos="360,180,0" flags="0">
+   <Inputs entityId="0" message="sys_flash 0" DisplayTime="0" posX="50" posY="70" fontSize="2" clr_Color="1,1,1" centered="0"/>
+  </Node>
+  <Node Id="18" Class="HUD:DisplayDebugMessage" pos="360,360,0" flags="0">
+   <Inputs entityId="0" message="gfx_uiaction_enable 0" DisplayTime="0" posX="50" posY="90" fontSize="2" clr_Color="1,1,1" centered="0"/>
+  </Node>
+ </Nodes>
+ <Edges>
+  <Edge nodeIn="4" nodeOut="1" portIn="Show" portOut="Start" enabled="1"/>
+  <Edge nodeIn="13" nodeOut="1" portIn="Set" portOut="Start" enabled="1"/>
+  <Edge nodeIn="16" nodeOut="1" portIn="Set" portOut="Start" enabled="1"/>
+  <Edge nodeIn="17" nodeOut="1" portIn="Show" portOut="Start" enabled="1"/>
+  <Edge nodeIn="18" nodeOut="1" portIn="Show" portOut="Start" enabled="1"/>
+ </Edges>
+ <GraphTokens />
+</Graph>

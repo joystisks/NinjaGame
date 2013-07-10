@@ -1,0 +1,8 @@
+<Material MtlFlags="2621440" Shader="Illum" GenMask="100010800" StringGenMask="%DECAL%ENVIRONMENT_MAP%TESSELLATION" SurfaceType="mat_water" MatTemplate="" Diffuse="0,0,0" Specular="0.50543249,0.50543249,0.50543249" Emissive="0,0,0" Shininess="220" Opacity="0.5">
+ <Textures>
+  <Texture Map="Diffuse" File="textures/decals/road/puddle_decal.tif"/>
+  <Texture Map="Bumpmap" File="textures/decals/road/puddle_decal_ddn.tif"/>
+  <Texture Map="Environment" File="textures/cubemaps/forest/cubemap_forest_a_cm.tif"/>
+ </Textures>
+ <PublicParams FresnelPower="4" GlossFromDiffuseContrast="1" FresnelScale="1" GlossFromDiffuseOffset="0" FresnelBias="1" GlossFromDiffuseAmount="0" GlossFromDiffuseBrightness="0.333" IndirectColor="0.25,0.25,0.25"/>
+</Material>

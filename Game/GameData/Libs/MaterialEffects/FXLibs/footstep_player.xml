@@ -1,0 +1,180 @@
+<FXLib>
+
+<Effect name="default">
+	<Sound>
+		<Name>sounds/physics:footsteps/player:default</Name>
+	</Sound>
+	<RandEffect>
+		<Decal minscale="0.3" maxscale="0.3" lifetime="20">
+			<Filename>textures/decals/footprint_sand_left.dds</Filename>
+			<Material>Materials/decals/footstep_snow</Material>
+		</Decal>
+	</RandEffect>
+</Effect>
+
+<Effect name="concrete">
+	<Sound>
+	<Name>sounds/physics:footsteps/player:concrete</Name>
+	</Sound>
+	<RandEffect>
+		<Decal minscale="0.3" maxscale="0.3" lifetime="20">
+			<Filename>textures/decals/footprint_sand_left.dds</Filename>
+			<Material>Materials/decals/footstep_snow</Material>
+		</Decal>
+	</RandEffect>
+</Effect>
+
+<Effect name="fabric">
+	<Sound>
+	<Name>sounds/physics:footsteps/player:fabric</Name>
+	</Sound>
+</Effect>
+
+<Effect name="plastic">
+	<Sound>
+	<Name>sounds/physics:footsteps/player:plastic</Name>
+	</Sound>
+</Effect>
+
+<Effect name="grass">
+	<Sound>
+	<Name>sounds/physics:footsteps/player:grass</Name>
+	</Sound>
+	<RandEffect>
+		<Decal minscale="0.3" maxscale="0.3" lifetime="20">
+			<Filename>textures/decals/footprint_sand_left.dds</Filename>
+			<Material>Materials/decals/footstep_snow</Material>
+		</Decal>
+	</RandEffect>
+</Effect>
+
+<Effect name="grass_tall">
+	<Sound>
+	<Name>sounds/physics:footsteps/player:grass_tall</Name>
+	</Sound>
+	<RandEffect>
+		<Decal minscale="0.3" maxscale="0.3" lifetime="20">
+			<Filename>textures/decals/footprint_sand_left.dds</Filename>
+			<Material>Materials/decals/footstep_snow</Material>
+		</Decal>
+	</RandEffect>
+</Effect>
+
+<Effect name="vegetation">
+	<Sound>
+	<Name>sounds/physics:footsteps/player:vegetation</Name>
+	</Sound>
+	<RandEffect>
+		<Decal minscale="0.3" maxscale="0.3" lifetime="20">
+			<Filename>textures/decals/footprint_sand_left.dds</Filename>
+			<Material>Materials/decals/footstep_snow</Material>
+		</Decal>
+	</RandEffect>
+</Effect>
+
+<Effect name="dirt">
+	<Sound>
+	<Name>sounds/physics:footsteps/player:dirt</Name>
+	</Sound>
+	<Particle>
+		<Name minscale="0.9" maxscale="0.9" maxscaledist="100">collisions.footsteps.dirt</Name>
+	</Particle>
+	<RandEffect>
+		<Decal minscale="0.3" maxscale="0.3" lifetime="20">
+			<Filename>textures/decals/footprint_sand_left.dds</Filename>
+			<Material>Materials/decals/footstep_snow</Material>
+		</Decal>
+	</RandEffect>
+</Effect>
+
+<Effect name="gravel">
+	<Sound>
+	<Name>sounds/physics:footsteps/player:gravel</Name>
+	</Sound>
+	<RandEffect>
+		<Decal minscale="0.3" maxscale="0.3" lifetime="20">
+			<Filename>textures/decals/footprint_sand_left.dds</Filename>
+			<Material>Materials/decals/footstep_snow</Material>
+		</Decal>
+	</RandEffect>
+</Effect>
+
+<Effect name="pebble">
+	<Sound>
+	<Name>sounds/physics:footsteps/player:pebble</Name>
+	</Sound>
+	<RandEffect>
+		<Decal minscale="0.3" maxscale="0.4" lifetime="20">
+			<Filename>textures/decals/footprint_sand_left.dds</Filename>
+			<Material>Materials/decals/footstep_snow</Material>
+		</Decal>
+	</RandEffect>
+</Effect>
+
+<Effect name="wood_solid">
+	<Sound>
+	<Name>sounds/physics:footsteps/player:wood_solid</Name>
+	</Sound>
+	<RandEffect>
+		<Decal minscale="0.3" maxscale="0.3" lifetime="20">
+			<Filename>textures/decals/footprint_sand_left.dds</Filename>
+			<Material>Materials/decals/footstep_snow</Material>
+		</Decal>
+	</RandEffect>
+</Effect>
+
+<Effect name="wood_hollow">
+	<Sound>
+	<Name>sounds/physics:footsteps/player:wood_hollow</Name>
+	</Sound>
+	<RandEffect>
+		<Decal minscale="0.3" maxscale="0.3" lifetime="20">
+			<Filename>textures/decals/footprint_sand_left.dds</Filename>
+			<Material>Materials/decals/footstep_snow</Material>
+		</Decal>
+	</RandEffect>
+</Effect>
+
+<Effect name="metal_thick">
+	<Sound>
+	<Name>sounds/physics:footsteps/player:metal_thick</Name>
+	</Sound>
+</Effect>
+
+<Effect name="metal_chainlink">
+	<Sound>
+	<Name>sounds/physics:footsteps/player:metal_thin</Name>
+	</Sound>
+</Effect>
+
+<Effect name="metal_grate">
+	<Sound>
+	<Name>sounds/physics:footsteps/player:metal_grate</Name>
+	</Sound>
+</Effect>
+
+<Effect name="metal_thin">
+	<Sound>
+	<Name>sounds/physics:footsteps/player:metal_thin</Name>
+	</Sound>
+</Effect>
+
+<!--water_shallow & water_deep required by game code-->
+
+<Effect name="water_shallow">
+	<Sound><Name>sounds/physics:footsteps/player:water_shallow</Name></Sound>
+	<Particle>
+		<Name minscale="0.2" maxscale="0.2" maxscaledist="1">collisions.footsteps.water</Name>
+	</Particle>
+</Effect>
+
+<Effect name="water_deep">
+	<Sound><Name>sounds/physics:footsteps/player:water_deep</Name></Sound>
+	<Particle>
+		<Name minscale="0.5" maxscale="0.5" maxscaledist="1">collisions.footsteps.water</Name>
+	</Particle>
+</Effect>
+
+<!--End-->
+
+</FXLib>

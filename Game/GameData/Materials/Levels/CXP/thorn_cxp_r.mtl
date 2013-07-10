@@ -1,0 +1,19 @@
+<Material MtlFlags="524544">
+ <SubMaterials>
+  <Material Name="Leaf" MtlFlags="524416" Shader="Vegetation" GenMask="400800000" StringGenMask="%LEAVES%TEMP_VEGETATION" SurfaceType="mat_canopy" MatTemplate="" Diffuse="0.43134022,0.43134022,0.39929333" Specular="0.30212551,0.30212551,0.30212551" Emissive="0,0,0" Shininess="50" Opacity="1" AlphaTest="0.5">
+   <Textures>
+    <Texture Map="Diffuse" File="materials/levels/cxp/thorn_diff_cxp.tif"/>
+    <Texture Map="Specular" File="objects/natural/vegetation/rocky_ravine/thorn_spec.tif"/>
+    <Texture Map="Bumpmap" File="objects/natural/vegetation/rocky_ravine/thorn_ddn.tif"/>
+   </Textures>
+   <PublicParams BackViewDep="0.26699999" BackDiffuse="0.63921571,0.71372551,0.41176474" BackDiffuseMultiplier="0.53899997" bendDetailFrequency="1" bendDetailLeafAmplitude="0.035358001" bendDetailBranchAmplitude="0.0252" BackShadowBias="0.119" FresnelScale="1" FresnelPower="4" FresnelBias="1" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="Proxy_obstruct" MtlFlags="525440" Shader="Nodraw" GenMask="0" StringGenMask="" SurfaceType="mat_canopy" MatTemplate="" Diffuse="0.588,0.588,0.588" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures />
+  </Material>
+  <Material Name="Proxy_AI" MtlFlags="525440" Shader="Nodraw" GenMask="0" StringGenMask="" SurfaceType="mat_canopy" MatTemplate="" Diffuse="0.58431375,0.58431375,0.58431375" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures />
+  </Material>
+ </SubMaterials>
+ <PublicParams FresnelScale="1" FresnelPower="4" FresnelBias="1" GlossFromDiffuseAmount="0" GlossFromDiffuseContrast="1" GlossFromDiffuseBrightness="0.333" GlossFromDiffuseOffset="0" IndirectColor="0.25,0.25,0.25"/>
+</Material>

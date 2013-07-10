@@ -1,0 +1,14 @@
+<Material MtlFlags="526336" Shader="Watersurface" GenMask="2155" StringGenMask="" SurfaceType="mat_water" MatTemplate="" Diffuse="1,1,1" Specular="0.227451,0.227451,0.227451" Emissive="0,0,0" Shininess="10.4" Opacity="1">
+ <Textures>
+  <Texture Map="Diffuse" File="textures/defaults/16_grey.dds">
+   <TexMod />
+  </Texture>
+  <Texture Map="Bumpmap" File="textures/defaults/oceanwaves_ddn.tif">
+   <TexMod TileU="8.1999998" TileV="19.5"/>
+  </Texture>
+  <Texture Map="Environment" File="textures/cubemaps/redemption_cm.dds">
+   <TexMod />
+  </Texture>
+ </Textures>
+ <PublicParams WavesSpeed="1.983" BumpScale="0.64700001" BigWavesScale="1.237" SmallWavesScale="1.776" ReflectionAmount="0.2" FresnelBias="0.1" SunShinePow="40" SunMultiplier="0.1" TransparencyRatio="0.109" SoftIntersectionFactor="1" FoamIntersectionFactor="0.25" FoamMultiplier="3.1800001"/>
+</Material>

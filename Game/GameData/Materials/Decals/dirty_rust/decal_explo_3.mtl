@@ -1,0 +1,15 @@
+<Material MtlFlags="0" Shader="Illum" GenMask="318783488" SurfaceType="" Diffuse="0.84313732,0.84313732,0.84313732" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="0.75">
+ <Textures>
+  <Texture Map="Diffuse" File="textures/decals/explosion_decals/explosion_metal.tif" IsTileU="0" IsTileV="0">
+   <TexMod />
+  </Texture>
+  <Texture Map="Normalmap" File="textures/decals/normals/52_ddn.tif">
+   <TexMod />
+  </Texture>
+  <Texture Map="Detail" File="textures/terrain/bump_detail/detail_bump_concr_003_ddn.dds">
+   <TexMod />
+  </Texture>
+ </Textures>
+ <PublicParams AmbientMultiplier="1" DetailBumpTillingU="3" DetailBumpTillingV="3" DetailBumpScale="1" DetailBlendAmount="0"/>
+ <MaterialLayers />
+</Material>

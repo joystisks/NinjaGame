@@ -1,0 +1,7 @@
+<Material MtlFlags="524288" Shader="Illum" GenMask="10C000800" StringGenMask="%DECAL%OFFSETBUMPMAPPING%PARALLAX_OCCLUSION_MAPPING%TESSELLATION" SurfaceType="" MatTemplate="" Diffuse="0.27583286,0.45907992,0.44232297" Specular="1,1,1" Emissive="0,0,0" Shininess="255" Opacity="0.15000001">
+ <Textures>
+  <Texture Map="Diffuse" File="textures/decals/ice_crack02_diff.tif"/>
+  <Texture Map="Bumpmap" File="textures/decals/ice_crack02_ddn.tif"/>
+ </Textures>
+ <PublicParams FresnelPower="4" GlossFromDiffuseContrast="1" PomDisplacement="0.025" FresnelScale="1" GlossFromDiffuseOffset="0" FresnelBias="1" GlossFromDiffuseAmount="0" GlossFromDiffuseBrightness="0.333" SelfShadowStrength="4.7529998" ObmDisplacement="0.025" HeightBias="0.5" IndirectColor="0.25,0.25,0.25"/>
+</Material>

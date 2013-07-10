@@ -1,0 +1,8 @@
+<Material MtlFlags="524288" Shader="Illum" GenMask="100080800" StringGenMask="%DECAL%GLOSS_MAP%TESSELLATION" SurfaceType="" MatTemplate="" Diffuse="0.31118053,0.31118053,0.31118053" Specular="0.21951973,0.21951973,0.21951973" Emissive="0,0,0" Shininess="120" Opacity="1">
+ <Textures>
+  <Texture Map="Diffuse" File="textures/decals/manhole_cover/manhole_02.tif"/>
+  <Texture Map="Specular" File="textures/decals/manhole_cover/manhole_03_spec.tif"/>
+  <Texture Map="Bumpmap" File="textures/decals/manhole_cover/manhole_03_ddn.tif"/>
+ </Textures>
+ <PublicParams SpecMapChannelB="0" SpecMapChannelR="0" FresnelPower="4" GlossMapChannelB="0" SpecMapChannelG="0" FresnelScale="1" FresnelBias="1" IndirectColor="0.25,0.25,0.25"/>
+</Material>

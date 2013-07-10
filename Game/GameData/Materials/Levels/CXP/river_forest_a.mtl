@@ -1,0 +1,6 @@
+<Material MtlFlags="526336" Shader="Water" GenMask="114" StringGenMask="" SurfaceType="mat_water" MatTemplate="" Diffuse="1,1,1" Specular="0.227451,0.227451,0.227451" Emissive="0,0,0" Shininess="10.4" Opacity="1">
+ <Textures>
+  <Texture Map="Environment" File="textures/cubemaps/forest/cubemap_forest_a_cm.dds"/>
+ </Textures>
+ <PublicParams FakeCameraSpeed="0" Tilling="50" DetailTilling="2" RipplesNormalsScale="1" SoftIntersectionFactor="1" FresnelBias="0.1" FresnelPower="5" ReflectionScale="3" ReflectionBumpScale="0.1" RefractionBumpScale="0.1" DetailNormalsScale="0.5" NormalsScale="1.25" GradientScale="0.1" HeightScale="0.025"/>
+</Material>

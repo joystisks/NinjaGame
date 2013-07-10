@@ -1,0 +1,6 @@
+<UserFriendly>
+ <ObjectLayers>
+  <Layer Name="Main" GUID="{AE180615-F0D2-41B0-8B89-593ECCB6DADC}" Hidden="0" Frozen="0"/>
+  <Layer Name="AI_Shoot_At_Surfaces" GUID="{370B3AA2-29A7-47DB-BC52-5628F49FB240}" Hidden="0" Frozen="0"/>
+ </ObjectLayers>
+</UserFriendly>

@@ -1,0 +1,44 @@
+<EntityPrototypeLibrary Name="AI_Friendlies" SandboxVersion="3.4.2.4851">
+ <EntityPrototype Name="Grunt.Grunt_SCAR" Id="{B4CE220A-0777-4252-B959-C95146AE4882}" Library="AI_Friendlies" Class="Grunt" Description="">
+  <Properties AnimPack="" awarenessOfPlayer="0" esBehaviorSelectionTree="Cover2ST" bCannotSwim="0" aicharacter_character="" eiColliderMode="0" esCommConfig="" commrange="30" distanceToHideFrom="3" equip_EquipmentPack="AI" esFaction="Players" bFactionHostility="1" objFrozenModel="" bGrenades="1" fGroupHostility="0" fileHitDeathReactionsParamsDataFile="Libs/HitDeathReactionsData/HitDeathReactions_Grunt.xml" IdleSequence="None" bIdleStartOnSpawn="0" bInvulnerable="0" fileModel="Objects/Characters/neutral_male/sdk_character_male_v2.cdf" nModelVariations="0" bNanoSuit="0" esNavigationType="MediumSizedCharacters" physicMassMult="1" preferredCombatDistance="20" ragdollPersistence="0" rank="4" reaction="1" soclasses_SmartObjectClass="Actor" SoundPack="" SoundPackAlternative="" SpawnedEntityName="" bSquadMate="0" bSquadMateIncendiary="0" bTrackable="1" bUsable="0" UseText="" esVoice="" nVoiceID="0" voiceType="enemy">
+   <CharacterSounds foleyEffect="foley_grunt" footstepEffect="footstep_grunt" bFootstepGearEffect="1" footstepIndGearAudioSignal_Run="" footstepIndGearAudioSignal_Walk="" remoteFootstepEffect="footstep_grunt"/>
+   <Damage FallPercentage="20" FallSleepTime="2" health="500" bLogDamages="0" bNoDeath="0" bNoGrab="0"/>
+   <Interest Angle="270" bInterested="1" MinInterestLevel="0"/>
+   <Perception audioScale="1" camoScale="1" collisionReactionScale="1" config="Human" FOVPrimary="80" FOVSecondary="160" heatScale="1" bIsAffectedByLight="0" minAlarmLevel="0" persistence="0" sightrange="70" sightrangeVehicle="-1" stanceScale="1.9" stuntReactionTimeOut="3" bThermalVision="0" velBase="1" velScale="0.03">
+    <TargetTracks classThreat="1" targetLimit="0"/>
+   </Perception>
+   <RateOfDeath accuracy="1" attackrange="70" reactionTime="1"/>
+   <Readability bIgnoreAnimations="0" bIgnoreVoice="0"/>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="Grunt.Grunt_Demolition" Id="{543F2080-CA09-4E72-8A3C-23E44AC718C1}" Library="AI_Friendlies" Class="Grunt" Description="">
+  <Properties AnimPack="" awarenessOfPlayer="0" esBehaviorSelectionTree="Cover2ST" bCannotSwim="0" aicharacter_character="" eiColliderMode="0" esCommConfig="" commrange="30" distanceToHideFrom="3" equip_EquipmentPack="AI_Demolition" esFaction="Players" bFactionHostility="1" objFrozenModel="" bGrenades="1" fGroupHostility="0" fileHitDeathReactionsParamsDataFile="Libs/HitDeathReactionsData/HitDeathReactions_Grunt.xml" IdleSequence="None" bIdleStartOnSpawn="0" bInvulnerable="0" fileModel="Objects/Characters/neutral_male/sdk_character_male_v2.cdf" nModelVariations="0" bNanoSuit="0" esNavigationType="MediumSizedCharacters" physicMassMult="1" preferredCombatDistance="20" ragdollPersistence="0" rank="4" reaction="1" soclasses_SmartObjectClass="Actor" SoundPack="" SoundPackAlternative="" SpawnedEntityName="" bSquadMate="0" bSquadMateIncendiary="0" bTrackable="1" bUsable="0" UseText="" esVoice="" nVoiceID="0" voiceType="enemy">
+   <CharacterSounds foleyEffect="foley_grunt" footstepEffect="footstep_grunt" bFootstepGearEffect="1" footstepIndGearAudioSignal_Run="" footstepIndGearAudioSignal_Walk="" remoteFootstepEffect="footstep_grunt"/>
+   <Damage FallPercentage="20" FallSleepTime="2" health="500" bLogDamages="0" bNoDeath="0" bNoGrab="0"/>
+   <Interest Angle="270" bInterested="1" MinInterestLevel="0"/>
+   <Perception audioScale="1" camoScale="1" collisionReactionScale="1" config="Human" FOVPrimary="80" FOVSecondary="160" heatScale="1" bIsAffectedByLight="0" minAlarmLevel="0" persistence="0" sightrange="70" sightrangeVehicle="-1" stanceScale="1.9" stuntReactionTimeOut="3" bThermalVision="0" velBase="1" velScale="0.03">
+    <TargetTracks classThreat="1" targetLimit="0"/>
+   </Perception>
+   <RateOfDeath accuracy="1" attackrange="70" reactionTime="1"/>
+   <Readability bIgnoreAnimations="0" bIgnoreVoice="0"/>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+ <EntityPrototype Name="Grunt.Grunt_Invincible" Id="{7E65BD94-8F08-4A3E-A4D5-F633ACA0498E}" Library="AI_Friendlies" Class="Grunt" Description="">
+  <Properties AnimPack="" awarenessOfPlayer="0" esBehaviorSelectionTree="Cover2ST" bCannotSwim="0" aicharacter_character="" eiColliderMode="0" esCommConfig="" commrange="30" distanceToHideFrom="3" equip_EquipmentPack="AI" esFaction="Players" bFactionHostility="1" objFrozenModel="" bGrenades="1" fGroupHostility="0" fileHitDeathReactionsParamsDataFile="Libs/HitDeathReactionsData/HitDeathReactions_Grunt.xml" IdleSequence="None" bIdleStartOnSpawn="0" bInvulnerable="1" fileModel="Objects/Characters/neutral_male/sdk_character_male_v2.cdf" nModelVariations="0" bNanoSuit="0" esNavigationType="MediumSizedCharacters" physicMassMult="1" preferredCombatDistance="20" ragdollPersistence="0" rank="4" reaction="1" soclasses_SmartObjectClass="Actor" SoundPack="" SoundPackAlternative="" SpawnedEntityName="" bSquadMate="0" bSquadMateIncendiary="0" bTrackable="1" bUsable="0" UseText="" esVoice="" nVoiceID="0" voiceType="enemy">
+   <CharacterSounds foleyEffect="foley_grunt" footstepEffect="footstep_grunt" bFootstepGearEffect="1" footstepIndGearAudioSignal_Run="" footstepIndGearAudioSignal_Walk="" remoteFootstepEffect="footstep_grunt"/>
+   <Damage FallPercentage="20" FallSleepTime="2" health="500" bLogDamages="0" bNoDeath="0" bNoGrab="0"/>
+   <Interest Angle="270" bInterested="1" MinInterestLevel="0"/>
+   <Perception audioScale="1" camoScale="1" collisionReactionScale="1" config="Human" FOVPrimary="80" FOVSecondary="160" heatScale="1" bIsAffectedByLight="0" minAlarmLevel="0" persistence="0" sightrange="70" sightrangeVehicle="-1" stanceScale="1.9" stuntReactionTimeOut="3" bThermalVision="0" velBase="1" velScale="0.03">
+    <TargetTracks classThreat="1" targetLimit="0"/>
+   </Perception>
+   <RateOfDeath accuracy="1" attackrange="70" reactionTime="1"/>
+   <Readability bIgnoreAnimations="0" bIgnoreVoice="0"/>
+   <AdditionalArchetypeProperties PrototypeMaterial=""/>
+  </Properties>
+  <ObjectVars OutdoorOnly="0" CastShadow="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" CreatedThroughPool="0"/>
+ </EntityPrototype>
+</EntityPrototypeLibrary>

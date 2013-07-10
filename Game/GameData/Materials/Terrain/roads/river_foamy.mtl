@@ -1,0 +1,14 @@
+<Material MtlFlags="524288" Shader="Illum" GenMask="2102080800" StringGenMask="%DECAL%GLOSS_MAP%OFFSETBUMPMAPPING%STAT_BRANCHING%VERTCOLORS" SurfaceType="mat_water" MatTemplate="" Diffuse="0.13725491,0.14117648,0.14509805" Specular="0.58039218,0.58039218,0.58039218" Emissive="0,0,0" Shininess="1.5" Opacity="0.73299998">
+ <Textures>
+  <Texture Map="Diffuse" File="textures/terrain/roads/river_foamy.tif">
+   <TexMod TileU="2" TexMod_UOscillatorType="2" TexMod_RotateType="3" TexMod_URotateRate="0.098876953" TexMod_URotatePhase="0.99975586" TexMod_URotateAmplitude="0.34606934" TexMod_URotateCenter="0.30000001" TexMod_UOscillatorRate="1" TexMod_VOscillatorRate="0.2" TexMod_UOscillatorPhase="1" TexMod_UOscillatorAmplitude="-0.12" TexMod_VOscillatorAmplitude="0.1"/>
+  </Texture>
+  <Texture Map="Specular" File="textures/terrain/roads/river_foamy_spec.tif">
+   <TexMod />
+  </Texture>
+  <Texture Map="Bumpmap" File="textures/terrain/roads/river_foamy_ddn.tif">
+   <TexMod TexMod_UOscillatorType="2"/>
+  </Texture>
+ </Textures>
+ <PublicParams ObmDisplacement="0.0040000002" AmbientMultiplier="0"/>
+</Material>

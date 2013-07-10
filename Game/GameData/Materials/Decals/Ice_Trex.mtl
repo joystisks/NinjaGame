@@ -1,0 +1,7 @@
+<Material MtlFlags="524288" Shader="Illum" GenMask="10C000800" StringGenMask="%DECAL%OFFSETBUMPMAPPING%PARALLAX_OCCLUSION_MAPPING%TESSELLATION" SurfaceType="" MatTemplate="" Diffuse="0.84336972,0.84336972,0.84336972" Specular="0,0,0" Emissive="0,0,0" Shininess="255" Opacity="1">
+ <Textures>
+  <Texture Map="Diffuse" File="textures/decals/trex_diff.tif"/>
+  <Texture Map="Bumpmap" File="textures/decals/trex_ddn.tif"/>
+ </Textures>
+ <PublicParams FresnelPower="4" GlossFromDiffuseContrast="1" PomDisplacement="0.050000001" FresnelScale="2.78" GlossFromDiffuseOffset="0" FresnelBias="1" GlossFromDiffuseAmount="0" GlossFromDiffuseBrightness="0.333" SelfShadowStrength="1.432" ObmDisplacement="0.025" HeightBias="1" IndirectColor="0.25,0.25,0.25"/>
+</Material>

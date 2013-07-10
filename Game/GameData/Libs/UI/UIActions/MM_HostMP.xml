@@ -1,0 +1,224 @@
+<Graph Description="" Group="MM_PagesMain" enabled="1" MultiPlayer="ClientServer">
+ <Nodes>
+  <Node Id="1" Class="UI:Action:Start" pos="-510,-820,0" flags="0">
+   <Inputs UseAsState="1"/>
+  </Node>
+  <Node Id="33" Name="Setup_page" Class="_commentbox" pos="-542.21307,-865.54669,0" flags="0">
+   <Inputs TextSize="1" Color="0.27451,0.352941,0.705882" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+   <ResizeBorder X="0" Y="0" Width="722.96967" Height="1285.0328"/>
+   <NodeSize Width="722.96967" Height="1312.4235"/>
+  </Node>
+  <Node Id="34" Class="UI:Functions:MainMenu:AddBackButton" pos="-280,50,0" flags="0">
+   <Inputs instanceID="-1" id="MM_MultiPlayer"/>
+  </Node>
+  <Node Id="35" Class="UI:Functions:MainMenu:AddTextField" pos="-280,-540,0" flags="0">
+   <Inputs instanceID="-1" caption="Server name" tooltip="Server name" id="IDD_ServerName" default="" width="350"/>
+  </Node>
+  <Node Id="37" Class="UI:Functions:MainMenu:SetupScreen" pos="-280,-820,0" flags="0">
+   <Inputs instanceID="-1" Caption="@ui_HostMpTitle" ShowLine="1" MaxButtons="10" ButtonXPos="-500" ButtonYPos="0" ButtonOffset="40"/>
+  </Node>
+  <Node Id="38" Class="UI:Events:Settings:OnLevelItem" pos="-340,310,0" flags="0">
+   <Inputs Port="-1" Idx=""/>
+  </Node>
+  <Node Id="39" Class="UI:Functions:Settings:GetLevels" pos="-280,-410,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="42" Name="Handle_events" Class="_commentbox" pos="-544.8584,499.43127,0" flags="0">
+   <Inputs TextSize="1" Color="0.27451,0.352941,0.705882" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+   <ResizeBorder X="0" Y="0" Width="945.86047" Height="555.18945"/>
+   <NodeSize Width="945.86047" Height="582.58008"/>
+  </Node>
+  <Node Id="83" Class="UI:Action:Control" pos="-320,930,0" flags="0">
+   <Inputs uiActions_UIAction="MM_DefaultEvents" Strict="0" Args=""/>
+  </Node>
+  <Node Id="91" Class="UI:Action:End" pos="-70,930,0" flags="0">
+   <Inputs UseAsState="1" Args=""/>
+  </Node>
+  <Node Id="92" Name="Host_lobby" Class="_comment" pos="-520,590,0" flags="0"/>
+  <Node Id="93" Class="UI:Action:Start" pos="-530,930,0" flags="0">
+   <Inputs UseAsState="1"/>
+  </Node>
+  <Node Id="94" Name="Use_default_event_state_as_well" Class="_comment" pos="-530,890,0" flags="0"/>
+  <Node Id="95" Name="After_we_called_&quot;GetLevels&quot;,_the_&quot;OnLevelItem&quot;_node_is_triggered_once_per_level" Class="_comment" pos="-370,270,0" flags="0"/>
+  <Node Id="98" Class="UI:Functions:MainMenu:AddSwitch" pos="-280,-60,0" flags="0">
+   <Inputs instanceID="-1" caption="Level" tooltip="" value="none" id="ID_LEVELS"/>
+  </Node>
+  <Node Id="100" Class="UI:Functions:MainMenu:AddSwitchOption" pos="-80,310,0" flags="0">
+   <Inputs instanceID="-1" id="ID_LEVELS" caption="" value=""/>
+  </Node>
+  <Node Id="102" Class="UI:Functions:MainMenu:AddSwitch" pos="-280,-370,0" flags="0">
+   <Inputs instanceID="-1" caption="Lobby type" tooltip="" value="LAN" id="ID_LOBBYTYPE"/>
+  </Node>
+  <Node Id="103" Class="UI:Functions:MainMenu:SetTextFieldText" pos="640,-580,0" flags="0">
+   <Inputs instanceID="-1" id="IDD_ServerName" value=""/>
+  </Node>
+  <Node Id="104" Class="UI:Functions:MainMenu:AddSwitchOption" pos="-280,-260,0" flags="0">
+   <Inputs instanceID="-1" id="ID_LOBBYTYPE" caption="LAN" value="1"/>
+  </Node>
+  <Node Id="105" Class="UI:Functions:MainMenu:AddSwitchOption" pos="-280,-160,0" flags="0">
+   <Inputs instanceID="-1" id="ID_LOBBYTYPE" caption="Internet" value="0"/>
+  </Node>
+  <Node Id="107" Class="UI:Functions:MainMenu:AddApplyButton" pos="-280,130,0" flags="0">
+   <Inputs instanceID="-1" caption="Create" tooltip="" id="MM_LobbyHost"/>
+  </Node>
+  <Node Id="109" Class="UI:Events:MainMenu:OnButton" pos="-530,630,0" flags="0">
+   <Inputs instanceID="-1" Port="0" Idx="MM_LobbyHost"/>
+  </Node>
+  <Node Id="111" Class="UI:Functions:MainMenu:GetControlVal" pos="-270,600,0" flags="0">
+   <Inputs instanceID="-1" id="ID_LOBBYTYPE"/>
+  </Node>
+  <Node Id="113" Class="UI:Functions:LobbyMP:HostGame" pos="200,610,0" flags="0">
+   <Inputs LAN="0" MapPath="" Gamerules=""/>
+  </Node>
+  <Node Id="114" Class="UI:Functions:MainMenu:GetControlVal" pos="-270,670,0" flags="0">
+   <Inputs instanceID="-1" id="ID_LEVELS"/>
+  </Node>
+  <Node Id="118" Class="UI:Events:MP:OnGetName" pos="203.31981,-583.08594,0" flags="0">
+   <Inputs Port="-1" Idx=""/>
+  </Node>
+  <Node Id="119" Name="Setup_server_name" Class="_commentbox" pos="193.92056,-628.62964,0" flags="0">
+   <Inputs TextSize="1" Color="0.27451,0.352941,0.705882" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+   <ResizeBorder X="0" Y="0" Width="675.32147" Height="227.75385"/>
+   <NodeSize Width="675.32147" Height="255.14447"/>
+  </Node>
+  <Node Id="122" Class="UI:Functions:MP:GetPlayerName" pos="-30,140,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="124" Class="String:Concat" pos="460,-550,0" flags="0">
+   <Inputs String1="" String2="&apos;s Server"/>
+  </Node>
+  <Node Id="128" Class="System:ConsoleVariable" pos="-30,520,0" flags="0">
+   <Inputs CVar="sv_servername" Value=""/>
+  </Node>
+  <Node Id="130" Class="UI:Functions:MainMenu:GetTextFieldText" pos="-270,530,0" flags="0">
+   <Inputs instanceID="-1" id="IDD_ServerName"/>
+  </Node>
+  <Node Id="131" Class="UI:Functions:MainMenu:AddTextField" pos="-280,-670,0" flags="0">
+   <Inputs instanceID="-1" caption="Player name" tooltip="Player name" id="IDD_PLAYERNAME" default="" width="350"/>
+  </Node>
+  <Node Id="133" Class="UI:Functions:MP:SetPlayerName" pos="-20,820,0" flags="0">
+   <Inputs Name=""/>
+  </Node>
+  <Node Id="134" Class="UI:Functions:MainMenu:GetTextFieldText" pos="-270,820,0" flags="0">
+   <Inputs instanceID="-1" id="IDD_PLAYERNAME"/>
+  </Node>
+  <Node Id="135" Class="UI:Functions:MainMenu:SetTextFieldText" pos="430,-480,0" flags="0">
+   <Inputs instanceID="-1" id="IDD_PLAYERNAME" value=""/>
+  </Node>
+  <Node Id="139" Class="UI:Functions:MainMenu:ClearSwitchOptions" pos="1070,-260,0" flags="0">
+   <Inputs instanceID="-1" id="ID_GAMERULES"/>
+  </Node>
+  <Node Id="143" Class="Game:GetSupportedGameRulesForMap" pos="1340,-220,0" flags="0">
+   <Inputs Mapname=""/>
+  </Node>
+  <Node Id="231" Class="UI:Functions:MainMenu:GetControlVal" pos="1070,-190,0" flags="0">
+   <Inputs instanceID="-1" id="ID_LEVELS"/>
+  </Node>
+  <Node Id="233" Class="UI:Events:MainMenu:OnControlChanged" pos="690,-310,0" flags="0">
+   <Inputs instanceID="-1" Port="0" Idx="ID_LEVELS"/>
+  </Node>
+  <Node Id="237" Class="UI:Functions:MainMenu:AddSwitchOptionsFromString" pos="1610,-240,0" flags="0">
+   <Inputs instanceID="-1" id="ID_GAMERULES" options="" delimter="|"/>
+  </Node>
+  <Node Id="239" Class="UI:Functions:MainMenu:AddSwitch" pos="-50,-60,0" flags="0">
+   <Inputs instanceID="-1" caption="Gametype" tooltip="" value="Select one" id="ID_GAMERULES"/>
+  </Node>
+  <Node Id="245" Name="Load_supported_gamerules_for_map" Class="_commentbox" pos="189.34167,-368.9375,0" flags="0">
+   <Inputs TextSize="1" Color="0.27451,0.352941,0.705882" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+   <ResizeBorder X="0" Y="0" Width="1746.7968" Height="372.48853"/>
+   <NodeSize Width="1746.7968" Height="399.87915"/>
+  </Node>
+  <Node Id="246" Class="UI:Functions:MainMenu:GetControlVal" pos="-270,740,0" flags="0">
+   <Inputs instanceID="-1" id="ID_GAMERULES"/>
+  </Node>
+  <Node Id="248" Class="Logic:Any" pos="950,-220,0" flags="0" InHideMask="63" OutHideMask="1">
+   <Inputs />
+  </Node>
+  <Node Id="253" Class="UI:Util:UIDelay" pos="300,-260,0" flags="0">
+   <Inputs delay="1"/>
+  </Node>
+  <Node Id="254" Class="UI:Action:Start" pos="230,-210,0" flags="0">
+   <Inputs UseAsState="1"/>
+  </Node>
+  <Node Id="257" Class="Logic:Gate" pos="650,-180,0" flags="0">
+   <Inputs Closed="0"/>
+  </Node>
+  <Node Id="259" Class="Logic:Any" pos="510,-210,0" flags="0" InHideMask="63" OutHideMask="1">
+   <Inputs />
+  </Node>
+  <Node Id="261" Class="String:Compare" pos="1370,-70,0" flags="0">
+   <Inputs A="" B="-1" IgnoreCase="1"/>
+  </Node>
+  <Node Id="263" Class="UI:Functions:MainMenu:AddSeparator" pos="-5.48177,-744.60706,0" flags="0">
+   <Inputs instanceID="-1" caption="Game Options"/>
+  </Node>
+  <Node Id="264" Class="UI:Util:Platform" pos="50,-850,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="265" Class="UI:Functions:MainMenu:AddCosmeticConsoleButton" pos="250,-910,0" flags="0">
+   <Inputs instanceID="-1" button="X360_A" caption="@ui_PressToSelect"/>
+  </Node>
+  <Node Id="266" Class="UI:Functions:MainMenu:AddCosmeticConsoleButton" pos="250,-830,0" flags="0">
+   <Inputs instanceID="-1" button="PS3_Cross" caption="@ui_PressToSelect"/>
+  </Node>
+ </Nodes>
+ <Edges>
+  <Edge nodeIn="37" nodeOut="1" portIn="Call" portOut="StartAction" enabled="1"/>
+  <Edge nodeIn="107" nodeOut="34" portIn="Call" portOut="OnCall" enabled="1"/>
+  <Edge nodeIn="39" nodeOut="35" portIn="send" portOut="OnCall" enabled="1"/>
+  <Edge nodeIn="263" nodeOut="37" portIn="Call" portOut="OnCall" enabled="1"/>
+  <Edge nodeIn="100" nodeOut="38" portIn="caption" portOut="LevelLabel" enabled="1"/>
+  <Edge nodeIn="100" nodeOut="38" portIn="value" portOut="LevelName" enabled="1"/>
+  <Edge nodeIn="100" nodeOut="38" portIn="Call" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="102" nodeOut="39" portIn="Call" portOut="OnEvent" enabled="1"/>
+  <Edge nodeIn="91" nodeOut="83" portIn="EndAction" portOut="OnEnd" enabled="1"/>
+  <Edge nodeIn="83" nodeOut="93" portIn="Start" portOut="StartAction" enabled="1"/>
+  <Edge nodeIn="239" nodeOut="98" portIn="Call" portOut="OnCall" enabled="1"/>
+  <Edge nodeIn="104" nodeOut="102" portIn="Call" portOut="OnCall" enabled="1"/>
+  <Edge nodeIn="105" nodeOut="104" portIn="Call" portOut="OnCall" enabled="1"/>
+  <Edge nodeIn="98" nodeOut="105" portIn="Call" portOut="OnCall" enabled="1"/>
+  <Edge nodeIn="122" nodeOut="107" portIn="send" portOut="OnCall" enabled="1"/>
+  <Edge nodeIn="111" nodeOut="109" portIn="Call" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="114" nodeOut="109" portIn="Call" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="130" nodeOut="109" portIn="Call" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="134" nodeOut="109" portIn="Call" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="246" nodeOut="109" portIn="Call" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="113" nodeOut="111" portIn="send" portOut="OnCall" enabled="1"/>
+  <Edge nodeIn="113" nodeOut="111" portIn="LAN" portOut="ReturnVal" enabled="1"/>
+  <Edge nodeIn="113" nodeOut="114" portIn="MapPath" portOut="ReturnVal" enabled="1"/>
+  <Edge nodeIn="124" nodeOut="118" portIn="String1" portOut="Name" enabled="1"/>
+  <Edge nodeIn="124" nodeOut="118" portIn="Set" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="135" nodeOut="118" portIn="value" portOut="Name" enabled="1"/>
+  <Edge nodeIn="135" nodeOut="118" portIn="Call" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="103" nodeOut="124" portIn="Call" portOut="Out" enabled="1"/>
+  <Edge nodeIn="103" nodeOut="124" portIn="value" portOut="Out" enabled="1"/>
+  <Edge nodeIn="128" nodeOut="130" portIn="Set" portOut="OnCall" enabled="1"/>
+  <Edge nodeIn="128" nodeOut="130" portIn="Value" portOut="ReturnVal" enabled="1"/>
+  <Edge nodeIn="35" nodeOut="131" portIn="Call" portOut="OnCall" enabled="1"/>
+  <Edge nodeIn="264" nodeOut="131" portIn="get" portOut="OnCall" enabled="1"/>
+  <Edge nodeIn="133" nodeOut="134" portIn="send" portOut="OnCall" enabled="1"/>
+  <Edge nodeIn="133" nodeOut="134" portIn="Name" portOut="ReturnVal" enabled="1"/>
+  <Edge nodeIn="143" nodeOut="139" portIn="Get" portOut="OnCall" enabled="1"/>
+  <Edge nodeIn="237" nodeOut="143" portIn="Call" portOut="GameRules" enabled="1"/>
+  <Edge nodeIn="237" nodeOut="143" portIn="options" portOut="GameRules" enabled="1"/>
+  <Edge nodeIn="143" nodeOut="231" portIn="Mapname" portOut="ReturnVal" enabled="1"/>
+  <Edge nodeIn="261" nodeOut="231" portIn="A" portOut="ReturnVal" enabled="1"/>
+  <Edge nodeIn="261" nodeOut="231" portIn="Compare" portOut="ReturnVal" enabled="1"/>
+  <Edge nodeIn="248" nodeOut="233" portIn="in1" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="34" nodeOut="239" portIn="Call" portOut="OnCall" enabled="1"/>
+  <Edge nodeIn="113" nodeOut="246" portIn="Gamerules" portOut="ReturnVal" enabled="1"/>
+  <Edge nodeIn="139" nodeOut="248" portIn="Call" portOut="out" enabled="1"/>
+  <Edge nodeIn="231" nodeOut="248" portIn="Call" portOut="out" enabled="1"/>
+  <Edge nodeIn="253" nodeOut="248" portIn="in" portOut="out" enabled="1"/>
+  <Edge nodeIn="259" nodeOut="253" portIn="in1" portOut="out" enabled="1"/>
+  <Edge nodeIn="257" nodeOut="254" portIn="Open" portOut="StartAction" enabled="1"/>
+  <Edge nodeIn="259" nodeOut="254" portIn="in2" portOut="StartAction" enabled="1"/>
+  <Edge nodeIn="248" nodeOut="257" portIn="in2" portOut="Out" enabled="1"/>
+  <Edge nodeIn="257" nodeOut="259" portIn="In" portOut="out" enabled="1"/>
+  <Edge nodeIn="257" nodeOut="261" portIn="Close" portOut="False" enabled="1"/>
+  <Edge nodeIn="131" nodeOut="263" portIn="Call" portOut="OnCall" enabled="1"/>
+  <Edge nodeIn="265" nodeOut="264" portIn="Call" portOut="IsC360" enabled="1"/>
+  <Edge nodeIn="266" nodeOut="264" portIn="Call" portOut="IsPS3" enabled="1"/>
+ </Edges>
+ <GraphTokens />
+</Graph>

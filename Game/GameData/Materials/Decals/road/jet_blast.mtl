@@ -1,0 +1,9 @@
+<Material MtlFlags="131072" Shader="Illum" GenMask="301989888" SurfaceType="" Diffuse="0.39607847,0.039215688,0.039215688" Specular="0,0,0" Emissive="0,0,0" Opacity="0.5">
+ <Textures>
+  <Texture Map="Diffuse" File="textures/decals/roadsign/jetblast.tif" Filter="6">
+   <TexMod />
+  </Texture>
+ </Textures>
+ <PublicParams Displacement="0.025" AmbientMultiplier="1"/>
+ <MaterialLayers />
+</Material>

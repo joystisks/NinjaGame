@@ -1,0 +1,9 @@
+<Material MtlFlags="524288" Shader="Illum" GenMask="100082280" StringGenMask="%DETAIL_BUMP_MAPPING%DETAIL_TEXTURE_IS_NORMALMAP%DETAIL_TEXTURE_IS_SET%GLOSS_MAP%TESSELLATION" SurfaceType="mat_concrete" MatTemplate="" Diffuse="0.11657578,0.11657578,0.11657578" Specular="0.50543249,0.50543249,0.50543249" Emissive="0,0,0" Shininess="60" Opacity="1">
+ <Textures>
+  <Texture Map="Diffuse" File="textures/brick/brick_wall02_diff.tif"/>
+  <Texture Map="Specular" File="textures/brick/brick_wall02_spec.tif"/>
+  <Texture Map="Bumpmap" File="textures/brick/brick_wall02_ddn.tif"/>
+  <Texture Map="Detail" File="textures/detail_bumpmaps/wallstructure_1_ddn.tif"/>
+ </Textures>
+ <PublicParams SpecMapChannelB="0" SpecMapChannelR="0" FresnelPower="4" DetailBumpTillingU="10" GlossMapChannelB="0" SpecMapChannelG="0" FresnelScale="1" DetailDiffuseScale="0" FresnelBias="1" DetailBumpScale="0.5" DetailGlossScale="0" IndirectColor="0.25,0.25,0.25"/>
+</Material>

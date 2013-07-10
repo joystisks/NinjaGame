@@ -1,0 +1,8 @@
+<Material MtlFlags="524320" Shader="Illum" GenMask="2100080800" StringGenMask="%DECAL%GLOSS_MAP%TESSELLATION%VERTCOLORS" SurfaceType="mat_concrete" MatTemplate="" Diffuse="0.65882355,0.65882355,0.65882355" Specular="0.098689198,0.098689198,0.098689198" Emissive="0,0,0" Shininess="25" Opacity="0.99000001">
+ <Textures>
+  <Texture Map="Diffuse" File="textures/terrain/roads/road_concrete_white_stripes_dif.tif" Filter="5"/>
+  <Texture Map="Specular" File="textures/terrain/roads/road_concrete_white_stripes_spec.tif"/>
+  <Texture Map="Bumpmap" File="textures/terrain/roads/road_concrete_white_stripes_ddn.tif"/>
+ </Textures>
+ <PublicParams SpecMapChannelB="0" SpecMapChannelR="0" FresnelPower="4" GlossMapChannelB="0" SpecMapChannelG="0" FresnelScale="1" FresnelBias="1" IndirectColor="0.25,0.25,0.25"/>
+</Material>

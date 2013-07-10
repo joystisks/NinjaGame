@@ -1,0 +1,17 @@
+<Graph Description="" Group="Props" enabled="1" MultiPlayer="ClientServer">
+ <Nodes>
+  <Node Id="3" Class="Movement:RotateEntity" pos="-150,-150,0" flags="0" GraphEntity="0">
+   <Inputs entityId="0" Speed="0,-30,0" Paused="0" Ref="1"/>
+  </Node>
+  <Node Id="8" Class="Movement:RotateEntity" pos="-150,-40,0" flags="0" EntityGUID="{635A4D76-EB77-4894-A53F-8D57DC470891}" EntityGUID_64="4894EB77635A4D76">
+   <Inputs entityId="0" Speed="0,-29,0" Paused="0" Ref="1"/>
+  </Node>
+  <Node Id="9" Class="Movement:RotateEntity" pos="-150,70,0" flags="0" EntityGUID="{DDC8EF5D-D921-4451-B3A0-209F716435CA}" EntityGUID_64="4451D921DDC8EF5D">
+   <Inputs entityId="0" Speed="0,-31,0" Paused="0" Ref="1"/>
+  </Node>
+  <Node Id="11" Class="Movement:RotateEntity" pos="-150,180,0" flags="0" EntityGUID="{B2F7608C-BC3C-42F0-A191-796FD201F030}" EntityGUID_64="42F0BC3CB2F7608C">
+   <Inputs entityId="0" Speed="0,-28,0" Paused="0" Ref="1"/>
+  </Node>
+ </Nodes>
+ <Edges />
+</Graph>

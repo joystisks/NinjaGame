@@ -1,0 +1,8 @@
+<Material MtlFlags="524320" Shader="Illum" GenMask="2108080800" StringGenMask="%DECAL%GLOSS_MAP%PARALLAX_OCCLUSION_MAPPING%TESSELLATION%VERTCOLORS" SurfaceType="mat_ice" MatTemplate="" Diffuse="0.65922403,0.65922403,0.65922403" Specular="0.70116949,0.70116949,0.70116949" Emissive="0,0,0" Shininess="78" Opacity="0.99000001">
+ <Textures>
+  <Texture Map="Diffuse" File="textures/terrain/roads/road_concrete_snowy_dif.tif" Filter="5"/>
+  <Texture Map="Specular" File="textures/terrain/roads/road_concrete_snowy_spec.tif"/>
+  <Texture Map="Bumpmap" File="textures/terrain/roads/road_concrete_snowy_ddn.tif"/>
+ </Textures>
+ <PublicParams SpecMapChannelB="0" SpecMapChannelR="0" FresnelPower="4" GlossMapChannelB="0" PomDisplacement="0.0163" SpecMapChannelG="0" FresnelScale="1" FresnelBias="1" SelfShadowStrength="5" HeightBias="1" IndirectColor="0.25,0.25,0.25"/>
+</Material>

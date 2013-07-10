@@ -1,0 +1,6 @@
+<UserFriendly>
+ <ObjectLayers>
+  <Layer Name="Main" GUID="{B43BB935-F4CF-45AE-BD63-F72FDE0AEA7C}" Hidden="0" Frozen="0"/>
+  <Layer Name="Navigation_Tests" GUID="{9EF5B09B-C0AF-4EA1-A43C-00199C1C42B1}" Hidden="0" Frozen="0"/>
+ </ObjectLayers>
+</UserFriendly>

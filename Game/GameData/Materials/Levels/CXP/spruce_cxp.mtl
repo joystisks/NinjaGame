@@ -1,0 +1,50 @@
+<Material MtlFlags="524544">
+ <SubMaterials>
+  <Material Name="Leaf" MtlFlags="524416" Shader="Vegetation" GenMask="10500801000" StringGenMask="%DETAIL_BENDING%LEAVES%MERGED_TEXTURES%STAT_BRANCHING%TEMP_VEGETATION" SurfaceType="mat_canopy" MatTemplate="" Diffuse="0.41176474,0.35686275,0.33725491" Specular="0,0,0" Emissive="0.60784316,0.60784316,0.60784316" Shininess="13.4" Opacity="1" AlphaTest="0.5">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/natural/vegetation/rocky_ravine/spruce_leaf_diff.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Specular" File="objects/natural/vegetation/rocky_ravine/spruce_leaf_spec.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Bumpmap" File="objects/natural/vegetation/rocky_ravine/spruce_leaf_ddn.tif">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams BackViewDep="0" BackDiffuse="1,1,1" BackDiffuseMultiplier="0.85000002" bendDetailFrequency="0.99000001" bendDetailLeafAmplitude="0.080000103" bendDetailBranchAmplitude="0.1" bendDetailPhase="100" BackShadowBias="0"/>
+  </Material>
+  <Material Name="Trunk" MtlFlags="524416" Shader="Vegetation" GenMask="10500000000" StringGenMask="%MERGED_TEXTURES%STAT_BRANCHING%TEMP_VEGETATION" SurfaceType="mat_wood" MatTemplate="" Diffuse="0.49803925,0.49803925,0.49803925" Specular="0.34117648,0.34117648,0.34117648" Emissive="0,0,0" Shininess="5" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/natural/vegetation/rocky_ravine/spruce_trunk_diff.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Bumpmap" File="objects/natural/vegetation/rocky_ravine/spruce_trunk_ddn.tif">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams bendDetailFrequency="0" bendDetailLeafAmplitude="0" bendDetailBranchAmplitude="0" bendDetailPhase="0"/>
+  </Material>
+  <Material Name="Proxy_AI" MtlFlags="525440" Shader="NoDraw" GenMask="0" StringGenMask="" SurfaceType="mat_wood" MatTemplate="" Diffuse="0.588,0.588,0.588" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures />
+  </Material>
+  <Material Name="Proxy_Trunk" MtlFlags="525440" Shader="Nodraw" GenMask="0" StringGenMask="" SurfaceType="mat_wood" MatTemplate="" Diffuse="1,1,1" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures />
+  </Material>
+  <Material Name="Trunk_dead" MtlFlags="524416" Shader="Vegetation" GenMask="10500002000" StringGenMask="%DETAIL_BUMP_MAPPING%MERGED_TEXTURES%STAT_BRANCHING%TEMP_VEGETATION" SurfaceType="mat_wood" MatTemplate="" Diffuse="0.4784314,0.4784314,0.4784314" Specular="0.16078432,0.16078432,0.16078432" Emissive="0,0,0" Shininess="3" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/natural/vegetation/rocky_ravine/spruce_trunk_dead_diff.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Bumpmap" File="objects/natural/vegetation/rocky_ravine/spruce_trunk_dead_ddn.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Detail" File="objects/natural/vegetation/rocky_ravine/spruce_trunk_dead_ddn.tif">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams bendDetailFrequency="5" bendDetailLeafAmplitude="0.079999998" bendDetailBranchAmplitude="0.2" bendDetailPhase="100" DetailBumpTillingU="5" DetailBumpTillingV="5" DetailBumpScale="1" DetailBlendAmount="0"/>
+  </Material>
+ </SubMaterials>
+ <PublicParams AmbientMultiplier="1"/>
+</Material>

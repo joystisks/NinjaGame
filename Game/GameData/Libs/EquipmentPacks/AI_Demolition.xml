@@ -1,0 +1,14 @@
+<EquipPack name="AI_Demolition" primary="RocketLauncher">
+ <Items>
+  <RocketLauncher type="ItemGivable"/>
+  <SCARAI type="ItemGivable"/>
+  <Fists type="ItemGivable"/>
+ </Items>
+ <Ammos>
+  <Ammo name="MGbullet" amount="0"/>
+  <Ammo name="bullet" amount="160"/>
+  <Ammo name="explosivegrenade" amount="10"/>
+  <Ammo name="rocket" amount="10"/>
+  <Ammo name="tank125" amount="0"/>
+ </Ammos>
+</EquipPack>

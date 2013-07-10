@@ -1,0 +1,12 @@
+<Material MtlFlags="0" Shader="Illum" GenMask="452984832" SurfaceType="" Diffuse="0.82352948,0.82352948,0.82352948" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="0.85000002">
+ <Textures>
+  <Texture Map="Diffuse" File="textures/decals/explosion_decals/explosionhighres.tif" IsTileU="0" IsTileV="0">
+   <TexMod />
+  </Texture>
+  <Texture Map="Bumpmap" File="textures/decals/field_mud_water_ddn.tif">
+   <TexMod />
+  </Texture>
+ </Textures>
+ <PublicParams PomDisplacement="0.02" SelfShadowStrength="3" AmbientMultiplier="1"/>
+ <MaterialLayers />
+</Material>

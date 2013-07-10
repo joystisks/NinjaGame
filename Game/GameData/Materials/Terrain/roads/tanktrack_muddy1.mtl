@@ -1,0 +1,14 @@
+<Material MtlFlags="524328" Shader="Illum" GenMask="2100082A80" StringGenMask="%DECAL%DETAIL_BUMP_MAPPING%DETAIL_TEXTURE_IS_NORMALMAP%DETAIL_TEXTURE_IS_SET%GLOSS_MAP%TESSELLATION%VERTCOLORS" SurfaceType="mat_soil" MatTemplate="" Diffuse="0.36859095,0.32503697,0.25902736" Specular="0.15686275,0.14117648,0.13333334" Emissive="0,0,0" Shininess="20" Opacity="0.99000001">
+ <Textures>
+  <Texture Map="Diffuse" File="textures/terrain/roads/tanktracks_x.dds" Filter="7">
+   <TexMod OffsetU="1" OffsetV="1"/>
+  </Texture>
+  <Texture Map="Specular" File="textures/terrain/roads/road_muddy_off_12_spec.dds"/>
+  <Texture Map="Bumpmap" File="textures/terrain/roads/road_muddy_off_12_ddn.dds">
+   <TexMod TileU="0.80000001"/>
+  </Texture>
+  <Texture Map="Detail" File="textures/terrain/bump_detail/detail_bump_concr_005_ddn.dds"/>
+ </Textures>
+ <DetailDecal Opacity="128" SSAOAmount="0" topTileU="1" topTileV="1" topOffsV="0" topOffsU="0" topRotation="0" topDeformation="0" topSortOffset="0" bottomTileU="0.5" bottomTileV="0.5" bottomOffsV="0.5" bottomOffsU="0.5" bottomRotation="0" bottomDeformation="0" bottomSortOffset="0"/>
+ <PublicParams SpecMapChannelB="0" SpecMapChannelR="0" FresnelPower="4" DetailBumpTillingU="10" GlossMapChannelB="0" SpecMapChannelG="0" FresnelScale="1" DetailDiffuseScale="0" FresnelBias="1" DetailBumpScale="1.5" DetailGlossScale="0" IndirectColor="0.25,0.25,0.25"/>
+</Material>

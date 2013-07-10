@@ -1,0 +1,6 @@
+<Material MtlFlags="524288" Shader="Illum" GenMask="100000800" StringGenMask="%DECAL%TESSELLATION" SurfaceType="" MatTemplate="" Diffuse="0.48776522,0.57315886,0.68002033" Specular="1,1,1" Emissive="0.80784321,0.80784321,0.80784321" Shininess="138" Opacity="0.41">
+ <Textures>
+  <Texture Map="Diffuse" File="textures/decals/ice_crack01_diff.tif" IsTileU="0" IsTileV="0"/>
+ </Textures>
+ <PublicParams FresnelPower="4" GlossFromDiffuseContrast="1" FresnelScale="1" GlossFromDiffuseOffset="0" FresnelBias="1" GlossFromDiffuseAmount="0" GlossFromDiffuseBrightness="0.333" IndirectColor="0.25,0.25,0.25"/>
+</Material>

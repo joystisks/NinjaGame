@@ -1,0 +1,13 @@
+<UserFriendly>
+ <ObjectLayers>
+  <Layer Name="Main" GUID="{EDFD1511-8FE8-43BC-8AA6-1CFEEEFEED01}" Hidden="0" Frozen="1"/>
+  <Layer Name="Layer4" GUID="{20902233-7748-4052-9E53-BD26FC7BA4E6}" Hidden="0" Frozen="0"/>
+  <Layer Name="Layer3" GUID="{7F793A7E-62A3-49D3-9FAA-5D8A871BE372}" Hidden="0" Frozen="0"/>
+  <Layer Name="Layer2" GUID="{C51C2F98-ACD2-442E-AABD-486E0A5FA888}" Hidden="0" Frozen="0"/>
+  <Layer Name="Layer1" GUID="{6D04DF98-BF35-4C7D-A5C7-27789B7480E8}" Hidden="0" Frozen="0"/>
+  <Layer Name="Layer2/Layer2Child" GUID="{0DF265C5-8451-496A-9D55-BB4E2B0D72BB}" Hidden="0" Frozen="0"/>
+  <Layer Name="Layer4/Layer4Child" GUID="{1B811CDB-4068-434D-A46B-A3281AB09F9F}" Hidden="0" Frozen="0"/>
+  <Layer Name="Layer1/Layer1Child" GUID="{C75DBCE0-F5D7-4D33-815E-6B83D8E8A8C2}" Hidden="0" Frozen="0"/>
+  <Layer Name="Layer3/Layer3Child" GUID="{521FACEF-0E49-4DA6-9A89-73EF3FC60820}" Hidden="0" Frozen="0"/>
+ </ObjectLayers>
+</UserFriendly>

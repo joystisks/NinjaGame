@@ -1,0 +1,44 @@
+<Material MtlFlags="524544">
+ <SubMaterials>
+  <Material Name="x" MtlFlags="524416" Shader="Terrain.Layer" GenMask="20C0C2280" StringGenMask="%DETAIL_BUMP_MAPPING%DETAIL_TEXTURE_IS_NORMALMAP%DETAIL_TEXTURE_IS_SET%GLOSS_DIFFUSEALPHA%GLOSS_MAP%OFFSETBUMPMAPPING%PARALLAX_OCCLUSION_MAPPING%TEMP_TERRAIN" SurfaceType="mat_snow" MatTemplate="" Diffuse="1,1,1" Specular="1,1,1" Emissive="0,0,0" Shininess="20" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="textures/terrain/detail/snow_terrain.tif">
+     <TexMod TileU="0.1" TileV="0.1"/>
+    </Texture>
+    <Texture Map="Specular" File="textures/terrain/detail/snow_terrain.tif"/>
+    <Texture Map="Bumpmap" File="textures/terrain/detail/snow_terrain_ddn.tif">
+     <TexMod TileU="0.025" TileV="0.025"/>
+    </Texture>
+    <Texture Map="Detail" File="textures/detail_bumpmaps/gravel_1_ddn.dds"/>
+   </Textures>
+   <PublicParams FresnelPower="4" DetailBumpTillingU="40" DetailTextureStrength="2" PomDisplacement="0.029999999" FresnelScale="1" DetailDiffuseScale="0" FresnelBias="1" DetailBumpScale="1" SelfShadowStrength="1" ObmDisplacement="0.025" HeightBias="0.5" DetailGlossScale="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="y" MtlFlags="524416" Shader="Terrain.Layer" GenMask="20C0C2280" StringGenMask="%DETAIL_BUMP_MAPPING%DETAIL_TEXTURE_IS_NORMALMAP%DETAIL_TEXTURE_IS_SET%GLOSS_DIFFUSEALPHA%GLOSS_MAP%OFFSETBUMPMAPPING%PARALLAX_OCCLUSION_MAPPING%TEMP_TERRAIN" SurfaceType="mat_snow" MatTemplate="" Diffuse="1,1,1" Specular="1,1,1" Emissive="0,0,0" Shininess="20" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="textures/terrain/detail/snow_terrain.tif">
+     <TexMod TileU="0.1" TileV="0.1"/>
+    </Texture>
+    <Texture Map="Specular" File="textures/terrain/detail/snow_terrain.tif"/>
+    <Texture Map="Bumpmap" File="textures/terrain/detail/snow_terrain_ddn.tif">
+     <TexMod TileU="0.025" TileV="0.025"/>
+    </Texture>
+    <Texture Map="Detail" File="textures/detail_bumpmaps/gravel_1_ddn.dds"/>
+   </Textures>
+   <PublicParams FresnelPower="4" DetailBumpTillingU="30" DetailTextureStrength="2" PomDisplacement="0.029999999" FresnelScale="1" DetailDiffuseScale="0" FresnelBias="1" DetailBumpScale="1" SelfShadowStrength="1" ObmDisplacement="0.025" HeightBias="0.5" DetailGlossScale="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="z" MtlFlags="524416" Shader="Terrain.Layer" GenMask="20C0C2280" StringGenMask="%DETAIL_BUMP_MAPPING%DETAIL_TEXTURE_IS_NORMALMAP%DETAIL_TEXTURE_IS_SET%GLOSS_DIFFUSEALPHA%GLOSS_MAP%OFFSETBUMPMAPPING%PARALLAX_OCCLUSION_MAPPING%TEMP_TERRAIN" SurfaceType="mat_snow" MatTemplate="" Diffuse="1,1,1" Specular="1,1,1" Emissive="0,0,0" Shininess="20" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="textures/terrain/detail/snow_terrain.tif">
+     <TexMod TileU="0.1" TileV="0.1"/>
+    </Texture>
+    <Texture Map="Specular" File="textures/terrain/detail/snow_terrain.tif"/>
+    <Texture Map="Bumpmap" File="textures/terrain/detail/snow_terrain_ddn.tif">
+     <TexMod TileU="0.025" TileV="0.025"/>
+    </Texture>
+    <Texture Map="Detail" File="textures/detail_bumpmaps/gravel_1_ddn.dds"/>
+   </Textures>
+   <PublicParams FresnelPower="4" DetailBumpTillingU="30" DetailTextureStrength="2" PomDisplacement="0.029999999" FresnelScale="1" DetailDiffuseScale="0" FresnelBias="1" DetailBumpScale="1" SelfShadowStrength="1" ObmDisplacement="0.025" HeightBias="0.5" DetailGlossScale="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+ </SubMaterials>
+ <PublicParams FresnelPower="4" GlossFromDiffuseContrast="1" FresnelScale="1" GlossFromDiffuseOffset="0" FresnelBias="1" GlossFromDiffuseAmount="0" GlossFromDiffuseBrightness="0.333" IndirectColor="0.25,0.25,0.25"/>
+</Material>

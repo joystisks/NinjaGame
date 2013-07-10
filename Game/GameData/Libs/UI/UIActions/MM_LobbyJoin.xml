@@ -1,0 +1,117 @@
+<Graph Description="" Group="MM_PagesMain" enabled="1" MultiPlayer="ClientServer">
+ <Nodes>
+  <Node Id="1" Class="UI:Action:Start" pos="-450,180,0" flags="0">
+   <Inputs UseAsState="1"/>
+  </Node>
+  <Node Id="33" Name="Setup_page" Class="_commentbox" pos="-467.81918,120.37576,0" flags="0">
+   <Inputs TextSize="1" Color="0.27451,0.352941,0.705882" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+   <ResizeBorder X="0" Y="0" Width="695.7417" Height="365.42755"/>
+   <NodeSize Width="695.7417" Height="392.81818"/>
+  </Node>
+  <Node Id="34" Class="UI:Functions:MainMenu:AddBackButton" pos="-230,320,0" flags="0">
+   <Inputs instanceID="-1" id="MM_JoinMP"/>
+  </Node>
+  <Node Id="37" Class="UI:Functions:MainMenu:SetupScreen" pos="-260,50,0" flags="0">
+   <Inputs instanceID="-1" Caption="@ui_JoinMpTitle" ShowLine="1" MaxButtons="1" ButtonXPos="-500" ButtonYPos="-150" ButtonOffset="0"/>
+  </Node>
+  <Node Id="42" Name="Handle_events" Class="_commentbox" pos="-481.89453,562.64941,0" flags="0">
+   <Inputs TextSize="1" Color="0.27451,0.352941,0.705882" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+   <ResizeBorder X="0" Y="0" Width="861.74078" Height="291.52167"/>
+   <NodeSize Width="861.74078" Height="318.91229"/>
+  </Node>
+  <Node Id="83" Class="UI:Action:Control" pos="-250.7417,641.44708,0" flags="0">
+   <Inputs uiActions_UIAction="MM_DefaultEvents" Strict="0" Args=""/>
+  </Node>
+  <Node Id="91" Class="UI:Action:End" pos="-0.74169922,641.44708,0" flags="0">
+   <Inputs UseAsState="1" Args=""/>
+  </Node>
+  <Node Id="93" Class="UI:Action:Start" pos="-460.7417,641.44708,0" flags="0">
+   <Inputs UseAsState="1"/>
+  </Node>
+  <Node Id="94" Name="Use_default_event_state_as_well" Class="_comment" pos="-460.7417,601.44708,0" flags="0"/>
+  <Node Id="102" Class="UI:Util:Platform" pos="40,170,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="118" Class="UI:Functions:MainMenu:AddCosmeticConsoleButton" pos="220,170,0" flags="0">
+   <Inputs instanceID="-1" button="X360_A" caption="@ui_PressToSelect"/>
+  </Node>
+  <Node Id="119" Class="UI:Functions:MainMenu:AddCosmeticConsoleButton" pos="220,250,0" flags="0">
+   <Inputs instanceID="-1" button="PS3_Cross" caption="@ui_PressToSelect"/>
+  </Node>
+  <Node Id="170" Class="UI:Events:MainMenu:OnButton" pos="-470.7417,801.44708,0" flags="0">
+   <Inputs instanceID="-1" Port="0" Idx="MM_JoinMP"/>
+  </Node>
+  <Node Id="172" Class="UI:Functions:LobbyMP:LeaveGame" pos="-180.7417,801.44708,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="173" Name="Leave_game_when_Back_is_pressed" Class="_comment" pos="-470,770,0" flags="0"/>
+  <Node Id="180" Class="UI:Functions:MainMenu:AddListbox" pos="-230,390,0" flags="0">
+   <Inputs instanceID="-1" id="ID_PLAYERS" caption="Players" x="-450" y="-100"/>
+  </Node>
+  <Node Id="189" Class="UI:Functions:LobbyMP:GetPlayerlist" pos="110.10547,941.52704,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="194" Class="UI:Action:Start" pos="-469.89453,951.52704,0" flags="0">
+   <Inputs UseAsState="1"/>
+  </Node>
+  <Node Id="196" Class="UI:Util:UIDelay" pos="340.10547,991.52704,0" flags="0">
+   <Inputs delay="2"/>
+  </Node>
+  <Node Id="198" Class="Logic:Any" pos="-239.89453,951.52704,0" flags="0" InHideMask="60">
+   <Inputs />
+  </Node>
+  <Node Id="199" Name="Update_playerlist" Class="_commentbox" pos="-491,899.32916,0" flags="0">
+   <Inputs TextSize="1" Color="0.27451,0.352941,0.705882" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+   <ResizeBorder X="0" Y="0" Width="967.77051" Height="319.50974"/>
+   <NodeSize Width="967.77051" Height="346.90036"/>
+  </Node>
+  <Node Id="205" Class="UI:Functions:MainMenu:ClearListBox" pos="-129.89453,931.52704,0" flags="0">
+   <Inputs instanceID="-1" id="ID_PLAYERS"/>
+  </Node>
+  <Node Id="206" Class="UI:Events:LobbyMP:PlayerList" pos="-470,1030,0" flags="0">
+   <Inputs Port="-1" Idx=""/>
+  </Node>
+  <Node Id="207" Class="UI:Events:LobbyMP:PlayerIDList" pos="-470,1080,0" flags="0">
+   <Inputs Port="-1" Idx=""/>
+  </Node>
+  <Node Id="208" Class="UI:Variable:Array" pos="-210,1030,0" flags="0">
+   <Inputs uiArrays_Array="MainMenu:ListBoxCaptions" instanceID="-1" Value=""/>
+  </Node>
+  <Node Id="209" Class="UI:Variable:Array" pos="-210,1130,0" flags="0">
+   <Inputs uiArrays_Array="MainMenu:ListBoxValues" instanceID="-1" Value=""/>
+  </Node>
+  <Node Id="210" Class="UI:Functions:MainMenu:AddListboxItems" pos="90,1030,0" flags="0">
+   <Inputs instanceID="-1" id="ID_PLAYERS"/>
+  </Node>
+  <Node Id="211" Class="UI:Functions:MainMenu:AddScreenText" pos="120,430,0" flags="0">
+   <Inputs instanceID="-1" text="Welcome to the Lobby! !B!  Please wait until the Host is ready to Launch the game. When the game is about to start a countdown will be begin.!B!!B!!B!" id="MM_Lobby_Text" alignment="right"/>
+  </Node>
+  <Node Id="213" Class="UI:Functions:MainMenu:AddSeparator" pos="-230,240,0" flags="0">
+   <Inputs instanceID="-1" caption="Player List"/>
+  </Node>
+ </Nodes>
+ <Edges>
+  <Edge nodeIn="37" nodeOut="1" portIn="Call" portOut="StartAction" enabled="1"/>
+  <Edge nodeIn="180" nodeOut="34" portIn="Call" portOut="OnCall" enabled="1"/>
+  <Edge nodeIn="213" nodeOut="37" portIn="Call" portOut="OnCall" enabled="1"/>
+  <Edge nodeIn="91" nodeOut="83" portIn="EndAction" portOut="OnEnd" enabled="1"/>
+  <Edge nodeIn="83" nodeOut="93" portIn="Start" portOut="StartAction" enabled="1"/>
+  <Edge nodeIn="118" nodeOut="102" portIn="Call" portOut="IsC360" enabled="1"/>
+  <Edge nodeIn="119" nodeOut="102" portIn="Call" portOut="IsPS3" enabled="1"/>
+  <Edge nodeIn="172" nodeOut="170" portIn="send" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="211" nodeOut="180" portIn="Call" portOut="OnCall" enabled="1"/>
+  <Edge nodeIn="196" nodeOut="189" portIn="in" portOut="OnEvent" enabled="1"/>
+  <Edge nodeIn="198" nodeOut="194" portIn="in1" portOut="StartAction" enabled="1"/>
+  <Edge nodeIn="198" nodeOut="196" portIn="in2" portOut="out" enabled="1"/>
+  <Edge nodeIn="205" nodeOut="198" portIn="Call" portOut="out" enabled="1"/>
+  <Edge nodeIn="189" nodeOut="205" portIn="send" portOut="OnCall" enabled="1"/>
+  <Edge nodeIn="208" nodeOut="206" portIn="Value" portOut="Array" enabled="1"/>
+  <Edge nodeIn="208" nodeOut="206" portIn="Set" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="209" nodeOut="207" portIn="Value" portOut="Array" enabled="1"/>
+  <Edge nodeIn="209" nodeOut="207" portIn="Set" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="210" nodeOut="208" portIn="Call" portOut="OnSet" enabled="1"/>
+  <Edge nodeIn="34" nodeOut="213" portIn="Call" portOut="OnCall" enabled="1"/>
+  <Edge nodeIn="102" nodeOut="213" portIn="get" portOut="OnCall" enabled="1"/>
+ </Edges>
+ <GraphTokens />
+</Graph>

@@ -1,0 +1,213 @@
+<Graph Description="" Group="MM_PagesShared" enabled="1" MultiPlayer="ClientServer">
+ <Nodes>
+  <Node Id="1" Class="UI:Action:Start" pos="-520,-560,0" flags="0">
+   <Inputs UseAsState="1"/>
+  </Node>
+  <Node Id="2" Class="UI:Action:End" pos="2280,-150,0" flags="0">
+   <Inputs UseAsState="1" Args=""/>
+  </Node>
+  <Node Id="5" Class="UI:Functions:MainMenu:SetupScreen" pos="-330,-560,0" flags="0">
+   <Inputs instanceID="-1" Caption="@ui_GraphicSettingsTitle" ShowLine="1" MaxButtons="5" ButtonXPos="-500" ButtonYPos="0" ButtonOffset="40"/>
+  </Node>
+  <Node Id="6" Class="UI:Functions:MainMenu:AddBackButton" pos="-330,510,0" flags="0">
+   <Inputs instanceID="-1" id="MM_Main"/>
+  </Node>
+  <Node Id="7" Class="UI:Functions:Settings:GetResolutionList" pos="-330,760,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="9" Class="UI:Functions:MainMenu:AddSwitch" pos="-330,-420,0" flags="0">
+   <Inputs instanceID="-1" caption="@ui_Resolution" tooltip="@ui_ResolutionTT" value="" id="SW_RES"/>
+  </Node>
+  <Node Id="19" Class="UI:Functions:MainMenu:AddSwitchOption" pos="290,-510,0" flags="0">
+   <Inputs instanceID="-1" id="SW_RES" caption="4xMSAA" value="0"/>
+  </Node>
+  <Node Id="21" Class="UI:Functions:MainMenu:AddApplyButton" pos="-330,670,0" flags="0">
+   <Inputs instanceID="-1" caption="@ui_Apply" tooltip="@ui_ApplyTT" id="ID_APPLY_GRAPHICS"/>
+  </Node>
+  <Node Id="29" Name="Setup_page" Class="_commentbox" pos="-535.62384,-604.49768,0" flags="0">
+   <Inputs TextSize="1" Color="0.27451,0.352941,0.705882" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+   <ResizeBorder X="0" Y="0" Width="1811.0933" Height="1476.7981"/>
+   <NodeSize Width="1811.0933" Height="1504.1887"/>
+  </Node>
+  <Node Id="39" Name="Handle_events" Class="_commentbox" pos="1449.4529,-604.77246,0" flags="0">
+   <Inputs TextSize="1" Color="0.27451,0.352941,0.705882" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+   <ResizeBorder X="0" Y="0" Width="1290.77" Height="807.15576"/>
+   <NodeSize Width="1290.77" Height="834.54639"/>
+  </Node>
+  <Node Id="42" Class="UI:Functions:Settings:SetGraphics" pos="2080,-290,0" flags="0">
+   <Inputs Resolution="0" Quality="0" Fullscreen="0"/>
+  </Node>
+  <Node Id="49" Class="UI:Functions:MainMenu:GetControlVal" pos="1740,-290,0" flags="0">
+   <Inputs instanceID="0" id="SW_RES"/>
+  </Node>
+  <Node Id="52" Class="UI:Functions:Settings:GetCurrGraphics" pos="-330,800,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="54" Class="UI:Functions:MainMenu:SetControlVal" pos="290,-350,0" flags="0">
+   <Inputs instanceID="-1" id="SW_RES"/>
+  </Node>
+  <Node Id="61" Class="UI:Events:Settings:OnGraphicChanged" pos="30,-350,0" flags="0">
+   <Inputs Port="-1" Idx=""/>
+  </Node>
+  <Node Id="62" Class="UI:Action:Control" pos="2070,-150,0" flags="0">
+   <Inputs uiActions_UIAction="MM_Main" Strict="0" Args=""/>
+  </Node>
+  <Node Id="67" Class="UI:Events:MainMenu:OnButton" pos="1480,-530,0" flags="0">
+   <Inputs instanceID="-1" Port="0" Idx="ID_RESET_GRAPHIC"/>
+  </Node>
+  <Node Id="70" Class="UI:Functions:Settings:GetCurrGraphics" pos="1730,-530,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="71" Class="UI:Functions:MainMenu:AddDefaultsButton" pos="-330,580,0" flags="0">
+   <Inputs instanceID="-1" caption="@ui_reset" tooltip="@ui_resetTT" id="ID_RESET_GRAPHIC"/>
+  </Node>
+  <Node Id="73" Class="UI:Events:MainMenu:OnButton" pos="1480,-390,0" flags="0">
+   <Inputs instanceID="-1" Port="0" Idx="ID_APPLY_GRAPHICS"/>
+  </Node>
+  <Node Id="79" Class="UI:Action:Control" pos="1740,-390,0" flags="0">
+   <Inputs uiActions_UIAction="MM_Confirmation" Strict="0" Args="@ui_ApplyChanges|@ui_Yes|@ui_No"/>
+  </Node>
+  <Node Id="80" Class="Logic:Condition" pos="2080,-390,0" flags="0">
+   <Inputs Condition="0"/>
+  </Node>
+  <Node Id="81" Class="UI:Events:Settings:OnResolutionItem" pos="30,-510,0" flags="0">
+   <Inputs Port="-1" Idx=""/>
+  </Node>
+  <Node Id="82" Class="UI:Functions:MainMenu:AddSwitch" pos="-330,-310,0" flags="0">
+   <Inputs instanceID="-1" caption="@ui_Fullscreen" tooltip="@ui_FullscreenTT" value="" id="SW_FS"/>
+  </Node>
+  <Node Id="83" Class="UI:Functions:MainMenu:AddSwitchOption" pos="-330,-200,0" flags="0">
+   <Inputs instanceID="-1" id="SW_FS" caption="@ui_Yes" value="1"/>
+  </Node>
+  <Node Id="84" Class="UI:Functions:MainMenu:AddSwitchOption" pos="-330,-100,0" flags="0">
+   <Inputs instanceID="-1" id="SW_FS" caption="@ui_No" value="0"/>
+  </Node>
+  <Node Id="85" Class="UI:Functions:MainMenu:SetControlVal" pos="290,-270,0" flags="0">
+   <Inputs instanceID="-1" id="SW_FS"/>
+  </Node>
+  <Node Id="86" Class="UI:Functions:MainMenu:GetControlVal" pos="1740,-150,0" flags="0">
+   <Inputs instanceID="0" id="SW_FS"/>
+  </Node>
+  <Node Id="87" Name="Setup_resolutions" Class="_comment" pos="10,-550,0" flags="0"/>
+  <Node Id="88" Name="Update_Data" Class="_comment" pos="10,-390,0" flags="0"/>
+  <Node Id="89" Name="Reset_to_current_state" Class="_comment" pos="1470,-570,0" flags="0"/>
+  <Node Id="90" Name="Apply_Graphic_Changes" Class="_comment" pos="1470,-430,0" flags="0"/>
+  <Node Id="91" Class="UI:Action:End" pos="1950,110,0" flags="0">
+   <Inputs UseAsState="1" Args=""/>
+  </Node>
+  <Node Id="93" Class="UI:Action:Start" pos="1490,110,0" flags="0">
+   <Inputs UseAsState="1"/>
+  </Node>
+  <Node Id="94" Name="Use_default_event_state_as_well" Class="_comment" pos="1480,70,0" flags="0"/>
+  <Node Id="95" Class="UI:Action:Control" pos="1700,110,0" flags="0">
+   <Inputs uiActions_UIAction="MM_DefaultEvents" Strict="0" Args=""/>
+  </Node>
+  <Node Id="96" Class="UI:Action:Start" pos="1740,-70,0" flags="0">
+   <Inputs UseAsState="1"/>
+  </Node>
+  <Node Id="97" Class="UI:Functions:MainMenu:AddSwitch" pos="-330,0,0" flags="0">
+   <Inputs instanceID="-1" caption="@ui_Quality" tooltip="@ui_QualityTT" value="" id="SW_QUALITY"/>
+  </Node>
+  <Node Id="98" Class="UI:Functions:MainMenu:AddSwitchOption" pos="-330,110,0" flags="0">
+   <Inputs instanceID="-1" id="SW_QUALITY" caption="@ui_Low" value="1"/>
+  </Node>
+  <Node Id="99" Class="UI:Functions:MainMenu:AddSwitchOption" pos="-330,210,0" flags="0">
+   <Inputs instanceID="-1" id="SW_QUALITY" caption="@ui_Medium" value="2"/>
+  </Node>
+  <Node Id="100" Class="UI:Functions:MainMenu:AddSwitchOption" pos="-330,310,0" flags="0">
+   <Inputs instanceID="-1" id="SW_QUALITY" caption="@ui_High" value="3"/>
+  </Node>
+  <Node Id="101" Class="UI:Functions:MainMenu:AddSwitchOption" pos="-330,410,0" flags="0">
+   <Inputs instanceID="-1" id="SW_QUALITY" caption="@ui_VeryHigh" value="4"/>
+  </Node>
+  <Node Id="102" Class="System:ConsoleVariable" pos="2570,-290,0" flags="0" InHideMask="15" OutHideMask="1">
+   <Inputs CVar="sys_spec" Value=""/>
+  </Node>
+  <Node Id="105" Class="UI:Functions:MainMenu:GetControlVal" pos="2310,-400,0" flags="0">
+   <Inputs instanceID="-1" id="SW_QUALITY"/>
+  </Node>
+  <Node Id="107" Class="System:ConsoleVariable" pos="390,-110,0" flags="0" InHideMask="15" OutHideMask="1">
+   <Inputs CVar="sys_spec" Value=""/>
+  </Node>
+  <Node Id="108" Class="Math:Equal" pos="600,-110,0" flags="0" InHideMask="3" OutHideMask="7">
+   <Inputs A="0" B="0"/>
+  </Node>
+  <Node Id="110" Class="UI:Functions:MainMenu:SetControlVal" pos="1010,-110,0" flags="0">
+   <Inputs instanceID="-1" id="SW_QUALITY"/>
+  </Node>
+  <Node Id="111" Class="Math:SetNumber" pos="740,-110,0" flags="0">
+   <Inputs in="2"/>
+  </Node>
+  <Node Id="112" Class="Logic:Any" pos="880,-110,0" flags="0" InHideMask="63" OutHideMask="1">
+   <Inputs />
+  </Node>
+  <Node Id="116" Class="Math:SetNumber" pos="740,-50,0" flags="0">
+   <Inputs in="2"/>
+  </Node>
+  <Node Id="121" Class="UI:Functions:MainMenu:GetControlVal" pos="1740,-220,0" flags="0">
+   <Inputs instanceID="-1" id="SW_QUALITY"/>
+  </Node>
+  <Node Id="122" Class="Logic:Any" pos="290,-110,0" flags="0" InHideMask="63" OutHideMask="1">
+   <Inputs />
+  </Node>
+ </Nodes>
+ <Edges>
+  <Edge nodeIn="5" nodeOut="1" portIn="Call" portOut="StartAction" enabled="1"/>
+  <Edge nodeIn="6" nodeOut="1" portIn="id" portOut="Args" enabled="1"/>
+  <Edge nodeIn="9" nodeOut="5" portIn="Call" portOut="OnCall" enabled="1"/>
+  <Edge nodeIn="71" nodeOut="6" portIn="Call" portOut="OnCall" enabled="1"/>
+  <Edge nodeIn="52" nodeOut="7" portIn="send" portOut="OnEvent" enabled="1"/>
+  <Edge nodeIn="82" nodeOut="9" portIn="Call" portOut="OnCall" enabled="1"/>
+  <Edge nodeIn="7" nodeOut="21" portIn="send" portOut="OnCall" enabled="1"/>
+  <Edge nodeIn="62" nodeOut="42" portIn="Start" portOut="OnEvent" enabled="1"/>
+  <Edge nodeIn="105" nodeOut="42" portIn="Call" portOut="OnEvent" enabled="0"/>
+  <Edge nodeIn="42" nodeOut="49" portIn="Resolution" portOut="ReturnVal" enabled="1"/>
+  <Edge nodeIn="54" nodeOut="61" portIn="value" portOut="Resolution" enabled="1"/>
+  <Edge nodeIn="54" nodeOut="61" portIn="Call" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="85" nodeOut="61" portIn="value" portOut="FullScreen" enabled="1"/>
+  <Edge nodeIn="85" nodeOut="61" portIn="Call" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="122" nodeOut="61" portIn="in1" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="2" nodeOut="62" portIn="EndAction" portOut="OnStart" enabled="1"/>
+  <Edge nodeIn="70" nodeOut="67" portIn="send" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="21" nodeOut="71" portIn="Call" portOut="OnCall" enabled="1"/>
+  <Edge nodeIn="49" nodeOut="73" portIn="instanceID" portOut="instanceID" enabled="1"/>
+  <Edge nodeIn="49" nodeOut="73" portIn="Call" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="79" nodeOut="73" portIn="Start" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="86" nodeOut="73" portIn="instanceID" portOut="instanceID" enabled="1"/>
+  <Edge nodeIn="86" nodeOut="73" portIn="Call" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="121" nodeOut="73" portIn="instanceID" portOut="instanceID" enabled="1"/>
+  <Edge nodeIn="121" nodeOut="73" portIn="Call" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="80" nodeOut="79" portIn="Condition" portOut="Args" enabled="1"/>
+  <Edge nodeIn="80" nodeOut="79" portIn="In" portOut="OnEnd" enabled="1"/>
+  <Edge nodeIn="42" nodeOut="80" portIn="send" portOut="OnTrue" enabled="1"/>
+  <Edge nodeIn="19" nodeOut="81" portIn="value" portOut="ID" enabled="1"/>
+  <Edge nodeIn="19" nodeOut="81" portIn="caption" portOut="ResString" enabled="1"/>
+  <Edge nodeIn="19" nodeOut="81" portIn="Call" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="83" nodeOut="82" portIn="Call" portOut="OnCall" enabled="1"/>
+  <Edge nodeIn="84" nodeOut="83" portIn="Call" portOut="OnCall" enabled="1"/>
+  <Edge nodeIn="97" nodeOut="84" portIn="Call" portOut="OnCall" enabled="1"/>
+  <Edge nodeIn="42" nodeOut="86" portIn="Fullscreen" portOut="ReturnVal" enabled="1"/>
+  <Edge nodeIn="95" nodeOut="93" portIn="Start" portOut="StartAction" enabled="1"/>
+  <Edge nodeIn="91" nodeOut="95" portIn="EndAction" portOut="OnEnd" enabled="1"/>
+  <Edge nodeIn="62" nodeOut="96" portIn="uiActions_UIAction" portOut="Args" enabled="1"/>
+  <Edge nodeIn="98" nodeOut="97" portIn="Call" portOut="OnCall" enabled="1"/>
+  <Edge nodeIn="99" nodeOut="98" portIn="Call" portOut="OnCall" enabled="1"/>
+  <Edge nodeIn="100" nodeOut="99" portIn="Call" portOut="OnCall" enabled="1"/>
+  <Edge nodeIn="101" nodeOut="100" portIn="Call" portOut="OnCall" enabled="1"/>
+  <Edge nodeIn="6" nodeOut="101" portIn="Call" portOut="OnCall" enabled="1"/>
+  <Edge nodeIn="122" nodeOut="101" portIn="in2" portOut="OnCall" enabled="1"/>
+  <Edge nodeIn="102" nodeOut="105" portIn="Set" portOut="ReturnVal" enabled="1"/>
+  <Edge nodeIn="102" nodeOut="105" portIn="Value" portOut="ReturnVal" enabled="1"/>
+  <Edge nodeIn="108" nodeOut="107" portIn="A" portOut="CurValue" enabled="1"/>
+  <Edge nodeIn="116" nodeOut="107" portIn="in" portOut="CurValue" enabled="1"/>
+  <Edge nodeIn="111" nodeOut="108" portIn="set" portOut="true" enabled="1"/>
+  <Edge nodeIn="116" nodeOut="108" portIn="set" portOut="false" enabled="1"/>
+  <Edge nodeIn="112" nodeOut="111" portIn="in1" portOut="out" enabled="1"/>
+  <Edge nodeIn="110" nodeOut="112" portIn="Call" portOut="out" enabled="1"/>
+  <Edge nodeIn="110" nodeOut="112" portIn="value" portOut="out" enabled="1"/>
+  <Edge nodeIn="112" nodeOut="116" portIn="in2" portOut="out" enabled="1"/>
+  <Edge nodeIn="42" nodeOut="121" portIn="Quality" portOut="ReturnVal" enabled="1"/>
+  <Edge nodeIn="107" nodeOut="122" portIn="Get" portOut="out" enabled="1"/>
+ </Edges>
+ <GraphTokens />
+</Graph>

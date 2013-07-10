@@ -1,0 +1,286 @@
+<PrefabsLibrary Name="Contextuals">
+ <Prefab Name="Vaults.Vault_100cm" Id="{8F787213-56CE-4BD2-A668-D1A6C1267CF4}" Library="Contextuals">
+  <Objects>
+   <Object Type="TagPoint" Layer="Roads" LayerGUID="{199D9849-F2D3-4D98-A5F5-B8842C293FDC}" Id="{F48B15C2-C35D-488C-AE11-9AB661C1FDA5}" Name="Vault_1m_ObjectPos2" Pos="0.5,0.5,1.5205231" FloorNumber="-1" Rotate="4.3711388e-008,0,0,1" ColorRGB="16711680" EntityClass="TagPoint"/>
+   <Object Type="TagPoint" Layer="Roads" LayerGUID="{199D9849-F2D3-4D98-A5F5-B8842C293FDC}" Id="{444E02D9-81CC-49BD-85E1-913F809A7F05}" Name="Vault_1m_AnimStartPoint2" Pos="0.5,1.552124,0.5" FloorNumber="-1" Rotate="-6.7045015e-008,0,0,1" ColorRGB="16711680" EntityClass="TagPoint"/>
+   <Object Type="Entity" Layer="Roads" LayerGUID="{199D9849-F2D3-4D98-A5F5-B8842C293FDC}" Id="{B857018D-2B19-49F7-94B0-C418BFA7EDA7}" Name="Vault_1m_Trigger2" Pos="0.5,1.7844238,0.5" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="ProximityTrigger">
+    <Properties bActivateWithUseButton="0" DimX="1" DimY="1.5" DimZ="1" bEnabled="1" EnterDelay="0" ExitDelay="0" bInVehicleOnly="0" bKillOnTrigger="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="1" OnlySelectedEntity="None" bOnlySpecialAI="0" PlaySequence="" ReferenceName="" ScriptCommand="" TextInstruction="" bTriggerOnce="0"/>
+    <FlowGraph Description="" Group="" enabled="1" MultiPlayer="ClientServer">
+     <Nodes>
+      <Node Id="2" Class="entity:ProximityTrigger" pos="-130,380,0" flags="0" GraphEntity="0">
+       <Inputs entityId="0" Disable="0" Enable="0" Enter="0" Leave="0"/>
+      </Node>
+      <Node Id="3" Class="Input:Key" pos="-150,180,0" flags="0">
+       <Inputs entityId="0" Key="xi_b" NonDevMode="1"/>
+      </Node>
+      <Node Id="6" Class="Entity:EntityId" pos="-40,810,0" flags="0" EntityGUID="{C8FA4F74-80AA-4C76-AFBE-372B583D9A95}" EntityGUID_64="4C7680AAC8FA4F74">
+       <Inputs entityId="0"/>
+      </Node>
+      <Node Id="7" Class="Animations:CooperativeAnimation" pos="310,460,0" flags="0">
+       <Inputs Loop="0" ForceStart="1" Location="0,0,0" Rotation="0,0,0" Alignment="3" Entity_01="0" AnimationName_01="contextual_runVault_1m_pistol_01" SlideDuration_01="0.15" HorizPhysics1="0" Entity_02="0" AnimationName_02="" SlideDuration_02="0.4" HorizPhysics2="0"/>
+      </Node>
+      <Node Id="8" Class="Entity:EntityPos" pos="-140,520,0" flags="0" EntityGUID="{444E02D9-81CC-49BD-85E1-913F809A7F05}" EntityGUID_64="49BD81CC444E02D9">
+       <Inputs entityId="0" pos="0,0,0" rotate="0,0,0" scale="0,0,0"/>
+      </Node>
+      <Node Id="9" Class="Time:Timer" pos="-50,860,0" flags="0">
+       <Inputs period="3" min="0" max="100000" paused="0"/>
+      </Node>
+      <Node Id="12" Class="Vec3:ScaleVec3" pos="46.363636,593.63635,0" flags="0">
+       <Inputs vector="0,0,0" scale="0.01745"/>
+      </Node>
+      <Node Id="13" Class="Game:LocalPlayer" pos="0,690,0" flags="0">
+       <Inputs />
+      </Node>
+      <Node Id="17" Class="Logic:All" pos="340,200,0" flags="0">
+       <Inputs />
+      </Node>
+      <Node Id="18" Class="Logic:Any" pos="170,270,0" flags="0">
+       <Inputs />
+      </Node>
+      <Node Id="19" Class="Start" pos="-130,320,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="20" Class="HUD:DisplayDebugMessage" pos="250,-60,0" flags="0">
+       <Inputs entityId="0" message="Press B" DisplayTime="0" posX="350" posY="350" fontSize="2" clr_Color="0.796917,0.0199178,0.0199178" centered="0"/>
+      </Node>
+      <Node Id="21" Class="Logic:Any" pos="80,10,0" flags="0">
+       <Inputs />
+      </Node>
+     </Nodes>
+     <Edges>
+      <Edge nodeIn="17" nodeOut="2" portIn="in2" portOut="IsInside" enabled="1"/>
+      <Edge nodeIn="18" nodeOut="2" portIn="in2" portOut="Leave" enabled="1"/>
+      <Edge nodeIn="20" nodeOut="2" portIn="Show" portOut="IsInside" enabled="1"/>
+      <Edge nodeIn="21" nodeOut="2" portIn="in1" portOut="Leave" enabled="1"/>
+      <Edge nodeIn="17" nodeOut="3" portIn="in1" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="18" nodeOut="3" portIn="in1" portOut="Released" enabled="1"/>
+      <Edge nodeIn="18" nodeOut="7" portIn="in3" portOut="Done" enabled="1"/>
+      <Edge nodeIn="7" nodeOut="8" portIn="Location" portOut="pos" enabled="1"/>
+      <Edge nodeIn="12" nodeOut="8" portIn="vector" portOut="rotate" enabled="1"/>
+      <Edge nodeIn="7" nodeOut="12" portIn="Rotation" portOut="out" enabled="1"/>
+      <Edge nodeIn="7" nodeOut="13" portIn="Entity_01" portOut="entityId" enabled="1"/>
+      <Edge nodeIn="7" nodeOut="17" portIn="Start" portOut="Out" enabled="1"/>
+      <Edge nodeIn="21" nodeOut="17" portIn="in2" portOut="Out" enabled="1"/>
+      <Edge nodeIn="17" nodeOut="18" portIn="Reset" portOut="out" enabled="1"/>
+      <Edge nodeIn="18" nodeOut="19" portIn="in4" portOut="output" enabled="1"/>
+      <Edge nodeIn="21" nodeOut="19" portIn="in3" portOut="output" enabled="1"/>
+      <Edge nodeIn="20" nodeOut="21" portIn="Hide" portOut="out" enabled="1"/>
+     </Edges>
+    </FlowGraph>
+   </Object>
+  </Objects>
+ </Prefab>
+ <Prefab Name="Climbs.Climb_180cm_Up" Id="{41206E56-B215-4149-83F5-1F8CC5120488}" Library="Contextuals">
+  <Objects>
+   <Object Type="Entity" Layer="Roads" LayerGUID="{199D9849-F2D3-4D98-A5F5-B8842C293FDC}" Id="{DDFEB9C2-D32F-4BFD-A090-18E38F592C53}" Name="Climb_1.8m_Trigger1" Pos="0.5,0.96374512,0.5" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="ProximityTrigger">
+    <Properties bActivateWithUseButton="0" DimX="1" DimY="1.75" DimZ="1" bEnabled="1" EnterDelay="0" ExitDelay="0" bInVehicleOnly="0" bKillOnTrigger="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="1" OnlySelectedEntity="None" bOnlySpecialAI="0" PlaySequence="" ReferenceName="" ScriptCommand="" TextInstruction="" bTriggerOnce="0"/>
+    <FlowGraph Description="" Group="" enabled="1" MultiPlayer="ClientServer">
+     <Nodes>
+      <Node Id="2" Class="entity:ProximityTrigger" pos="-200,10,0" flags="0" GraphEntity="0">
+       <Inputs entityId="0" Disable="0" Enable="0" Enter="0" Leave="0"/>
+      </Node>
+      <Node Id="3" Class="Input:Key" pos="-120,200,0" flags="0">
+       <Inputs entityId="0" Key="xi_b" NonDevMode="1"/>
+      </Node>
+      <Node Id="6" Class="Entity:EntityId" pos="-40,810,0" flags="0" EntityGUID="{C8FA4F74-80AA-4C76-AFBE-372B583D9A95}" EntityGUID_64="4C7680AAC8FA4F74">
+       <Inputs entityId="0"/>
+      </Node>
+      <Node Id="7" Class="Animations:CooperativeAnimation" pos="290,450,0" flags="0">
+       <Inputs Loop="0" ForceStart="1" Location="0,0,0" Rotation="0,0,0" Alignment="3" Entity_01="0" AnimationName_01="contextual_idleClimb_180cm_pistol_01" SlideDuration_01="0.15" HorizPhysics1="0" Entity_02="0" AnimationName_02="" SlideDuration_02="0.4" HorizPhysics2="0"/>
+      </Node>
+      <Node Id="8" Class="Entity:EntityPos" pos="-140,520,0" flags="0" EntityGUID="{41063DFB-2E07-4996-B791-17CC7C83F12F}" EntityGUID_64="49962E0741063DFB">
+       <Inputs entityId="0" pos="0,0,0" rotate="0,0,0" scale="0,0,0"/>
+      </Node>
+      <Node Id="9" Class="Time:Timer" pos="-50,860,0" flags="0">
+       <Inputs period="4" min="0" max="100000" paused="0"/>
+      </Node>
+      <Node Id="12" Class="Vec3:ScaleVec3" pos="46.363636,593.63635,0" flags="0">
+       <Inputs vector="0,0,0" scale="0.01745"/>
+      </Node>
+      <Node Id="13" Class="Game:LocalPlayer" pos="0,690,0" flags="0">
+       <Inputs />
+      </Node>
+      <Node Id="17" Class="Logic:All" pos="340,200,0" flags="0">
+       <Inputs />
+      </Node>
+      <Node Id="18" Class="Logic:Any" pos="170,270,0" flags="0">
+       <Inputs />
+      </Node>
+      <Node Id="19" Class="Start" pos="-140,310,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="20" Class="HUD:DisplayDebugMessage" pos="200,10,0" flags="0">
+       <Inputs entityId="0" message="Press B" DisplayTime="0" posX="350" posY="350" fontSize="2" clr_Color="0.796917,0.0199178,0.0199178" centered="0"/>
+      </Node>
+      <Node Id="21" Class="Logic:Any" pos="60,20,0" flags="0">
+       <Inputs />
+      </Node>
+     </Nodes>
+     <Edges>
+      <Edge nodeIn="17" nodeOut="2" portIn="in2" portOut="IsInside" enabled="1"/>
+      <Edge nodeIn="18" nodeOut="2" portIn="in2" portOut="Leave" enabled="1"/>
+      <Edge nodeIn="20" nodeOut="2" portIn="Show" portOut="IsInside" enabled="1"/>
+      <Edge nodeIn="21" nodeOut="2" portIn="in2" portOut="Leave" enabled="1"/>
+      <Edge nodeIn="17" nodeOut="3" portIn="in1" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="18" nodeOut="3" portIn="in1" portOut="Released" enabled="1"/>
+      <Edge nodeIn="18" nodeOut="7" portIn="in3" portOut="Done" enabled="1"/>
+      <Edge nodeIn="7" nodeOut="8" portIn="Location" portOut="pos" enabled="1"/>
+      <Edge nodeIn="12" nodeOut="8" portIn="vector" portOut="rotate" enabled="1"/>
+      <Edge nodeIn="7" nodeOut="12" portIn="Rotation" portOut="out" enabled="1"/>
+      <Edge nodeIn="7" nodeOut="13" portIn="Entity_01" portOut="entityId" enabled="1"/>
+      <Edge nodeIn="7" nodeOut="17" portIn="Start" portOut="Out" enabled="1"/>
+      <Edge nodeIn="21" nodeOut="17" portIn="in1" portOut="Out" enabled="1"/>
+      <Edge nodeIn="17" nodeOut="18" portIn="Reset" portOut="out" enabled="1"/>
+      <Edge nodeIn="18" nodeOut="19" portIn="in4" portOut="output" enabled="1"/>
+      <Edge nodeIn="21" nodeOut="19" portIn="in3" portOut="output" enabled="1"/>
+      <Edge nodeIn="20" nodeOut="21" portIn="Hide" portOut="out" enabled="1"/>
+     </Edges>
+    </FlowGraph>
+   </Object>
+   <Object Type="TagPoint" Layer="Roads" LayerGUID="{199D9849-F2D3-4D98-A5F5-B8842C293FDC}" Id="{41063DFB-2E07-4996-B791-17CC7C83F12F}" Name="Climb_1.8m_AnimStartPoint1" Pos="0.5,0.9107666,0.5" FloorNumber="-1" Rotate="-6.7045015e-008,0,0,1" ColorRGB="16711680" EntityClass="TagPoint"/>
+   <Object Type="TagPoint" Layer="Roads" LayerGUID="{199D9849-F2D3-4D98-A5F5-B8842C293FDC}" Id="{5091FA7D-DDDC-4F3A-B020-A3557DF61FFD}" Name="Climb_1.8m_ObjectPos1" Pos="0.5,0.5,2.1253204" FloorNumber="-1" Rotate="4.3711388e-008,0,0,1" ColorRGB="16711680" EntityClass="TagPoint"/>
+  </Objects>
+ </Prefab>
+ <Prefab Name="Jumps.Jump_200cm" Id="{7C6126EB-0A44-488E-95AB-95F147875127}" Library="Contextuals">
+  <Objects>
+   <Object Type="Entity" Layer="Roads" LayerGUID="{199D9849-F2D3-4D98-A5F5-B8842C293FDC}" Id="{9AC6D2F8-01F2-4EDD-B90B-192FB3037E14}" Name="Jump_2m_Trigger1" Pos="0.5,4.4658203,0.5" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="ProximityTrigger">
+    <Properties bActivateWithUseButton="0" DimX="1" DimY="1.7" DimZ="1" bEnabled="1" EnterDelay="0" ExitDelay="0" bInVehicleOnly="0" bKillOnTrigger="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="1" OnlySelectedEntity="None" bOnlySpecialAI="0" PlaySequence="" ReferenceName="" ScriptCommand="" TextInstruction="" bTriggerOnce="0"/>
+    <FlowGraph Description="" Group="" enabled="1" MultiPlayer="ClientServer">
+     <Nodes>
+      <Node Id="2" Class="entity:ProximityTrigger" pos="-20,370,0" flags="0" GraphEntity="0">
+       <Inputs entityId="0" Disable="0" Enable="0" Enter="0" Leave="0"/>
+      </Node>
+      <Node Id="3" Class="Input:Key" pos="-120,200,0" flags="0">
+       <Inputs entityId="0" Key="xi_b" NonDevMode="1"/>
+      </Node>
+      <Node Id="6" Class="Entity:EntityId" pos="-40,810,0" flags="0" EntityGUID="{C8FA4F74-80AA-4C76-AFBE-372B583D9A95}" EntityGUID_64="4C7680AAC8FA4F74">
+       <Inputs entityId="0"/>
+      </Node>
+      <Node Id="7" Class="Animations:CooperativeAnimation" pos="310,460,0" flags="0">
+       <Inputs Loop="0" ForceStart="1" Location="0,0,0" Rotation="0,0,0" Alignment="3" Entity_01="0" AnimationName_01="contextual_idleJump_2m_pistol_02" SlideDuration_01="0.15" HorizPhysics1="0" Entity_02="0" AnimationName_02="" SlideDuration_02="0.4" HorizPhysics2="0"/>
+      </Node>
+      <Node Id="8" Class="Entity:EntityPos" pos="-140,520,0" flags="0" EntityGUID="{3331879E-662B-463D-8D41-50777A04117F}" EntityGUID_64="463D662B3331879E">
+       <Inputs entityId="0" pos="0,0,0" rotate="0,0,0" scale="0,0,0"/>
+      </Node>
+      <Node Id="9" Class="Time:Timer" pos="-50,860,0" flags="0">
+       <Inputs period="4" min="0" max="100000" paused="0"/>
+      </Node>
+      <Node Id="12" Class="Vec3:ScaleVec3" pos="46.363636,593.63635,0" flags="0">
+       <Inputs vector="0,0,0" scale="0.01745"/>
+      </Node>
+      <Node Id="13" Class="Game:LocalPlayer" pos="0,690,0" flags="0">
+       <Inputs />
+      </Node>
+      <Node Id="17" Class="Logic:All" pos="340,200,0" flags="0">
+       <Inputs />
+      </Node>
+      <Node Id="18" Class="Logic:Any" pos="170,270,0" flags="0">
+       <Inputs />
+      </Node>
+      <Node Id="19" Class="Start" pos="-140,310,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="20" Class="HUD:DisplayDebugMessage" pos="150,70,0" flags="0">
+       <Inputs entityId="0" message="Press B" DisplayTime="0" posX="350" posY="350" fontSize="2" clr_Color="0.796917,0.0199178,0.0199178" centered="0"/>
+      </Node>
+      <Node Id="21" Class="Logic:Any" pos="10,80,0" flags="0">
+       <Inputs />
+      </Node>
+     </Nodes>
+     <Edges>
+      <Edge nodeIn="17" nodeOut="2" portIn="in2" portOut="IsInside" enabled="1"/>
+      <Edge nodeIn="18" nodeOut="2" portIn="in2" portOut="Leave" enabled="1"/>
+      <Edge nodeIn="20" nodeOut="2" portIn="Show" portOut="IsInside" enabled="1"/>
+      <Edge nodeIn="21" nodeOut="2" portIn="in1" portOut="Leave" enabled="1"/>
+      <Edge nodeIn="17" nodeOut="3" portIn="in1" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="18" nodeOut="3" portIn="in1" portOut="Released" enabled="1"/>
+      <Edge nodeIn="18" nodeOut="7" portIn="in3" portOut="Done" enabled="1"/>
+      <Edge nodeIn="7" nodeOut="8" portIn="Location" portOut="pos" enabled="1"/>
+      <Edge nodeIn="12" nodeOut="8" portIn="vector" portOut="rotate" enabled="1"/>
+      <Edge nodeIn="7" nodeOut="12" portIn="Rotation" portOut="out" enabled="1"/>
+      <Edge nodeIn="7" nodeOut="13" portIn="Entity_01" portOut="entityId" enabled="1"/>
+      <Edge nodeIn="7" nodeOut="17" portIn="Start" portOut="Out" enabled="1"/>
+      <Edge nodeIn="21" nodeOut="17" portIn="in2" portOut="Out" enabled="1"/>
+      <Edge nodeIn="17" nodeOut="18" portIn="Reset" portOut="out" enabled="1"/>
+      <Edge nodeIn="18" nodeOut="19" portIn="in4" portOut="output" enabled="1"/>
+      <Edge nodeIn="21" nodeOut="19" portIn="in3" portOut="output" enabled="1"/>
+      <Edge nodeIn="20" nodeOut="21" portIn="Hide" portOut="out" enabled="1"/>
+     </Edges>
+    </FlowGraph>
+   </Object>
+   <Object Type="TagPoint" Layer="Roads" LayerGUID="{199D9849-F2D3-4D98-A5F5-B8842C293FDC}" Id="{11320656-5F11-4428-B399-8C61021377DD}" Name="Jump_2m_ObjectPos2" Pos="0.5,0.5,0.5" FloorNumber="-1" Rotate="4.3711388e-008,0,0,1" ColorRGB="16711680" EntityClass="TagPoint"/>
+   <Object Type="TagPoint" Layer="Roads" LayerGUID="{199D9849-F2D3-4D98-A5F5-B8842C293FDC}" Id="{3331879E-662B-463D-8D41-50777A04117F}" Name="Jump_2m_AnimStartPoint1" Pos="0.5,4.3775635,0.5" FloorNumber="-1" Rotate="4.3711388e-008,0,0,1" ColorRGB="16711680" EntityClass="TagPoint"/>
+  </Objects>
+ </Prefab>
+ <Prefab Name="Vaults.Vault_150cm" Id="{59E5184E-0898-40FE-81D4-182A90E5DE64}" Library="Contextuals">
+  <Objects>
+   <Object Type="TagPoint" Layer="Roads" LayerGUID="{199D9849-F2D3-4D98-A5F5-B8842C293FDC}" Id="{D7E9ACB0-83D4-4636-B966-9885DD3F5E34}" Name="Vault_1.5m_ObjectPos1" Pos="1.7144775,1.1680908,2.01474" FloorNumber="-1" Rotate="0.81411546,0,0,-0.58070302" ColorRGB="16711680" EntityClass="TagPoint"/>
+   <Object Type="TagPoint" Layer="Roads" LayerGUID="{199D9849-F2D3-4D98-A5F5-B8842C293FDC}" Id="{93051E3E-6F8C-4756-8EE5-43FF23C8F7B4}" Name="Vault_1.5m_AnimStartPoint1" Pos="0.71960449,0.82556152,0.50001526" FloorNumber="-1" Rotate="0.81411558,0,0,-0.58070284" ColorRGB="16711680" EntityClass="TagPoint"/>
+   <Object Type="Entity" Layer="Roads" LayerGUID="{199D9849-F2D3-4D98-A5F5-B8842C293FDC}" Id="{CDEC76DC-B4E4-4228-A27A-DF463A58A1AC}" Name="Vault_1.5m_Trigger1" Pos="0.5,0.75,0.5" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" MotionBlurMultiplier="1" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="ProximityTrigger">
+    <Properties bActivateWithUseButton="0" DimX="1" DimY="1.5" DimZ="1" bEnabled="1" EnterDelay="0" ExitDelay="0" bInVehicleOnly="0" bKillOnTrigger="0" bOnlyAI="0" bOnlyMyPlayer="0" bOnlyOneEntity="0" bOnlyPlayer="1" OnlySelectedEntity="None" bOnlySpecialAI="0" PlaySequence="" ReferenceName="" ScriptCommand="" TextInstruction="" bTriggerOnce="0"/>
+    <FlowGraph Description="" Group="" enabled="1" MultiPlayer="ClientServer">
+     <Nodes>
+      <Node Id="2" Class="entity:ProximityTrigger" pos="-20,370,0" flags="0" GraphEntity="0">
+       <Inputs entityId="0" Disable="0" Enable="0" Enter="0" Leave="0"/>
+      </Node>
+      <Node Id="3" Class="Input:Key" pos="-120,200,0" flags="0">
+       <Inputs entityId="0" Key="xi_b" NonDevMode="1"/>
+      </Node>
+      <Node Id="6" Class="Entity:EntityId" pos="-40,810,0" flags="0" EntityGUID="{C8FA4F74-80AA-4C76-AFBE-372B583D9A95}" EntityGUID_64="4C7680AAC8FA4F74">
+       <Inputs entityId="0"/>
+      </Node>
+      <Node Id="7" Class="Animations:CooperativeAnimation" pos="310,460,0" flags="0">
+       <Inputs Loop="0" ForceStart="1" Location="0,0,0" Rotation="0,0,0" Alignment="3" Entity_01="0" AnimationName_01="contextual_vault_upper_idle_action_rifle_01" SlideDuration_01="0.15" HorizPhysics1="0" Entity_02="0" AnimationName_02="" SlideDuration_02="0.4" HorizPhysics2="0"/>
+      </Node>
+      <Node Id="8" Class="Entity:EntityPos" pos="-140,520,0" flags="0" EntityGUID="{93051E3E-6F8C-4756-8EE5-43FF23C8F7B4}" EntityGUID_64="47566F8C93051E3E">
+       <Inputs entityId="0" pos="0,0,0" rotate="0,0,0" scale="0,0,0"/>
+      </Node>
+      <Node Id="9" Class="Time:Timer" pos="-50,860,0" flags="0">
+       <Inputs period="3" min="0" max="100000" paused="0"/>
+      </Node>
+      <Node Id="12" Class="Vec3:ScaleVec3" pos="46.363636,593.63635,0" flags="0">
+       <Inputs vector="0,0,0" scale="0.01745"/>
+      </Node>
+      <Node Id="13" Class="Game:LocalPlayer" pos="0,690,0" flags="0">
+       <Inputs />
+      </Node>
+      <Node Id="17" Class="Logic:All" pos="340,200,0" flags="0">
+       <Inputs />
+      </Node>
+      <Node Id="18" Class="Logic:Any" pos="170,270,0" flags="0">
+       <Inputs />
+      </Node>
+      <Node Id="19" Class="Start" pos="-130,320,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="20" Class="HUD:DisplayDebugMessage" pos="210,10,0" flags="0">
+       <Inputs entityId="0" message="Press B" DisplayTime="0" posX="350" posY="350" fontSize="2" clr_Color="0.796917,0.0199178,0.0199178" centered="0"/>
+      </Node>
+      <Node Id="21" Class="Logic:Any" pos="70,20,0" flags="0">
+       <Inputs />
+      </Node>
+     </Nodes>
+     <Edges>
+      <Edge nodeIn="17" nodeOut="2" portIn="in2" portOut="IsInside" enabled="1"/>
+      <Edge nodeIn="18" nodeOut="2" portIn="in2" portOut="Leave" enabled="1"/>
+      <Edge nodeIn="20" nodeOut="2" portIn="Show" portOut="IsInside" enabled="1"/>
+      <Edge nodeIn="21" nodeOut="2" portIn="in2" portOut="Leave" enabled="1"/>
+      <Edge nodeIn="17" nodeOut="3" portIn="in1" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="18" nodeOut="3" portIn="in1" portOut="Released" enabled="1"/>
+      <Edge nodeIn="18" nodeOut="7" portIn="in3" portOut="Done" enabled="1"/>
+      <Edge nodeIn="7" nodeOut="8" portIn="Location" portOut="pos" enabled="1"/>
+      <Edge nodeIn="12" nodeOut="8" portIn="vector" portOut="rotate" enabled="1"/>
+      <Edge nodeIn="7" nodeOut="12" portIn="Rotation" portOut="out" enabled="1"/>
+      <Edge nodeIn="7" nodeOut="13" portIn="Entity_01" portOut="entityId" enabled="1"/>
+      <Edge nodeIn="7" nodeOut="17" portIn="Start" portOut="Out" enabled="1"/>
+      <Edge nodeIn="21" nodeOut="17" portIn="in1" portOut="Out" enabled="1"/>
+      <Edge nodeIn="17" nodeOut="18" portIn="Reset" portOut="out" enabled="1"/>
+      <Edge nodeIn="18" nodeOut="19" portIn="in4" portOut="output" enabled="1"/>
+      <Edge nodeIn="21" nodeOut="19" portIn="in3" portOut="output" enabled="1"/>
+      <Edge nodeIn="20" nodeOut="21" portIn="Hide" portOut="out" enabled="1"/>
+     </Edges>
+    </FlowGraph>
+   </Object>
+  </Objects>
+ </Prefab>
+</PrefabsLibrary>

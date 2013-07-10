@@ -1,0 +1,186 @@
+<Graph Description="" Group="MM_PagesShared" enabled="1" MultiPlayer="ClientServer">
+ <Nodes>
+  <Node Id="1" Class="UI:Action:Start" pos="-210,-120,0" flags="0">
+   <Inputs UseAsState="1"/>
+  </Node>
+  <Node Id="5" Class="UI:Functions:MainMenu:SetupScreen" pos="250,-120,0" flags="0">
+   <Inputs instanceID="-1" Caption="@ui_WeaponCustTitle" ShowLine="1" MaxButtons="3" ButtonXPos="-500" ButtonYPos="-150" ButtonOffset="40"/>
+  </Node>
+  <Node Id="6" Class="UI:Functions:MainMenu:AddBackButton" pos="250,520,0" flags="0">
+   <Inputs instanceID="-1" id="MM_Main"/>
+  </Node>
+  <Node Id="9" Class="UI:Functions:MainMenu:AddSwitch" pos="250,20,0" flags="0">
+   <Inputs instanceID="-1" caption="@ui_ChooseWeapon" tooltip="@ui_ChooseWeaponTT" value="Choose a weapon" id="SW_WEAPON"/>
+  </Node>
+  <Node Id="12" Class="Game:LocalPlayer" pos="-200,130,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="16" Class="UI:Functions:MainMenu:AddSwitchOptionsFromString" pos="250,140,0" flags="0">
+   <Inputs instanceID="-1" id="SW_WEAPON" options="" delimter=","/>
+  </Node>
+  <Node Id="29" Name="Setup_page" Class="_commentbox" pos="-248.01225,-169.9791,0" flags="0">
+   <Inputs TextSize="1" Color="0.27451,0.352941,0.705882" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+   <ResizeBorder X="0" Y="0" Width="847.64404" Height="752.79321"/>
+   <NodeSize Width="847.64404" Height="780.18384"/>
+  </Node>
+  <Node Id="31" Class="UI:WeaponCustomization:GetInventoryForUI" pos="-20,120,0" flags="0">
+   <Inputs entityId="0"/>
+  </Node>
+  <Node Id="39" Name="Handle_events" Class="_commentbox" pos="-251.47424,666.08582,0" flags="0">
+   <Inputs TextSize="1" Color="0.27451,0.352941,0.705882" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+   <ResizeBorder X="0" Y="0" Width="1635.1505" Height="675.84448"/>
+   <NodeSize Width="1635.1505" Height="703.23511"/>
+  </Node>
+  <Node Id="61" Class="UI:Events:MainMenu:OnButton" pos="120,1230,0" flags="0">
+   <Inputs instanceID="-1" Port="0" Idx="BTN_DETACH"/>
+  </Node>
+  <Node Id="91" Class="UI:Action:End" pos="240,1470,0" flags="0">
+   <Inputs UseAsState="1" Args=""/>
+  </Node>
+  <Node Id="93" Class="UI:Action:Start" pos="-220,1470,0" flags="0">
+   <Inputs UseAsState="1"/>
+  </Node>
+  <Node Id="94" Name="Use_default_event_state_as_well" Class="_comment" pos="-230,1430,0" flags="0"/>
+  <Node Id="95" Class="UI:Action:Control" pos="-10,1470,0" flags="0">
+   <Inputs uiActions_UIAction="MM_DefaultEvents" Strict="0" Args=""/>
+  </Node>
+  <Node Id="108" Class="UI:Events:MainMenu:OnControlChanged" pos="-240,730,0" flags="0">
+   <Inputs instanceID="-1" Port="0" Idx="SW_WEAPON"/>
+  </Node>
+  <Node Id="129" Class="UI:Functions:MainMenu:GetControlVal" pos="130,730,0" flags="0">
+   <Inputs instanceID="-1" id="SW_WEAPON"/>
+  </Node>
+  <Node Id="206" Class="UI:WeaponCustomization:CompatibleAccessories" pos="400,730,0" flags="0">
+   <Inputs entityId="0" Weapon=""/>
+  </Node>
+  <Node Id="209" Class="UI:Functions:MainMenu:AddSwitch" pos="250,230,0" flags="0">
+   <Inputs instanceID="-1" caption="@ui_ChooseAttachment" tooltip="@ui_ChooseAttachmentTT" value="None" id="SW_ATTACHMENT"/>
+  </Node>
+  <Node Id="210" Class="UI:Functions:MainMenu:AddSwitchOptionsFromString" pos="1070,750,0" flags="1">
+   <Inputs instanceID="-1" id="SW_ATTACHMENT" options="" delimter=","/>
+  </Node>
+  <Node Id="220" Class="UI:Functions:MainMenu:ClearSwitchOptions" pos="720,710,0" flags="0">
+   <Inputs instanceID="-1" id="SW_ATTACHMENT"/>
+  </Node>
+  <Node Id="223" Class="Logic:Any" pos="0,730,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="225" Class="UI:Events:MainMenu:OnControlChanged" pos="-240,900,0" flags="0">
+   <Inputs instanceID="-1" Port="0" Idx="SW_ATTACHMENT"/>
+  </Node>
+  <Node Id="231" Class="UI:Functions:MainMenu:GetControlVal" pos="150,900,0" flags="0">
+   <Inputs instanceID="-1" id="SW_ATTACHMENT"/>
+  </Node>
+  <Node Id="235" Class="Logic:Any" pos="10,900,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="237" Class="UI:WeaponCustomization:CheckAccessoryState" pos="510,910,0" flags="0">
+   <Inputs entityId="0" Accessory="" Weapon=""/>
+  </Node>
+  <Node Id="238" Class="UI:Functions:MainMenu:GetControlVal" pos="150,960,0" flags="0">
+   <Inputs instanceID="-1" id="SW_WEAPON"/>
+  </Node>
+  <Node Id="244" Class="UI:Functions:MainMenu:AddButton" pos="1120,870,0" flags="0">
+   <Inputs instanceID="-1" caption="@ui_Detach" tooltip="@ui_DetachTT" id="testButton"/>
+  </Node>
+  <Node Id="246" Class="UI:Functions:MainMenu:RemoveButton" pos="1120,1050,0" flags="0">
+   <Inputs instanceID="-1" id="testButton"/>
+  </Node>
+  <Node Id="253" Class="UI:Functions:MainMenu:AddButton" pos="1120,960,0" flags="0">
+   <Inputs instanceID="-1" caption="@ui_Attach" tooltip="@ui_AttachTT" id="testButton"/>
+  </Node>
+  <Node Id="254" Class="UI:Functions:MainMenu:RemoveButton" pos="250,440,0" flags="0">
+   <Inputs instanceID="-1" id="testButton"/>
+  </Node>
+  <Node Id="255" Class="UI:Functions:MainMenu:AddButton" pos="250,340,0" flags="0">
+   <Inputs instanceID="-1" caption="button" tooltip="" id="testButton"/>
+  </Node>
+  <Node Id="257" Class="String:SetString" pos="810,890,0" flags="0">
+   <Inputs In="BTN_DETACH"/>
+  </Node>
+  <Node Id="258" Class="String:SetString" pos="810,940,0" flags="0">
+   <Inputs In="BTN_ATTACH"/>
+  </Node>
+  <Node Id="260" Class="Logic:Any" pos="1020,1080,0" flags="0" InHideMask="60">
+   <Inputs />
+  </Node>
+  <Node Id="262" Class="Weapon:Accessory" pos="600,1180,0" flags="0">
+   <Inputs entityId="0" Weapon="" Accessory=""/>
+  </Node>
+  <Node Id="264" Class="Game:LocalPlayer" pos="170,1120,0" flags="0">
+   <Inputs />
+  </Node>
+  <Node Id="265" Class="UI:Events:MainMenu:OnButton" pos="120,1170,0" flags="0">
+   <Inputs instanceID="-1" Port="0" Idx="BTN_ATTACH"/>
+  </Node>
+  <Node Id="269" Class="UI:Util:UIDelay" pos="580,1100,0" flags="0">
+   <Inputs delay="0.5"/>
+  </Node>
+  <Node Id="270" Class="Logic:Any" pos="810,1200,0" flags="0" InHideMask="60">
+   <Inputs />
+  </Node>
+  <Node Id="272" Class="Logic:Any" pos="390,910,0" flags="0" InHideMask="60">
+   <Inputs />
+  </Node>
+  <Node Id="273" Name="Default_events" Class="_commentbox" pos="-248.07425,1384.9702,0" flags="0">
+   <Inputs TextSize="1" Color="0.27451,0.352941,0.705882" DisplayFilled="1" DisplayBox="1" SortPriority="16"/>
+   <ResizeBorder X="0" Y="0" Width="663.30011" Height="164.4984"/>
+   <NodeSize Width="663.30011" Height="191.88902"/>
+  </Node>
+ </Nodes>
+ <Edges>
+  <Edge nodeIn="5" nodeOut="1" portIn="Call" portOut="StartAction" enabled="1"/>
+  <Edge nodeIn="6" nodeOut="1" portIn="id" portOut="Args" enabled="1"/>
+  <Edge nodeIn="12" nodeOut="1" portIn="update" portOut="StartAction" enabled="1"/>
+  <Edge nodeIn="9" nodeOut="5" portIn="Call" portOut="OnCall" enabled="1"/>
+  <Edge nodeIn="223" nodeOut="6" portIn="in1" portOut="OnCall" enabled="1"/>
+  <Edge nodeIn="31" nodeOut="9" portIn="Call" portOut="OnCall" enabled="1"/>
+  <Edge nodeIn="31" nodeOut="12" portIn="entityId" portOut="entityId" enabled="1"/>
+  <Edge nodeIn="206" nodeOut="12" portIn="entityId" portOut="entityId" enabled="1"/>
+  <Edge nodeIn="237" nodeOut="12" portIn="entityId" portOut="entityId" enabled="1"/>
+  <Edge nodeIn="209" nodeOut="16" portIn="Call" portOut="OnCall" enabled="1"/>
+  <Edge nodeIn="16" nodeOut="31" portIn="options" portOut="Args" enabled="1"/>
+  <Edge nodeIn="16" nodeOut="31" portIn="Call" portOut="OnCall" enabled="1"/>
+  <Edge nodeIn="262" nodeOut="61" portIn="Detach" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="95" nodeOut="93" portIn="Start" portOut="StartAction" enabled="1"/>
+  <Edge nodeIn="91" nodeOut="95" portIn="EndAction" portOut="OnEnd" enabled="1"/>
+  <Edge nodeIn="223" nodeOut="108" portIn="in2" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="206" nodeOut="129" portIn="Call" portOut="OnCall" enabled="1"/>
+  <Edge nodeIn="206" nodeOut="129" portIn="Weapon" portOut="ReturnVal" enabled="1"/>
+  <Edge nodeIn="210" nodeOut="206" portIn="options" portOut="Args" enabled="1"/>
+  <Edge nodeIn="220" nodeOut="206" portIn="Call" portOut="OnCall" enabled="1"/>
+  <Edge nodeIn="255" nodeOut="209" portIn="Call" portOut="OnCall" enabled="1"/>
+  <Edge nodeIn="235" nodeOut="210" portIn="in2" portOut="OnCall" enabled="1"/>
+  <Edge nodeIn="210" nodeOut="220" portIn="Call" portOut="OnCall" enabled="1"/>
+  <Edge nodeIn="129" nodeOut="223" portIn="Call" portOut="out" enabled="1"/>
+  <Edge nodeIn="235" nodeOut="225" portIn="in1" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="237" nodeOut="231" portIn="Accessory" portOut="ReturnVal" enabled="1"/>
+  <Edge nodeIn="262" nodeOut="231" portIn="Accessory" portOut="ReturnVal" enabled="1"/>
+  <Edge nodeIn="272" nodeOut="231" portIn="in1" portOut="OnCall" enabled="1"/>
+  <Edge nodeIn="231" nodeOut="235" portIn="Call" portOut="out" enabled="1"/>
+  <Edge nodeIn="238" nodeOut="235" portIn="Call" portOut="out" enabled="1"/>
+  <Edge nodeIn="264" nodeOut="235" portIn="update" portOut="out" enabled="1"/>
+  <Edge nodeIn="257" nodeOut="237" portIn="Set" portOut="Equipped" enabled="1"/>
+  <Edge nodeIn="258" nodeOut="237" portIn="Set" portOut="InInventory" enabled="1"/>
+  <Edge nodeIn="237" nodeOut="238" portIn="Weapon" portOut="ReturnVal" enabled="1"/>
+  <Edge nodeIn="262" nodeOut="238" portIn="Weapon" portOut="ReturnVal" enabled="1"/>
+  <Edge nodeIn="237" nodeOut="246" portIn="Call" portOut="OnCall" enabled="1"/>
+  <Edge nodeIn="6" nodeOut="254" portIn="Call" portOut="OnCall" enabled="1"/>
+  <Edge nodeIn="254" nodeOut="255" portIn="Call" portOut="OnCall" enabled="1"/>
+  <Edge nodeIn="244" nodeOut="257" portIn="Call" portOut="Out" enabled="1"/>
+  <Edge nodeIn="244" nodeOut="257" portIn="id" portOut="Out" enabled="1"/>
+  <Edge nodeIn="260" nodeOut="257" portIn="in1" portOut="Out" enabled="1"/>
+  <Edge nodeIn="253" nodeOut="258" portIn="Call" portOut="Out" enabled="1"/>
+  <Edge nodeIn="253" nodeOut="258" portIn="id" portOut="Out" enabled="1"/>
+  <Edge nodeIn="260" nodeOut="258" portIn="in2" portOut="Out" enabled="1"/>
+  <Edge nodeIn="246" nodeOut="260" portIn="id" portOut="out" enabled="1"/>
+  <Edge nodeIn="270" nodeOut="262" portIn="in1" portOut="Attached" enabled="1"/>
+  <Edge nodeIn="270" nodeOut="262" portIn="in2" portOut="Detached" enabled="1"/>
+  <Edge nodeIn="262" nodeOut="264" portIn="entityId" portOut="entityId" enabled="1"/>
+  <Edge nodeIn="262" nodeOut="265" portIn="Attach" portOut="onEvent" enabled="1"/>
+  <Edge nodeIn="272" nodeOut="269" portIn="in2" portOut="out" enabled="1"/>
+  <Edge nodeIn="269" nodeOut="270" portIn="in" portOut="out" enabled="1"/>
+  <Edge nodeIn="246" nodeOut="272" portIn="Call" portOut="out" enabled="1"/>
+ </Edges>
+ <GraphTokens />
+</Graph>

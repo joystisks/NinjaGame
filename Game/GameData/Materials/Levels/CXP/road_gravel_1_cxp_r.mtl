@@ -1,0 +1,17 @@
+<Material MtlFlags="524288" Shader="Illum" GenMask="102086000" StringGenMask="%DETAIL_BUMP_MAPPING%DISABLE_RAIN_PASS%GLOSS_MAP%OFFSETBUMPMAPPING%STAT_BRANCHING" SurfaceType="mat_rock" MatTemplate="" Diffuse="0.61176473,0.61176473,0.61176473" Specular="0.49333334,0.49333334,0.49333334" Emissive="0,0,0" Shininess="1.14" Opacity="0.94999999">
+ <Textures>
+  <Texture Map="Diffuse" File="textures/terrain/roads/path_gravel03.tif" Filter="5">
+   <TexMod TexMod_URotateRate="90" TexMod_URotatePhase="90" TexMod_URotateAmplitude="90" TexMod_VRotateRate="90" TexMod_VRotatePhase="90" TexMod_VRotateAmplitude="90" TexMod_WRotateRate="90" TexMod_WRotatePhase="90" TexMod_WRotateAmplitude="90" TexMod_URotateCenter="90" TexMod_VRotateCenter="90" TexMod_WRotateCenter="90"/>
+  </Texture>
+  <Texture Map="Specular" File="textures/terrain/roads/path_gravel03_spec.tif">
+   <TexMod />
+  </Texture>
+  <Texture Map="Bumpmap" File="textures/terrain/roads/path_gravel03_ddn.tif">
+   <TexMod />
+  </Texture>
+  <Texture Map="Detail" File="textures/detail_bumpmaps/path_1_ddn.tif">
+   <TexMod />
+  </Texture>
+ </Textures>
+ <PublicParams ObmDisplacement="0.015" AmbientMultiplier="1" DetailBumpTillingU="16.27" DetailBumpTillingV="16.83" DetailBumpScale="0.88" DetailBlendAmount="0"/>
+</Material>

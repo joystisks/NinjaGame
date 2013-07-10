@@ -1,0 +1,28 @@
+<Graph Description="" Group="HUD" enabled="1" MultiPlayer="ClientServer">
+ <Nodes>
+  <Node Id="1" Class="UI:Action:Start" pos="-320,230,0" flags="1">
+   <Inputs UseAsState="1"/>
+  </Node>
+  <Node Id="2" Class="UI:Action:End" pos="100,160,0" flags="0">
+   <Inputs UseAsState="1" Args=""/>
+  </Node>
+  <Node Id="26" Class="UI:Functions:HUD3D:DisplayMessage" pos="100,230,0" flags="0">
+   <Inputs instanceID="-1" Message=""/>
+  </Node>
+  <Node Id="27" Class="String:Compare" pos="-70,230,0" flags="0">
+   <Inputs A="" B="" IgnoreCase="1"/>
+  </Node>
+  <Node Id="29" Class="UI:Functions:HUD3D:HideMessage" pos="100,300,0" flags="0">
+   <Inputs instanceID="-1"/>
+  </Node>
+ </Nodes>
+ <Edges>
+  <Edge nodeIn="26" nodeOut="1" portIn="Message" portOut="Args" enabled="1"/>
+  <Edge nodeIn="27" nodeOut="1" portIn="A" portOut="Args" enabled="1"/>
+  <Edge nodeIn="27" nodeOut="1" portIn="Compare" portOut="StartAction" enabled="1"/>
+  <Edge nodeIn="2" nodeOut="27" portIn="EndAction" portOut="Result" enabled="1"/>
+  <Edge nodeIn="26" nodeOut="27" portIn="Call" portOut="False" enabled="1"/>
+  <Edge nodeIn="29" nodeOut="27" portIn="Call" portOut="True" enabled="1"/>
+ </Edges>
+ <GraphTokens />
+</Graph>

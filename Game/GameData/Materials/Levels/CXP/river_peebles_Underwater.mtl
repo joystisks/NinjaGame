@@ -1,0 +1,11 @@
+<Material MtlFlags="524288" Shader="Terrain.Layer" GenMask="202040001" StringGenMask="%ALLOW_POM%GLOSS_DIFFUSEALPHA%OFFSETBUMPMAPPING%TEMP_TERRAIN" SurfaceType="mat_water" MatTemplate="" Diffuse="0.70829779,0.70829779,0.70829779" Specular="0.0160677,0.011126082,0.0083731171" Emissive="0.039215688,0.047058828,0.054901965" Shininess="5.5999999" Opacity="1">
+ <Textures>
+  <Texture Map="Diffuse" File="textures/terrain/detail/river_peebles_diff.dds" Filter="7">
+   <TexMod TileU="0.2" TileV="0.2"/>
+  </Texture>
+  <Texture Map="Bumpmap" File="textures/terrain/detail/river_peebles_ddn.dds">
+   <TexMod TileU="0.2" TileV="0.2"/>
+  </Texture>
+ </Textures>
+ <PublicParams FresnelScale="1" FresnelPower="4" FresnelBias="1" DetailTextureStrength="1.0549999" ObmDisplacement="0.014" IndirectColor="0.25,0.25,0.25"/>
+</Material>
