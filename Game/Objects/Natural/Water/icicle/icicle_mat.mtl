@@ -1,0 +1,13 @@
+<Material MtlFlags="524544">
+ <SubMaterials>
+  <Material Name="ice" MtlFlags="524418" Shader="Illum" GenMask="100010000" StringGenMask="%ENVIRONMENT_MAP%TESSELLATION" SurfaceType="mat_glass_unbreakable" MatTemplate="" Diffuse="0.24279638,0.24279638,0.24279638" Specular="0.70116949,0.70116949,0.70116949" Emissive="0,0,0" Shininess="255" Opacity="1" AlphaTest="0.5">
+   <Textures>
+    <Texture Map="Diffuse" File="Objects/Natural/water/icicle/tx/icicles_diff.tif"/>
+    <Texture Map="Bumpmap" File="objects/natural/water/icicle/tx/icicles_ddn.tif"/>
+    <Texture Map="Environment" File="textures/cubemaps/forest_winter/environmentprobe1_cm.dds"/>
+   </Textures>
+   <PublicParams SpecMapChannelB="0" SpecMapChannelR="0" FresnelPower="4" GlossMapChannelB="0" SpecMapChannelG="0" FresnelScale="1" FresnelBias="1" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+ </SubMaterials>
+ <PublicParams FresnelPower="4" GlossFromDiffuseContrast="1" FresnelScale="1" GlossFromDiffuseOffset="0" FresnelBias="1" GlossFromDiffuseAmount="0" GlossFromDiffuseBrightness="0.333" IndirectColor="0.25,0.25,0.25"/>
+</Material>

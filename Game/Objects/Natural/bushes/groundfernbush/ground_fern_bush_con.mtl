@@ -1,0 +1,19 @@
+<Material MtlFlags="524544">
+ <SubMaterials>
+  <Material Name="Ground_Fern_Bush" MtlFlags="524416" Shader="Vegetation" GenMask="400C01000" StringGenMask="%DETAIL_BENDING%LEAVES%MERGED_TEXTURES%TEMP_VEGETATION" SurfaceType="mat_vegetation" MatTemplate="" Diffuse="0.22713655,0.22713655,0.22713655" Specular="0.042987008,0.042987008,0.042987008" Emissive="0,0,0" Shininess="80" Opacity="1" AlphaTest="0.69999999">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/natural/bushes/greenfernbush/con_ground_green_fern_bush_diff.tif"/>
+    <Texture Map="Specular" File="objects/natural/bushes/greenfernbush/con_ground_green_fern_bush_spec.tif"/>
+    <Texture Map="Bumpmap" File="objects/natural/bushes/greenfernbush/con_ground_green_fern_bush_ddn.tif"/>
+   </Textures>
+   <PublicParams bendDetailLeafAmplitude="0.1" BackShadowBias="0.1" FresnelPower="4" bendDetailFrequency="0.69999999" bendDetailBranchAmplitude="0.050000001" FresnelScale="1" FresnelBias="1" CapOpacityFalloff="0.75" BackViewDep="0.5" BackDiffuseMultiplier="0.5" BackDiffuse="0.71764702,0.75294101,0.44705901" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="obstruct_bending" MtlFlags="525440" Shader="Nodraw" GenMask="0" StringGenMask="" SurfaceType="mat_canopy" MatTemplate="" Diffuse="0.84705901,0,0" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="0.2">
+   <Textures />
+  </Material>
+  <Material Name="obstruct_AI" MtlFlags="525440" Shader="Nodraw" GenMask="0" StringGenMask="" SurfaceType="mat_canopy" MatTemplate="" Diffuse="0.84705901,0,0" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="0.2">
+   <Textures />
+  </Material>
+ </SubMaterials>
+ <PublicParams FresnelPower="4" GlossFromDiffuseContrast="1" FresnelScale="1" GlossFromDiffuseOffset="0" FresnelBias="1" GlossFromDiffuseAmount="0" GlossFromDiffuseBrightness="0.333" IndirectColor="0.25,0.25,0.25"/>
+</Material>

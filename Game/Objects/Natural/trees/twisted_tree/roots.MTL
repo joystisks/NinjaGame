@@ -1,0 +1,26 @@
+<Material MtlFlags="524544">
+ <SubMaterials>
+  <Material Name="wooden" MtlFlags="524416" Shader="Illum" GenMask="100082280" StringGenMask="%DETAIL_BUMP_MAPPING%DETAIL_TEXTURE_IS_NORMALMAP%DETAIL_TEXTURE_IS_SET%GLOSS_MAP%TESSELLATION" SurfaceType="mat_wood" MatTemplate="" Diffuse="0.20392159,0.20784315,0.21176472" Specular="0.41514811,0.41514811,0.41514811" Emissive="0,0,0" Shininess="20" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/natural/trees/twisted_tree/trunk_dry_tree.tif"/>
+    <Texture Map="Specular" File="objects/natural/trees/twisted_tree/trunk_dry_tree_spec.tif"/>
+    <Texture Map="Bumpmap" File="objects/natural/trees/twisted_tree/trunk_dry_tree_ddn.tif"/>
+    <Texture Map="Detail" File="textures/detail_bumpmaps/wood_a_detailbump_ddn.tif"/>
+   </Textures>
+   <PublicParams SpecMapChannelB="0" SpecMapChannelR="0" FresnelPower="4" DetailBumpTillingU="4" GlossMapChannelB="0" SpecMapChannelG="0" FresnelScale="1" DetailDiffuseScale="0" FresnelBias="1" DetailBumpScale="2" DetailGlossScale="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="cut" MtlFlags="524416" Shader="Illum" GenMask="2100082280" StringGenMask="%DETAIL_BUMP_MAPPING%DETAIL_TEXTURE_IS_NORMALMAP%DETAIL_TEXTURE_IS_SET%GLOSS_MAP%TESSELLATION%VERTCOLORS" SurfaceType="" MatTemplate="" Diffuse="0.42050794,0.42050794,0.42050794" Specular="0.288816,0.288816,0.288816" Emissive="0,0,0" Shininess="20" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/natural/trees/twisted_tree/cut.tif"/>
+    <Texture Map="Specular" File="objects/natural/trees/twisted_tree/cut_spec.tif"/>
+    <Texture Map="Bumpmap" File="objects/natural/trees/twisted_tree/cut_ddn.tif"/>
+    <Texture Map="Detail" File="textures/detail_bumpmaps/wood_a_detailbump_ddn.tif"/>
+   </Textures>
+   <PublicParams SpecMapChannelB="0" SpecMapChannelR="0" FresnelPower="4" DetailBumpTillingU="2" GlossMapChannelB="0" SpecMapChannelG="0" FresnelScale="1" DetailDiffuseScale="0" FresnelBias="1" DetailBumpScale="2" DetailGlossScale="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="proxy" MtlFlags="525440" Shader="Nodraw" GenMask="0" StringGenMask="" SurfaceType="mat_wood" MatTemplate="" Diffuse="0,70588240,0" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures />
+  </Material>
+ </SubMaterials>
+ <PublicParams FresnelPower="4" GlossFromDiffuseContrast="1" FresnelScale="1" GlossFromDiffuseOffset="0" FresnelBias="1" GlossFromDiffuseAmount="0" GlossFromDiffuseBrightness="0.333" IndirectColor="0.25,0.25,0.25"/>
+</Material>

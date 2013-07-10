@@ -1,0 +1,20 @@
+<Material MtlFlags="524544">
+ <SubMaterials>
+  <Material Name="proxy_bending" MtlFlags="525440" Shader="Nodraw" GenMask="0" StringGenMask="" SurfaceType="mat_canopy" MatTemplate="" Diffuse="1,1,1" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="0.5">
+   <Textures />
+  </Material>
+  <Material Name="leaf" MtlFlags="524416" Shader="Vegetation" GenMask="400803080" StringGenMask="%DETAIL_BENDING%DETAIL_BUMP_MAPPING%DETAIL_TEXTURE_IS_SET%LEAVES%TEMP_VEGETATION" SurfaceType="mat_vegetation" MatTemplate="" Diffuse="0.47617728,0.5174014,0.46474114" Specular="0.21951973,0.33445781,0.18014428" Emissive="0,0,0" Shininess="20" Opacity="1" AlphaTest="0.5">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/natural/trees/thin_leave_tree/con_leaves_branches_new_diff.tif" Filter="7"/>
+    <Texture Map="Specular" File="objects/natural/trees/thin_leave_tree/con_leaves_branches_new_spec.tif"/>
+    <Texture Map="Bumpmap" File="objects/natural/trees/thin_leave_tree/con_leaves_branches_new_ddn.tif"/>
+    <Texture Map="Detail" File="textures/terrain/bump_detail/detail_bump_metal_005_ddn.dds"/>
+   </Textures>
+   <PublicParams bendDetailLeafAmplitude="0.30000001" BackShadowBias="0.1" FresnelPower="4" bendDetailFrequency="0.5" bendDetailBranchAmplitude="0" DetailBumpTillingU="5" FresnelScale="1" DetailDiffuseScale="0" FresnelBias="0.40000001" DetailBumpScale="3" CapOpacityFalloff="1" BackViewDep="0.30000001" BackDiffuseMultiplier="0.75" BackDiffuse="0.71372598,0.81176502,0.36862701" DetailGlossScale="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="proxy_AI" MtlFlags="525440" Shader="Nodraw" GenMask="0" StringGenMask="" SurfaceType="mat_canopy" MatTemplate="" Diffuse="1,1,1" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="0.5">
+   <Textures />
+  </Material>
+ </SubMaterials>
+ <PublicParams FresnelPower="4" GlossFromDiffuseContrast="1" FresnelScale="1" GlossFromDiffuseOffset="0" FresnelBias="1" GlossFromDiffuseAmount="0" GlossFromDiffuseBrightness="0.333" IndirectColor="0.25,0.25,0.25"/>
+</Material>

@@ -1,0 +1,22 @@
+<Material MtlFlags="524544">
+ <SubMaterials>
+  <Material Name="Leaf" MtlFlags="524416" Shader="Vegetation" GenMask="400800020" StringGenMask="%BLENDLAYER%LEAVES%TEMP_VEGETATION" SurfaceType="mat_vegetation" MatTemplate="" Diffuse="0.43134022,0.43134022,0.39929333" Specular="0.30212551,0.30212551,0.30212551" Emissive="0,0,0" Shininess="50" Opacity="1" AlphaTest="0.5">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/natural/vegetation/rocky_ravine/thorn_diff.dds"/>
+    <Texture Map="Specular" File="objects/natural/vegetation/rocky_ravine/thorn_spec.tif"/>
+    <Texture Map="Bumpmap" File="objects/natural/vegetation/rocky_ravine/thorn_ddn.tif"/>
+    <Texture Map="Opacity" File="objects/structures/buildings/lighthouse/lighthouse_stucco_mask.tif"/>
+    <Texture Map="Custom" File="textures/terrain/detail/snow_terrain.dds"/>
+    <Texture Map="[1] Custom" File="textures/terrain/detail/snow_terrain_ddn.dds"/>
+   </Textures>
+   <PublicParams BlendFalloff="3" bendDetailLeafAmplitude="0.035" BackShadowBias="0.12" FresnelPower="4" bendDetailFrequency="1" bendDetailBranchAmplitude="0.025" BlendLayer2Tiling="4" FresnelScale="1" FresnelBias="1" CapOpacityFalloff="1" BackViewDep="0.26699999" BackDiffuseMultiplier="0.54000002" BackDiffuse="0.63921571,0.71372551,0.41176474" BlendFactor="3" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="Proxy_obstruct" MtlFlags="525440" Shader="Nodraw" GenMask="0" StringGenMask="" SurfaceType="mat_vegetation" MatTemplate="" Diffuse="0.588,0.588,0.588" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures />
+  </Material>
+  <Material Name="Proxy_AI" MtlFlags="525440" Shader="Nodraw" GenMask="0" StringGenMask="" SurfaceType="mat_vegetation" MatTemplate="" Diffuse="0.58431375,0.58431375,0.58431375" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures />
+  </Material>
+ </SubMaterials>
+ <PublicParams FresnelPower="4" GlossFromDiffuseContrast="1" FresnelScale="1" GlossFromDiffuseOffset="0" FresnelBias="1" GlossFromDiffuseAmount="0" GlossFromDiffuseBrightness="0.333" IndirectColor="0.25,0.25,0.25"/>
+</Material>

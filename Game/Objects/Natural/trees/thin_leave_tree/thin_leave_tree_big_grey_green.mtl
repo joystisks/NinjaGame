@@ -1,0 +1,31 @@
+<Material MtlFlags="524544">
+ <SubMaterials>
+  <Material Name="trunk" MtlFlags="524416" Shader="Vegetation" GenMask="400000000" StringGenMask="%TEMP_VEGETATION" SurfaceType="mat_wood" MatTemplate="" Diffuse="0.50543249,0.50543249,0.50543249" Specular="0.21951973,0.21951973,0.21951973" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/natural/trees/thin_leave_tree/trunk_pino.tif"/>
+    <Texture Map="Specular" File="objects/natural/trees/thin_leave_tree/trunk_pino_spec.tif"/>
+    <Texture Map="Bumpmap" File="objects/natural/trees/thin_leave_tree/trunk_pino_ddn.tif"/>
+   </Textures>
+   <PublicParams bendDetailLeafAmplitude="0.2" FresnelPower="4" bendDetailFrequency="1" bendDetailBranchAmplitude="-0.5" FresnelScale="1" FresnelBias="1" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="leaves" MtlFlags="524416" Shader="Vegetation" GenMask="400C01000" StringGenMask="%DETAIL_BENDING%LEAVES%MERGED_TEXTURES%TEMP_VEGETATION" SurfaceType="mat_vegetation" MatTemplate="" Diffuse="0.50543249,0.50543249,0.50543249" Specular="0.11657578,0.11657578,0.11657578" Emissive="0,0,0" Shininess="40" Opacity="1" AlphaTest="0.5">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/natural/trees/thin_leave_tree/leaves_branches_new.tif" Filter="7"/>
+    <Texture Map="Specular" File="objects/natural/trees/thin_leave_tree/leaves_branches_new_opac.tif"/>
+    <Texture Map="Bumpmap" File="objects/natural/trees/thin_leave_tree/leaves_branches_new_ddn.tif"/>
+    <Texture Map="Opacity" File="objects/natural/trees/thin_leave_tree/leaves_branches_new_opac.tif"/>
+   </Textures>
+   <PublicParams bendDetailLeafAmplitude="0.5" BackShadowBias="0" FresnelPower="4" bendDetailFrequency="0.15000001" bendDetailBranchAmplitude="0" FresnelScale="1" FresnelBias="1" CapOpacityFalloff="1" BackViewDep="0.5" BackDiffuseMultiplier="0.75" BackDiffuse="0.68235296,0.80392164,0.43921572" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="obstruct_bending" MtlFlags="525440" Shader="Nodraw" GenMask="0" StringGenMask="" SurfaceType="mat_canopy" MatTemplate="" Diffuse="0.50196099,0,0" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures />
+  </Material>
+  <Material Name="obstruct_AI" MtlFlags="525440" Shader="Nodraw" GenMask="0" StringGenMask="" SurfaceType="mat_canopy" MatTemplate="" Diffuse="0.50196099,0,0" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures />
+  </Material>
+  <Material Name="proxy_trunk" MtlFlags="525440" Shader="Nodraw" GenMask="0" StringGenMask="" SurfaceType="mat_wood" MatTemplate="" Diffuse="1,0,0" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures />
+  </Material>
+ </SubMaterials>
+ <PublicParams FresnelPower="4" GlossFromDiffuseContrast="1" FresnelScale="1" GlossFromDiffuseOffset="0" FresnelBias="1" GlossFromDiffuseAmount="0" GlossFromDiffuseBrightness="0.333" IndirectColor="0.25,0.25,0.25"/>
+</Material>

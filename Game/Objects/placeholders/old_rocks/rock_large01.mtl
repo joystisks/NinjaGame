@@ -1,0 +1,21 @@
+<Material MtlFlags="524544">
+ <SubMaterials>
+  <Material Name="rock01" MtlFlags="524416" Shader="Illum" GenMask="1" StringGenMask="%ALLOW_POM" SurfaceType="mat_rock" MatTemplate="" Diffuse="0.47058827,0.47058827,0.47058827" Specular="0,0,0" Emissive="0,0,0" Shininess="46.200001" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="textures/defaults/diffuse_prototype.dds"/>
+   </Textures>
+   <PublicParams FresnelPower="4" GlossFromDiffuseContrast="1" FresnelScale="1" GlossFromDiffuseOffset="0" FresnelBias="1" GlossFromDiffuseAmount="0" GlossFromDiffuseBrightness="0.333" IndirectColor="0.25,0.25,0.25"/>
+   <MaterialLayers>
+   </MaterialLayers>
+  </Material>
+  <Material Name="moss" MtlFlags="525440" Shader="Nodraw" GenMask="0" StringGenMask="" SurfaceType="mat_rock" MatTemplate="" Diffuse="0.41568631,0.41568631,0.41568631" Specular="0.41176474,0.40000004,0.227451" Emissive="0,0,0" Shininess="50" Opacity="1">
+   <Textures />
+   <MaterialLayers>
+   </MaterialLayers>
+  </Material>
+  <Material Name="proxy" MtlFlags="525440" Shader="Nodraw" GenMask="0" StringGenMask="" SurfaceType="mat_rock" MatTemplate="" Diffuse="1,1,1" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures />
+  </Material>
+ </SubMaterials>
+ <PublicParams FresnelPower="4" GlossFromDiffuseContrast="1" FresnelScale="1" GlossFromDiffuseOffset="0" FresnelBias="1" GlossFromDiffuseAmount="0" GlossFromDiffuseBrightness="0.333" IndirectColor="0.25,0.25,0.25"/>
+</Material>

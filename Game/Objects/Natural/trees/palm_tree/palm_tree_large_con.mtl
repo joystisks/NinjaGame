@@ -1,0 +1,34 @@
+<Material MtlFlags="524544">
+ <SubMaterials>
+  <Material Name="palm_tree_large_trunk" MtlFlags="524416" Shader="Vegetation" GenMask="400402280" StringGenMask="%DETAIL_BUMP_MAPPING%DETAIL_TEXTURE_IS_NORMALMAP%DETAIL_TEXTURE_IS_SET%MERGED_TEXTURES%TEMP_VEGETATION" SurfaceType="mat_wood_breakable" MatTemplate="" Diffuse="0.31118053,0.31118053,0.31118053" Specular="0.21951973,0.21951973,0.21951973" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/natural/trees/jungle_tree_thin/con_palm_pino_trunk_diff.tif"/>
+    <Texture Map="Bumpmap" File="objects/natural/trees/jungle_tree_thin/con_palm_pino_trunk_ddn.tif"/>
+    <Texture Map="Detail" File="textures/terrain/bump_detail/detail_bump_wood_005_ddn.dds"/>
+   </Textures>
+   <PublicParams bendDetailLeafAmplitude="0.079999998" FresnelPower="4" bendDetailFrequency="5" bendDetailBranchAmplitude="0.2" DetailBumpTillingU="2" FresnelScale="1" DetailDiffuseScale="0" FresnelBias="1" DetailBumpScale="1.5" DetailGlossScale="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="palm_tree_large_leaf" MtlFlags="524416" Shader="Vegetation" GenMask="400C03280" StringGenMask="%DETAIL_BENDING%DETAIL_BUMP_MAPPING%DETAIL_TEXTURE_IS_NORMALMAP%DETAIL_TEXTURE_IS_SET%LEAVES%MERGED_TEXTURES%TEMP_VEGETATION" SurfaceType="mat_canopy" MatTemplate="" Diffuse="0.50543249,0.50543249,0.50543249" Specular="0.21951973,0.21951973,0.21951973" Emissive="0,0,0" Shininess="80" Opacity="1" AlphaTest="0.44999999">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/natural/ground_plants/grass/con_grassmix_palmleaf_diff.tif"/>
+    <Texture Map="Specular" File="objects/natural/ground_plants/grass/con_grassmix_palmleaf_spec_01.tif"/>
+    <Texture Map="Bumpmap" File="objects/natural/ground_plants/grass/con_grassmix_palmleaf_ddn.tif"/>
+    <Texture Map="Detail" File="textures/terrain/bump_detail/detail_bump_ice_005_ddn.tif"/>
+   </Textures>
+   <PublicParams bendDetailLeafAmplitude="0.2" BackShadowBias="0.1" FresnelPower="4" bendDetailFrequency="0.5" bendDetailBranchAmplitude="0.2" DetailBumpTillingU="10" FresnelScale="1" DetailDiffuseScale="0" FresnelBias="1" DetailBumpScale="0.5" CapOpacityFalloff="1" BackViewDep="1" BackDiffuseMultiplier="1.5" BackDiffuse="0.74117601,0.71764702,0.384314" DetailGlossScale="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="nodraw" MtlFlags="525440" Shader="Nodraw" GenMask="0" StringGenMask="" SurfaceType="mat_wood" MatTemplate="" Diffuse="0,0,0" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures />
+  </Material>
+  <Material Name="obstruct" MtlFlags="525440" Shader="Nodraw" GenMask="0" StringGenMask="" SurfaceType="mat_wood" MatTemplate="" Diffuse="0,0,0" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures />
+  </Material>
+  <Material Name="splinters" MtlFlags="524416" Shader="Vegetation" GenMask="400000000" StringGenMask="%TEMP_VEGETATION" SurfaceType="mat_wood" MatTemplate="" Diffuse="0.45882401,0.45882401,0.45882401" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/natural/trees/explosion_shape/broken_tree.tif"/>
+   </Textures>
+   <PublicParams bendDetailLeafAmplitude="0.079999998" FresnelPower="4" bendDetailFrequency="5" bendDetailBranchAmplitude="0.2" FresnelScale="1" FresnelBias="1" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+ </SubMaterials>
+ <PublicParams FresnelPower="4" GlossFromDiffuseContrast="1" FresnelScale="1" GlossFromDiffuseOffset="0" FresnelBias="1" GlossFromDiffuseAmount="0" GlossFromDiffuseBrightness="0.333" IndirectColor="0.25,0.25,0.25"/>
+</Material>

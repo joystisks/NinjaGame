@@ -1,0 +1,16 @@
+<Material MtlFlags="524544">
+ <SubMaterials>
+  <Material Name="Forest_Ground_Branches" MtlFlags="524416" Shader="Vegetation" GenMask="10500000000" StringGenMask="%MERGED_TEXTURES%STAT_BRANCHING%TEMP_VEGETATION" SurfaceType="mat_wood" MatTemplate="" Diffuse="0.5529412,0.50588238,0.43921572" Specular="0.60000002,0.60000002,0.60000002" Emissive="0,0,0" Shininess="5" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/natural/trees/jungle_tree_thin/con_palm_pino_trunk_diff.tif">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams bendDetailFrequency="5" bendDetailLeafAmplitude="0.079999998" bendDetailBranchAmplitude="0.2" bendDetailPhase="100"/>
+  </Material>
+  <Material Name="proxy" MtlFlags="525440" Shader="Nodraw" GenMask="0" StringGenMask="" SurfaceType="mat_wood" MatTemplate="" Diffuse="1,1,1" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures />
+  </Material>
+ </SubMaterials>
+ <PublicParams AmbientMultiplier="1"/>
+</Material>

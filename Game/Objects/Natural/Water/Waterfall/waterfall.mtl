@@ -1,0 +1,14 @@
+<Material MtlFlags="524544">
+ <SubMaterials>
+  <Material Name="water" MtlFlags="524448" Shader="Illum" GenMask="2000000001" StringGenMask="%ALLOW_TESSELATION%VERTCOLORS" SurfaceType="mat_water" MatTemplate="" Diffuse="0.10615607,0.12198571,0.15415226" Specular="0.020951131,0.028991185,0.038472746" Emissive="0,0,0" Shininess="167" Opacity="0.15000001" CloakAmount="0">
+   <Textures>
+    <Texture Map="Diffuse" File="textures/terrain/roads/river_forest_foam_b.tif">
+     <TexMod TileU="2" TexMod_UOscillatorType="2" TexMod_UOscillatorRate="0.235" TexMod_UOscillatorAmplitude="1"/>
+    </Texture>
+    <Texture Map="Bumpmap" File="objects/natural/water/waterfall/river_forest_foam_ddn.tif"/>
+   </Textures>
+   <PublicParams FresnelPower="4" GlossFromDiffuseContrast="1" FresnelScale="1" GlossFromDiffuseOffset="0" FresnelBias="1" GlossFromDiffuseAmount="0" GlossFromDiffuseBrightness="0.333" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+ </SubMaterials>
+ <PublicParams FresnelPower="4" GlossFromDiffuseContrast="1" FresnelScale="1" GlossFromDiffuseOffset="0" FresnelBias="1" GlossFromDiffuseAmount="0" GlossFromDiffuseBrightness="0.333" IndirectColor="0.25,0.25,0.25"/>
+</Material>

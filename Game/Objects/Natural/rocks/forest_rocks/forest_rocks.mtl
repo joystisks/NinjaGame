@@ -1,0 +1,37 @@
+<Material MtlFlags="524544">
+ <SubMaterials>
+  <Material Name="forest_rocks" MtlFlags="524416" Shader="Illum" GenMask="100082280" StringGenMask="%DETAIL_BUMP_MAPPING%DETAIL_TEXTURE_IS_NORMALMAP%DETAIL_TEXTURE_IS_SET%GLOSS_MAP%TESSELLATION" SurfaceType="mat_rock" MatTemplate="" Diffuse="0.31118053,0.31118053,0.31118053" Specular="0.50543249,0.50543249,0.50543249" Emissive="0,0,0" Shininess="20" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/natural/rocks/forest_rocks/forest_rocks.tif"/>
+    <Texture Map="Specular" File="objects/natural/rocks/forest_rocks/forest_rocks_spec.tif"/>
+    <Texture Map="Bumpmap" File="objects/natural/rocks/forest_rocks/forest_rocks_ddn.tif"/>
+    <Texture Map="Detail" File="textures/detail_bumpmaps/rock_1_ddn.tif">
+     <TexMod TileU="7" TileV="7"/>
+    </Texture>
+   </Textures>
+   <PublicParams SpecMapChannelB="0" SpecMapChannelR="0" FresnelPower="4" DetailBumpTillingU="0.5" GlossMapChannelB="0" SpecMapChannelG="0" FresnelScale="1" DetailDiffuseScale="0" FresnelBias="1" DetailBumpScale="0.5" DetailGlossScale="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="proxy" MtlFlags="525440" Shader="Nodraw" GenMask="0" StringGenMask="" SurfaceType="mat_rock" MatTemplate="" Diffuse="1,0,0" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures />
+  </Material>
+  <Material Name="fern" MtlFlags="524416" Shader="Vegetation" GenMask="400801000" StringGenMask="%DETAIL_BENDING%LEAVES%TEMP_VEGETATION" SurfaceType="mat_vegetation" MatTemplate="" Diffuse="0.48627499,0.48627499,0.48627499" Specular="0.50196099,0.52941197,0.59215701" Emissive="0,0,0" Shininess="10" Opacity="1" AlphaTest="0.68387097">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/natural/bushes/groundfernbush/ground_fern_bush_leaf_a.tif"/>
+    <Texture Map="Specular" File="objects/natural/bushes/groundfernbush/ground_fern_bush_leaf_a.tif"/>
+   </Textures>
+   <PublicParams bendDetailLeafAmplitude="0.079999998" BackShadowBias="0.89999998" FresnelPower="4" bendDetailFrequency="5" bendDetailBranchAmplitude="0.2" FresnelScale="1" FresnelBias="1" CapOpacityFalloff="1" BackViewDep="0.5" BackDiffuseMultiplier="0.85000002" BackDiffuse="0.56999999,0.75999999,0.37" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="leaf" MtlFlags="524416" Shader="Vegetation" GenMask="400801000" StringGenMask="%DETAIL_BENDING%LEAVES%TEMP_VEGETATION" SurfaceType="mat_vegetation" MatTemplate="" Diffuse="0.49411801,0.49411801,0.49411801" Specular="0.286275,0.286275,0.286275" Emissive="0,0,0" Shininess="15" Opacity="1" AlphaTest="0.5">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/natural/bushes/roundleafbush/leaves_a.tif"/>
+    <Texture Map="Specular" File="objects/natural/bushes/roundleafbush/leaves_a_opac.tif"/>
+    <Texture Map="Opacity" File="objects/natural/bushes/roundleafbush/leaves_a_opac.tif"/>
+   </Textures>
+   <PublicParams bendDetailLeafAmplitude="0.079999998" BackShadowBias="0.89999998" FresnelPower="4" bendDetailFrequency="5" bendDetailBranchAmplitude="0" FresnelScale="1" FresnelBias="1" CapOpacityFalloff="1" BackViewDep="0.5" BackDiffuseMultiplier="0.85000002" BackDiffuse="0.56999999,0.75999999,0.37" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="dry_leaf" MtlFlags="525440" Shader="Nodraw" GenMask="0" StringGenMask="" SurfaceType="mat_vegetation" MatTemplate="" Diffuse="0,0,0" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures />
+  </Material>
+ </SubMaterials>
+ <PublicParams FresnelPower="4" GlossFromDiffuseContrast="1" FresnelScale="1" GlossFromDiffuseOffset="0" FresnelBias="1" GlossFromDiffuseAmount="0" GlossFromDiffuseBrightness="0.333" IndirectColor="0.25,0.25,0.25"/>
+</Material>

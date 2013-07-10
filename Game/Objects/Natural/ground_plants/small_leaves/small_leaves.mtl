@@ -1,0 +1,23 @@
+<Material MtlFlags="524544">
+ <SubMaterials>
+  <Material Name="small_leaves" MtlFlags="524416" Shader="Vegetation" GenMask="400803000" StringGenMask="%DETAIL_BENDING%DETAIL_BUMP_MAPPING%LEAVES%TEMP_VEGETATION" SurfaceType="mat_vegetation" MatTemplate="" Diffuse="0.49411768,0.49411768,0.49411768" Specular="0.37647101,0.37647101,0.37647101" Emissive="0,0,0" Shininess="10" Opacity="1" AlphaTest="0.5">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/natural/ground_plants/small_leaves/leaves_a.tif" Filter="5"/>
+    <Texture Map="Specular" File="objects/natural/ground_plants/small_leaves/leaves_a_spec.tif"/>
+    <Texture Map="Detail" File="textures/terrain/bump_detail/detail_bump_concr_005_ddn.dds"/>
+    <Texture Map="Opacity" File="objects/natural/ground_plants/small_leaves/leaves_a_spec.tif"/>
+   </Textures>
+   <PublicParams bendDetailLeafAmplitude="0.050000001" BackShadowBias="0.2" FresnelPower="4" bendDetailFrequency="0.5" bendDetailBranchAmplitude="0.029999999" DetailBumpTillingU="5" DetailBlendAmount="0" FresnelScale="1" FresnelBias="1" DetailBumpScale="1" BackViewDep="0.5" BackDiffuseMultiplier="1" BackDiffuse="0.59215689,0.74509805,0.38823533" DetailBumpTillingV="5" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="proxy_bending" MtlFlags="525440" Shader="NoDraw" GenMask="0" StringGenMask="" SurfaceType="mat_canopy" MatTemplate="" Diffuse="1,0,0" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="0.20999999">
+   <Textures />
+  </Material>
+  <Material Name="roots" MtlFlags="525440" Shader="Nodraw" GenMask="0" StringGenMask="" SurfaceType="mat_canopy" MatTemplate="" Diffuse="0.47451001,0.47451001,0.47451001" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="1" AlphaTest="0.5">
+   <Textures />
+  </Material>
+  <Material Name="ostruct_AI" MtlFlags="525440" Shader="Nodraw" GenMask="0" StringGenMask="" SurfaceType="mat_canopy" MatTemplate="" Diffuse="1,0,0" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="0.20999999">
+   <Textures />
+  </Material>
+ </SubMaterials>
+ <PublicParams FresnelPower="4" GlossFromDiffuseContrast="1" FresnelScale="1" GlossFromDiffuseOffset="0" FresnelBias="1" GlossFromDiffuseAmount="0" GlossFromDiffuseBrightness="0.333" IndirectColor="0.25,0.25,0.25"/>
+</Material>

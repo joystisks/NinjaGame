@@ -1,0 +1,33 @@
+<Material MtlFlags="524544">
+ <SubMaterials>
+  <Material Name="proxy" MtlFlags="525440" Shader="Nodraw" GenMask="0" StringGenMask="" SurfaceType="mat_ice" MatTemplate="" Diffuse="0.5,0.5,0.5" Specular="0.247868,0.247868,0.247868" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures />
+  </Material>
+  <Material Name="snowManMat_01" MtlFlags="524416" Shader="Illum" GenMask="82280" StringGenMask="%DETAIL_BUMP_MAPPING%DETAIL_TEXTURE_IS_NORMALMAP%DETAIL_TEXTURE_IS_SET%GLOSS_MAP" SurfaceType="mat_ice" MatTemplate="" Diffuse="0.5174014,0.5174014,0.5174014" Specular="1,1,1" Emissive="0,0,0" Shininess="200" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/natural/snow/snowman/textures/snowMan_diff2.tif"/>
+    <Texture Map="Specular" File="objects/natural/snow/snowman/textures/snowman_spec.dds"/>
+    <Texture Map="Bumpmap" File="objects/natural/snow/snowman/textures/snowman_b_ddn.dds"/>
+    <Texture Map="Detail" File="textures/terrain/detail/snow_terrain_ddn.tif"/>
+   </Textures>
+   <PublicParams SpecMapChannelB="0" SpecMapChannelR="0" FresnelPower="5" DetailBumpTillingU="5.4000001" GlossMapChannelB="0" SpecMapChannelG="0" FresnelScale="1.29" DetailDiffuseScale="0" FresnelBias="0.039999999" DetailBumpScale="0.72000003" DetailGlossScale="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="iceMat" MtlFlags="524416" Shader="Illum" GenMask="82280" StringGenMask="%DETAIL_BUMP_MAPPING%DETAIL_TEXTURE_IS_NORMALMAP%DETAIL_TEXTURE_IS_SET%GLOSS_MAP" SurfaceType="mat_ice" MatTemplate="" Diffuse="0.51139784,0.51139784,0.51139784" Specular="0,0,0" Emissive="0,0,0" Shininess="255" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/natural/snow/snowman/textures/snowbank_a_diff.tif"/>
+    <Texture Map="Specular" File="objects/natural/snow/snowman/textures/snowbank_a_diff.tif"/>
+    <Texture Map="Detail" File="textures/concrete/concrete_broken_ddn.dds"/>
+   </Textures>
+   <PublicParams SpecMapChannelB="0" SpecMapChannelR="0" FresnelPower="4" DetailBumpTillingU="3" GlossMapChannelB="0" SpecMapChannelG="0" FresnelScale="1" DetailDiffuseScale="0" FresnelBias="0.050999999" DetailBumpScale="0.40000001" DetailGlossScale="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="twigmat" MtlFlags="524416" Shader="Illum" GenMask="0" StringGenMask="" SurfaceType="mat_wood" MatTemplate="" Diffuse="0.27583286,0.27583286,0.27583286" Specular="0.0096963281,0.0096963281,0.0096963281" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="textures/wood/wood_tile_diff.dds">
+     <TexMod TileU="5" TileV="5"/>
+    </Texture>
+   </Textures>
+   <PublicParams FresnelPower="4" GlossFromDiffuseContrast="1" FresnelScale="1" GlossFromDiffuseOffset="0" FresnelBias="1" GlossFromDiffuseAmount="0" GlossFromDiffuseBrightness="0.333" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+ </SubMaterials>
+ <PublicParams FresnelPower="4" GlossFromDiffuseContrast="1" FresnelScale="1" GlossFromDiffuseOffset="0" FresnelBias="1" GlossFromDiffuseAmount="0" GlossFromDiffuseBrightness="0.333" IndirectColor="0.25,0.25,0.25"/>
+</Material>

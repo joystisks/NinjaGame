@@ -1,0 +1,19 @@
+<Material MtlFlags="524544">
+ <SubMaterials>
+  <Material Name="Grass" MtlFlags="524418" Shader="Illum" GenMask="2100080001" SurfaceType="mat_grass" Diffuse="0.48627454,0.48627454,0.48627454" Specular="0,0,0" Emissive="0,0,0" Shininess="1" Opacity="1" AlphaTest="0.5">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/natural/vegetation/meadow/meadow_grass_diff.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Specular" File="objects/natural/vegetation/meadow/meadow_grass_diff.tif">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams AmbientMultiplier="1"/>
+  </Material>
+  <Material Name="Proxy_Bending" MtlFlags="525440" Shader="Nodraw" GenMask="0" SurfaceType="mat_grass" Diffuse="0.49803925,0.49803925,0.49803925" Specular="0.37254903,0.37254903,0.37254903" Emissive="0,0,0" Shininess="2" Opacity="1">
+   <Textures />
+  </Material>
+ </SubMaterials>
+ <PublicParams AmbientMultiplier="1"/>
+</Material>

@@ -1,0 +1,6 @@
+<Material MtlFlags="524288" Shader="Illum" GenMask="120010000" StringGenMask="%ENVIRONMENT_MAP%PN_TESSELLATION%TESSELLATION" SurfaceType="mat_plastic" MatTemplate="" Diffuse="0,0,0" Specular="0.21951973,0.21951973,0.21951973" Emissive="0,0,0" Shininess="255" Opacity="0.5">
+ <Textures>
+  <Texture Map="Environment" File="textures/cubemaps/test_fleetfire.tif"/>
+ </Textures>
+ <PublicParams TessellationFaceCull="0.75" FresnelPower="4" GlossFromDiffuseContrast="1" TessellationFactor="1" FresnelScale="1" GlossFromDiffuseOffset="0" FresnelBias="1" GlossFromDiffuseAmount="0" GlossFromDiffuseBrightness="0.333" TessellationFactorMax="4" TessellationFactorMin="1" IndirectColor="0.25,0.25,0.25"/>
+</Material>

@@ -1,0 +1,27 @@
+<Material MtlFlags="256">
+ <SubMaterials>
+  <Material Name="riverrocks" MtlFlags="128" Shader="Illum" GenMask="268435472" SurfaceType="mat_rock" Diffuse="0.37254903,0.34117648,0.3137255" Specular="0.039215688,0.047058828,0.047058828" Emissive="0,0,0" Shininess="30" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/natural/rocks/river_rocks/riverrocks.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Specular" File="objects/natural/rocks/river_rocks/riverrocks_spec.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Normalmap" File="objects/natural/rocks/river_rocks/riverrocks_ddn.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Detail" File="objects/natural/rocks/river_rocks/detail.tif">
+     <TexMod TileU="4" TileV="4"/>
+    </Texture>
+   </Textures>
+   <PublicParams Displacement="0.025" AmbientMultiplier="1"/>
+  </Material>
+  <Material Name="Proxy" MtlFlags="1152" Shader="Nodraw" GenMask="0" SurfaceType="mat_rock" Diffuse="0.121569,0.047058798,0.68235302" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="0.30000001">
+   <Textures />
+   <MaterialLayers />
+  </Material>
+ </SubMaterials>
+ <PublicParams Displacement="0.025" AmbientMultiplier="1"/>
+ <MaterialLayers />
+</Material>

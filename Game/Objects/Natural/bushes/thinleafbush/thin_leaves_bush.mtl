@@ -1,0 +1,25 @@
+<Material MtlFlags="524544">
+ <SubMaterials>
+  <Material Name="leaves" MtlFlags="524416" Shader="Vegetation" GenMask="400801000" StringGenMask="%DETAIL_BENDING%LEAVES%TEMP_VEGETATION" SurfaceType="mat_grass" MatTemplate="" Diffuse="0.50588202,0.50588202,0.50588202" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="1" AlphaTest="0.5">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/natural/bushes/thinleafbush/leaves_a.tif"/>
+    <Texture Map="Bumpmap" File="objects/natural/bushes/thinleafbush/leaves_a_ddn.tif"/>
+   </Textures>
+   <PublicParams bendDetailLeafAmplitude="0.050000001" BackShadowBias="0.1" FresnelPower="4" bendDetailFrequency="0.60000002" bendDetailBranchAmplitude="0.1" FresnelScale="1" FresnelBias="1" CapOpacityFalloff="1" BackViewDep="0.5" BackDiffuseMultiplier="0.40000001" BackDiffuse="0.68627453,0.75294125,0.36078432" IndirectColor="0.25,0.25,0.25"/>
+   <MaterialLayers>
+    <Layer Name="Frozenlayerwip" NoDraw="0">
+     <PublicParams VariationTilling="1" TillingV="1" TintColor="1,1,1" ReflectionAmount="0.23999999" TillingU="1" TopSnowAmount="1" IndirectColor="0.25,0.25,0.25"/>
+    </Layer>
+    <Layer />
+    <Layer />
+   </MaterialLayers>
+  </Material>
+  <Material Name="proxy_bending" MtlFlags="525440" Shader="Nodraw" GenMask="0" StringGenMask="" SurfaceType="mat_grass" MatTemplate="" Diffuse="1,0.0117647,0.0117647" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="0.30000001">
+   <Textures />
+  </Material>
+  <Material Name="proxy_AI" MtlFlags="525440" Shader="Nodraw" GenMask="0" StringGenMask="" SurfaceType="mat_grass" MatTemplate="" Diffuse="1,0.0078431396,0.0078431396" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="0.30000001">
+   <Textures />
+  </Material>
+ </SubMaterials>
+ <PublicParams FresnelPower="4" GlossFromDiffuseContrast="1" FresnelScale="1" GlossFromDiffuseOffset="0" FresnelBias="1" GlossFromDiffuseAmount="0" GlossFromDiffuseBrightness="0.333" IndirectColor="0.25,0.25,0.25"/>
+</Material>

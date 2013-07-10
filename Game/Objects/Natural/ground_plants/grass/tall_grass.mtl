@@ -1,0 +1,6 @@
+<Material MtlFlags="524322" Shader="Vegetation" GenMask="C00200000" StringGenMask="%GRASS%TEMP_VEGETATION%TERRAINHEIGHTADAPTION" SurfaceType="mat_vegetation" MatTemplate="" Diffuse="0.32972905,0.2801244,0.17013837" Specular="0.078056589,0.078056589,0.078056589" Emissive="0,0,0" Shininess="4" Opacity="1" AlphaTest="0.31999999">
+ <Textures>
+  <Texture Map="Diffuse" File="objects/natural/ground_plants/grass/tall_grass_diff.tif"/>
+ </Textures>
+ <PublicParams bendDetailLeafAmplitude="0.2" BackShadowBias="0.89999998" FresnelPower="4" bendDetailFrequency="1" bendDetailBranchAmplitude="0.75999999" blendWithTerrainAmount="0.5" FresnelScale="1" FresnelBias="1" BackViewDep="0.5" BackDiffuseMultiplier="0.85000002" BackDiffuse="0.56999999,0.75999999,0.37" IndirectColor="0.25,0.25,0.25"/>
+</Material>

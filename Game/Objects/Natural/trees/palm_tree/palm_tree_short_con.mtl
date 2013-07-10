@@ -1,0 +1,26 @@
+<Material MtlFlags="524544">
+ <SubMaterials>
+  <Material Name="palm_tree_short_trunk" MtlFlags="524416" Shader="Vegetation" GenMask="400400000" StringGenMask="%MERGED_TEXTURES%TEMP_VEGETATION" SurfaceType="mat_wood_breakable" MatTemplate="" Diffuse="0.21951973,0.21951973,0.21951973" Specular="0.31118053,0.31118053,0.31118053" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/natural/trees/jungle_tree_thin/con_palm_pino_trunk_diff.tif"/>
+    <Texture Map="Bumpmap" File="objects/natural/trees/jungle_tree_thin/con_palm_pino_trunk_ddn.tif"/>
+   </Textures>
+   <PublicParams bendDetailLeafAmplitude="0.079999998" FresnelPower="4" bendDetailFrequency="5" bendDetailBranchAmplitude="0.2" FresnelScale="1" FresnelBias="1" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="palm_tree_short_leaf" MtlFlags="524416" Shader="Vegetation" GenMask="400C01000" StringGenMask="%DETAIL_BENDING%LEAVES%MERGED_TEXTURES%TEMP_VEGETATION" SurfaceType="mat_canopy" MatTemplate="" Diffuse="0.27583286,0.27583286,0.27583286" Specular="0.025371276,0.025371276,0.025371276" Emissive="0,0,0" Shininess="80" Opacity="1" AlphaTest="0.5">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/natural/ground_plants/grass/con_grassmix_palmleaf_diff.tif"/>
+    <Texture Map="Specular" File="objects/natural/ground_plants/grass/con_grassmix_palmleaf_spec.tif"/>
+    <Texture Map="Bumpmap" File="objects/natural/ground_plants/grass/con_grassmix_palmleaf_ddn.tif"/>
+   </Textures>
+   <PublicParams bendDetailLeafAmplitude="0.2" BackShadowBias="0.1" FresnelPower="4" bendDetailFrequency="0.5" bendDetailBranchAmplitude="0.2" FresnelScale="1" FresnelBias="1" CapOpacityFalloff="1" BackViewDep="1" BackDiffuseMultiplier="1.5" BackDiffuse="0.73725492,0.71372551,0.38431376" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="nodraw" MtlFlags="525440" Shader="NoDraw" GenMask="0" StringGenMask="" SurfaceType="mat_wood" MatTemplate="" Diffuse="0,0,0" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures />
+  </Material>
+  <Material Name="obstruct" MtlFlags="525440" Shader="Nodraw" GenMask="0" StringGenMask="" SurfaceType="mat_wood" MatTemplate="" Diffuse="0,0,0" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures />
+  </Material>
+ </SubMaterials>
+ <PublicParams FresnelPower="4" GlossFromDiffuseContrast="1" FresnelScale="1" GlossFromDiffuseOffset="0" FresnelBias="1" GlossFromDiffuseAmount="0" GlossFromDiffuseBrightness="0.333" IndirectColor="0.25,0.25,0.25"/>
+</Material>

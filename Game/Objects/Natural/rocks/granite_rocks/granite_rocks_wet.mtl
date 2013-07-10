@@ -1,0 +1,15 @@
+<Material MtlFlags="524544">
+ <SubMaterials>
+  <Material Name="rock" MtlFlags="524416" Shader="Illum" GenMask="2000000000" StringGenMask="%VERTCOLORS" SurfaceType="mat_concrete" MatTemplate="" Diffuse="0.10114516,0.10114516,0.10114516" Specular="0.011881335,0.011881335,0.011881335" Emissive="0,0,0" Shininess="110" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/natural/rocks/granite_rocks/granite_rocks_diff.tif"/>
+    <Texture Map="Bumpmap" File="objects/natural/rocks/granite_rocks/granite_rocks_ddn.tif"/>
+   </Textures>
+   <PublicParams FresnelScale="0" FresnelPower="4" FresnelBias="1" GlossFromDiffuseAmount="0" GlossFromDiffuseContrast="1" GlossFromDiffuseBrightness="0.333" GlossFromDiffuseOffset="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="proxy" MtlFlags="525440" Shader="Nodraw" GenMask="0" StringGenMask="" SurfaceType="mat_concrete" MatTemplate="" Diffuse="0.22331043,0.22331043,0.22331043" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures />
+  </Material>
+ </SubMaterials>
+ <PublicParams FresnelScale="0" FresnelPower="4" FresnelBias="1" GlossFromDiffuseAmount="0" GlossFromDiffuseContrast="1" GlossFromDiffuseBrightness="0.333" GlossFromDiffuseOffset="0" IndirectColor="0.25,0.25,0.25"/>
+</Material>

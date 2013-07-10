@@ -1,0 +1,13 @@
+<Material MtlFlags="524544">
+ <SubMaterials>
+  <Material Name="glacier_mat" MtlFlags="526464" Shader="Frozenlayerwip" GenMask="2400000000" StringGenMask="%TEMP_VEGETATION%VERTCOLORS" SurfaceType="mat_arm_left" MatTemplate="" Diffuse="0.5174014,0.5174014,0.5174014" Specular="0,0,0" Emissive="0,0,0" Shininess="255" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="textures/defaults/grey.dds"/>
+    <Texture Map="Detail" File="objects/natural/rocks/forest_rock/rock_forest_wall_ddn.dds"/>
+   </Textures>
+   <PublicParams VariationTilling="4" TillingV="4" TintColor="0.34402567,0.87513757,1" ReflectionAmount="0.147" TillingU="4" TopSnowAmount="1" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <MaterialRef />
+ </SubMaterials>
+ <PublicParams FresnelPower="4" GlossFromDiffuseContrast="1" FresnelScale="1" GlossFromDiffuseOffset="0" FresnelBias="1" GlossFromDiffuseAmount="0" GlossFromDiffuseBrightness="0.333" IndirectColor="0.25,0.25,0.25"/>
+</Material>

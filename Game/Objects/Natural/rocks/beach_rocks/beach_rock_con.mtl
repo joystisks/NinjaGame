@@ -1,0 +1,28 @@
+<Material MtlFlags="524544">
+ <SubMaterials>
+  <Material Name="rock" MtlFlags="524416" Shader="Illum" GenMask="21000422A0" StringGenMask="%BLENDLAYER%DETAIL_BUMP_MAPPING%DETAIL_TEXTURE_IS_NORMALMAP%DETAIL_TEXTURE_IS_SET%GLOSS_DIFFUSEALPHA%TESSELLATION%VERTCOLORS" SurfaceType="mat_rock" MatTemplate="" Diffuse="0.31118053,0.31118053,0.31118053" Specular="0.31118053,0.31118053,0.31118053" Emissive="0,0,0" Shininess="40" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/natural/rocks/cliff_rocks/con_cliff_rock_d_diff.tif"/>
+    <Texture Map="Bumpmap" File="objects/natural/rocks/cliff_rocks/con_cliff_rock_d_ddn.tif"/>
+    <Texture Map="Detail" File="textures/detail_bumpmaps/rock_1_ddn.tif">
+     <TexMod TileU="10" TileV="10"/>
+    </Texture>
+    <Texture Map="Opacity" File="objects/natural/rocks/forest_rock/rock_a_mask.tif"/>
+    <Texture Map="Custom" File="objects/natural/rocks/forest_rock/moss_diff.tif"/>
+    <Texture Map="[1] Custom" File="objects/natural/rocks/forest_rock/moss_ddn.tif"/>
+   </Textures>
+   <PublicParams BlendFalloff="4" FresnelPower="4" DetailBumpTillingU="0.2" BlendLayer2Tiling="2" BlendMaskRotation="0" FresnelScale="1" DetailDiffuseScale="0" FresnelBias="1" DetailBumpScale="1.5" BlendFactor="1" DetailGlossScale="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="plants" MtlFlags="524418" Shader="Illum" GenMask="100000000" StringGenMask="%TESSELLATION" SurfaceType="mat_vegetation" MatTemplate="" Diffuse="0.49411768,0.49411768,0.49411768" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="1" AlphaTest="0.5">
+   <Textures>
+    <Texture Map="Diffuse" File="textures/terrain/decals/roots_on_cliff.tif"/>
+    <Texture Map="Bumpmap" File="textures/terrain/decals/roots_on_cliff_ddn.tif"/>
+   </Textures>
+   <PublicParams FresnelPower="4" GlossFromDiffuseContrast="1" FresnelScale="1" GlossFromDiffuseOffset="0" FresnelBias="1" GlossFromDiffuseAmount="0" GlossFromDiffuseBrightness="0.333" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="proxy" MtlFlags="525440" Shader="Nodraw" GenMask="0" StringGenMask="" SurfaceType="mat_rock" MatTemplate="" Diffuse="1,0,0" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures />
+  </Material>
+ </SubMaterials>
+ <PublicParams FresnelPower="4" GlossFromDiffuseContrast="1" FresnelScale="1" GlossFromDiffuseOffset="0" FresnelBias="1" GlossFromDiffuseAmount="0" GlossFromDiffuseBrightness="0.333" IndirectColor="0.25,0.25,0.25"/>
+</Material>

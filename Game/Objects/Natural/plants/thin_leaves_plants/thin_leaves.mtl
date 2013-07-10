@@ -1,0 +1,31 @@
+<Material MtlFlags="256">
+ <SubMaterials>
+  <Material Name="leaves" MtlFlags="128" Shader="Vegetation" GenMask="268501248" SurfaceType="mat_canopy" Diffuse="0.470588,0.470588,0.470588" Specular="0.32941201,0.32941201,0.32941201" Emissive="0,0,0" Shininess="15.55" Opacity="1" AlphaTest="0.5">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/natural/bushes/junglebush/leaves_a.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Specular" File="objects/natural/bushes/junglebush/leaves_a_opac.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Normalmap" File="objects/natural/bushes/junglebush/leaves_a_ddn.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Opacity" File="objects/natural/bushes/junglebush/leaves_a_opac.tif">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams BackViewDep="0.80000001" BackDiffuse="0.756863,0.83137298,0.513726" BackDiffuseMultiplier="0.5" bendDetailFrequency="0.80000001" bendDetailLeafAmplitude="0.02" bendDetailBranchAmplitude="0.029999999" bendDetailPhase="100" BackShadowBias="0.2"/>
+  </Material>
+  <Material Name="proxy_bending" MtlFlags="1152" Shader="Nodraw" GenMask="0" SurfaceType="mat_canopy" Diffuse="0.803922,0.803922,0.803922" Specular="0,0,0" Emissive="0,0,0" Shininess="2.77" Opacity="1">
+   <Textures />
+   <MaterialLayers />
+  </Material>
+  <Material Name="proxy_ai" MtlFlags="1152" Shader="Nodraw" GenMask="0" SurfaceType="mat_canopy" Diffuse="0.80392164,0.80392164,0.80392164" Specular="0,0,0" Emissive="0,0,0" Shininess="2.77" Opacity="1">
+   <Textures />
+   <MaterialLayers />
+  </Material>
+ </SubMaterials>
+ <PublicParams AmbientMultiplier="1"/>
+ <MaterialLayers />
+</Material>

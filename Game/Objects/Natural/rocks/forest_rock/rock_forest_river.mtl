@@ -1,0 +1,22 @@
+<Material MtlFlags="524544">
+ <SubMaterials>
+  <Material Name="Rock" MtlFlags="524416" Shader="Illum" GenMask="2100042280" StringGenMask="%DETAIL_BUMP_MAPPING%DETAIL_TEXTURE_IS_NORMALMAP%DETAIL_TEXTURE_IS_SET%GLOSS_DIFFUSEALPHA%TESSELLATION%VERTCOLORS" SurfaceType="mat_rock" MatTemplate="" Diffuse="0.4039216,0.40784317,0.35686275" Specular="0.29411766,0.29411766,0.29411766" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/natural/rocks/forest_rock/rock_forest_a_diff.tif"/>
+    <Texture Map="Bumpmap" File="objects/natural/rocks/forest_rock/rock_forest_a_ddn.tif"/>
+    <Texture Map="Detail" File="textures/detail_bumpmaps/wallstructure_1_ddn.dds"/>
+   </Textures>
+   <PublicParams FresnelPower="4" DetailBumpTillingU="5" FresnelScale="1" DetailDiffuseScale="0" FresnelBias="1" DetailBumpScale="1.5" DetailGlossScale="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="Moss" MtlFlags="524416" Shader="Illum" GenMask="100000800" StringGenMask="%DECAL%TESSELLATION" SurfaceType="mat_rock" MatTemplate="" Diffuse="0.50588238,0.50588238,0.50588238" Specular="0,0,0" Emissive="0,0,0" Shininess="2" Opacity="0.99000001">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/natural/rocks/forest_rock/rock_forest_moss_a_diff.tif" Filter="7"/>
+   </Textures>
+   <PublicParams FresnelPower="4" GlossFromDiffuseContrast="1" FresnelScale="1" GlossFromDiffuseOffset="0" FresnelBias="1" GlossFromDiffuseAmount="0" GlossFromDiffuseBrightness="0.333" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="Proxy" MtlFlags="525440" Shader="Nodraw" GenMask="0" StringGenMask="" SurfaceType="mat_rock" MatTemplate="" Diffuse="1,1,1" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures />
+  </Material>
+ </SubMaterials>
+ <PublicParams FresnelPower="4" GlossFromDiffuseContrast="1" FresnelScale="1" GlossFromDiffuseOffset="0" FresnelBias="1" GlossFromDiffuseAmount="0" GlossFromDiffuseBrightness="0.333" IndirectColor="0.25,0.25,0.25"/>
+</Material>

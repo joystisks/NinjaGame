@@ -1,0 +1,37 @@
+<Material MtlFlags="256">
+ <SubMaterials>
+  <Material Name="forest_rocks" MtlFlags="128" Shader="Illum" GenMask="289406992" SurfaceType="mat_rock" Diffuse="0.247059,0.247059,0.247059" Specular="0.078431398,0.078431398,0.078431398" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="textures/terrain/detail/rock_stone_011_2.tif">
+     <TexMod />
+    </Texture>
+    <Texture Map="Specular" File="textures/terrain/detail/rock_stone_011_spec.dds">
+     <TexMod />
+    </Texture>
+    <Texture Map="Normalmap" File="textures/terrain/detail/rock_stone_011_ddn.dds">
+     <TexMod />
+    </Texture>
+    <Texture Map="Detail" File="objects/natural/rocks/forest_rocks/forest_rocks_detail_02.tif">
+     <TexMod TileU="7" TileV="7"/>
+    </Texture>
+   </Textures>
+   <PublicParams AmbientMultiplier="1"/>
+   <MaterialLayers>
+   </MaterialLayers>
+  </Material>
+  <Material Name="proxy" MtlFlags="1152" Shader="Nodraw" GenMask="0" SurfaceType="mat_rock" Diffuse="0.086274497,0,0.72548997" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures />
+  </Material>
+  <Material Name="border" MtlFlags="160" Shader="Illum" GenMask="322961408" SurfaceType="mat_rock" Diffuse="0.36078432,0.36078432,0.36078432" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="0.80000001">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/natural/rocks/suitjump_rocks/cliffrock_border.tif">
+     <TexMod />
+    </Texture>
+   </Textures>
+   <PublicParams AmbientMultiplier="1"/>
+   <MaterialLayers>
+   </MaterialLayers>
+  </Material>
+ </SubMaterials>
+ <PublicParams AmbientMultiplier="1"/>
+</Material>

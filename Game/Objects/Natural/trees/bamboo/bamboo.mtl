@@ -1,0 +1,20 @@
+<Material MtlFlags="524544">
+ <SubMaterials>
+  <Material Name="trunk" MtlFlags="524416" Shader="Vegetation" GenMask="400002280" StringGenMask="%DETAIL_BUMP_MAPPING%DETAIL_TEXTURE_IS_NORMALMAP%DETAIL_TEXTURE_IS_SET%TEMP_VEGETATION" SurfaceType="mat_vegetation" MatTemplate="" Diffuse="0.11657578,0.11657578,0.11657578" Specular="0.11657578,0.11657578,0.11657578" Emissive="0,0,0" Shininess="80" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="Objects/Natural/trees/bamboo/bamboo_trunk_diff.tif"/>
+    <Texture Map="Specular" File="objects/natural/trees/bamboo/bamboo_trunk_spec.tif"/>
+    <Texture Map="Detail" File="objects/natural/trees/bamboo/bamboo_trunk_detail_ddn.tif"/>
+   </Textures>
+   <PublicParams bendDetailLeafAmplitude="0.5" FresnelPower="4" bendDetailFrequency="1" bendDetailBranchAmplitude="0" DetailBumpTillingU="2" FresnelScale="1" DetailDiffuseScale="0" FresnelBias="1" DetailBumpScale="0.25" DetailGlossScale="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="leaves" MtlFlags="524416" Shader="Vegetation" GenMask="400801000" StringGenMask="%DETAIL_BENDING%LEAVES%TEMP_VEGETATION" SurfaceType="mat_vegetation" MatTemplate="" Diffuse="0.21951973,0.21951973,0.21951973" Specular="0.047775757,0.047775757,0.047775757" Emissive="0,0,0" Shininess="40" Opacity="1" AlphaTest="0.46000001">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/natural/trees/bamboo/bamboo_leaves_diff.tif"/>
+    <Texture Map="Specular" File="objects/natural/trees/bamboo/bamboo_leaves_spec.tif"/>
+   </Textures>
+   <PublicParams bendDetailLeafAmplitude="0.25" BackShadowBias="0.2" FresnelPower="4" bendDetailFrequency="1" bendDetailBranchAmplitude="0.1" FresnelScale="1" FresnelBias="1" CapOpacityFalloff="1" BackViewDep="0.5" BackDiffuseMultiplier="0.1" BackDiffuse="0.34402567,0.36859095,0.15105805" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+ </SubMaterials>
+ <PublicParams FresnelPower="4" GlossFromDiffuseContrast="1" FresnelScale="1" GlossFromDiffuseOffset="0" FresnelBias="1" GlossFromDiffuseAmount="0" GlossFromDiffuseBrightness="0.333" IndirectColor="0.25,0.25,0.25"/>
+</Material>

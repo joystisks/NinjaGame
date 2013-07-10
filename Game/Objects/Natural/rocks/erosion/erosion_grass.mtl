@@ -1,0 +1,45 @@
+<Material MtlFlags="524544">
+ <SubMaterials>
+  <Material Name="soil" MtlFlags="524416" Shader="Illum" GenMask="2108040000" StringGenMask="%GLOSS_DIFFUSEALPHA%PARALLAX_OCCLUSION_MAPPING%TESSELLATION%VERTCOLORS" SurfaceType="mat_soil" MatTemplate="" Diffuse="0.46474114,0.46474114,0.46474114" Specular="0.020951131,0.020951131,0.020951131" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/natural/rocks/erosion/soil_diff.tif"/>
+    <Texture Map="Bumpmap" File="objects/natural/rocks/erosion/soil_ddn.tif"/>
+   </Textures>
+   <PublicParams FresnelPower="4" PomDisplacement="0.015" FresnelScale="1" FresnelBias="1" SelfShadowStrength="4" HeightBias="0.5" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="trunk" MtlFlags="524416" Shader="Illum" GenMask="100040000" StringGenMask="%GLOSS_DIFFUSEALPHA%TESSELLATION" SurfaceType="mat_wood" MatTemplate="" Diffuse="0.21951973,0.21951973,0.21951973" Specular="0.16078432,0.16078432,0.16078432" Emissive="0,0,0" Shininess="5" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/natural/vegetation/rocky_ravine/spruce_trunk_dead_diff.tif"/>
+    <Texture Map="Bumpmap" File="objects/natural/vegetation/rocky_ravine/spruce_trunk_dead_ddn.tif"/>
+   </Textures>
+   <PublicParams FresnelPower="4" FresnelScale="1" FresnelBias="1" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="roots" MtlFlags="524418" Shader="Illum" GenMask="2100080000" StringGenMask="%GLOSS_MAP%TESSELLATION%VERTCOLORS" SurfaceType="mat_wood" MatTemplate="" Diffuse="0.47450984,0.47450984,0.47450984" Specular="0.27583286,0.27583286,0.27583286" Emissive="0,0,0" Shininess="5" Opacity="1" AlphaTest="0.30000001">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/natural/rocks/erosion/roots_diff.tif"/>
+    <Texture Map="Specular" File="objects/natural/rocks/erosion/roots_spec.tif"/>
+    <Texture Map="Bumpmap" File="objects/natural/rocks/erosion/roots_ddn.tif"/>
+   </Textures>
+   <PublicParams SpecMapChannelB="0" SpecMapChannelR="0" FresnelPower="4" GlossMapChannelB="0" SpecMapChannelG="0" FresnelScale="1" FresnelBias="1" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="proxy" MtlFlags="525440" Shader="Nodraw" GenMask="0" StringGenMask="" SurfaceType="mat_soil" MatTemplate="" Diffuse="1,1,1" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures />
+  </Material>
+  <Material Name="grass" MtlFlags="524416" Shader="Illum" GenMask="2100000000" StringGenMask="%TESSELLATION%VERTCOLORS" SurfaceType="mat_grass" MatTemplate="" Diffuse="0.19751643,0.19751643,0.19751643" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/natural/rocks/erosion/grass_diff.tif">
+     <TexMod TileU="2" TileV="2"/>
+    </Texture>
+    <Texture Map="Bumpmap" File="objects/natural/rocks/erosion/soil_ddn.tif"/>
+   </Textures>
+   <PublicParams FresnelPower="5" GlossFromDiffuseContrast="1" FresnelScale="1" GlossFromDiffuseOffset="0" FresnelBias="1" GlossFromDiffuseAmount="0" GlossFromDiffuseBrightness="0.333" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="trunk_base" MtlFlags="524416" Shader="Illum" GenMask="100000000" StringGenMask="%TESSELLATION" SurfaceType="mat_soil" MatTemplate="" Diffuse="0.46474114,0.46474114,0.46474114" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/natural/rocks/erosion/soil_diff.tif"/>
+   </Textures>
+   <PublicParams FresnelPower="4" GlossFromDiffuseContrast="1" FresnelScale="1" GlossFromDiffuseOffset="0" FresnelBias="1" GlossFromDiffuseAmount="0" GlossFromDiffuseBrightness="0.333" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+ </SubMaterials>
+ <PublicParams FresnelPower="4" GlossFromDiffuseContrast="1" FresnelScale="1" GlossFromDiffuseOffset="0" FresnelBias="1" GlossFromDiffuseAmount="0" GlossFromDiffuseBrightness="0.333" IndirectColor="0.25,0.25,0.25"/>
+</Material>

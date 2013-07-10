@@ -1,0 +1,19 @@
+<Material MtlFlags="524544">
+ <SubMaterials>
+  <Material Name="leaf" MtlFlags="524416" Shader="Vegetation" GenMask="400800000" StringGenMask="%LEAVES%TEMP_VEGETATION" SurfaceType="mat_vegetation" MatTemplate="" Diffuse="0.59215689,0.59215689,0.59215689" Specular="0.45882356,0.45882356,0.45882356" Emissive="0,0,0" Shininess="10" Opacity="1" AlphaTest="0.5">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/natural/ground_plants/leafs_forest.tif"/>
+    <Texture Map="Specular" File="objects/natural/ground_plants/leafs_forest.tif"/>
+   </Textures>
+   <PublicParams bendDetailLeafAmplitude="0.079999998" BackShadowBias="0.89999998" FresnelPower="4" bendDetailFrequency="5" bendDetailBranchAmplitude="0.2" FresnelScale="1" FresnelBias="1" BackViewDep="0.5" BackDiffuseMultiplier="0" BackDiffuse="0.56078434,0.56078434,0.56078434" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="stone" MtlFlags="524416" Shader="Vegetation" GenMask="400000000" StringGenMask="%TEMP_VEGETATION" SurfaceType="mat_rock" MatTemplate="" Diffuse="0.49803901,0.49803901,0.49803901" Specular="0.2392157,0.2392157,0.2392157" Emissive="0,0,0" Shininess="3" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/natural/rocks/forest_rocks/forest_rocks.tif"/>
+    <Texture Map="Specular" File="objects/natural/rocks/forest_rocks/forest_rocks_spec.tif"/>
+   </Textures>
+   <PublicParams bendDetailLeafAmplitude="0.079999998" FresnelPower="4" bendDetailFrequency="5" bendDetailBranchAmplitude="0.2" FresnelScale="1" FresnelBias="1" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+ </SubMaterials>
+ <PublicParams FresnelPower="4" GlossFromDiffuseContrast="1" FresnelScale="1" GlossFromDiffuseOffset="0" FresnelBias="1" GlossFromDiffuseAmount="0" GlossFromDiffuseBrightness="0.333" IndirectColor="0.25,0.25,0.25"/>
+</Material>

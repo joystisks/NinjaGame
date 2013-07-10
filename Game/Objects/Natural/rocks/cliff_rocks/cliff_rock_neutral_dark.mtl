@@ -1,0 +1,24 @@
+<Material MtlFlags="524544">
+ <SubMaterials>
+  <Material Name="forest_rocks" MtlFlags="524416" Shader="Illum" GenMask="2000000001" StringGenMask="%ALLOW_POM%VERTCOLORS" SurfaceType="mat_rock" MatTemplate="" Diffuse="0.31118053,0.31118053,0.31118053" Specular="0.0090214908,0.0090214908,0.0090214908" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/natural/rocks/cliff_rocks/con_cliff_rock_d_diff.tif"/>
+    <Texture Map="Bumpmap" File="objects/natural/rocks/cliff_rocks/con_cliff_rock_d_ddn.tif"/>
+    <Texture Map="Detail" File="objects/natural/rocks/cliff_rocks/con_cliff_rock_d_detail.tif">
+     <TexMod TileU="10" TileV="10"/>
+    </Texture>
+   </Textures>
+   <PublicParams FresnelPower="4" GlossFromDiffuseContrast="1" FresnelScale="1" GlossFromDiffuseOffset="0" FresnelBias="1" GlossFromDiffuseAmount="0" GlossFromDiffuseBrightness="0.333" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="proxy" MtlFlags="525440" Shader="Nodraw" GenMask="0" StringGenMask="" SurfaceType="mat_rock" MatTemplate="" Diffuse="0.086274497,0,0.72548997" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures />
+  </Material>
+  <Material Name="border" MtlFlags="524448" Shader="Illum" GenMask="2000000801" StringGenMask="%ALLOW_POM%DECAL%VERTCOLORS" SurfaceType="mat_rock" MatTemplate="" Diffuse="0.36078432,0.36078432,0.36078432" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="0.80000001">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/natural/rocks/suitjump_rocks/cliffrock_border.tif"/>
+   </Textures>
+   <PublicParams FresnelPower="4" GlossFromDiffuseContrast="1" FresnelScale="1" GlossFromDiffuseOffset="0" FresnelBias="1" GlossFromDiffuseAmount="0" GlossFromDiffuseBrightness="0.333" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+ </SubMaterials>
+ <PublicParams FresnelPower="4" GlossFromDiffuseContrast="1" FresnelScale="1" GlossFromDiffuseOffset="0" FresnelBias="1" GlossFromDiffuseAmount="0" GlossFromDiffuseBrightness="0.333" IndirectColor="0.25,0.25,0.25"/>
+</Material>

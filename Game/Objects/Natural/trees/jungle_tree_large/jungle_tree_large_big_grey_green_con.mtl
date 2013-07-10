@@ -1,0 +1,38 @@
+<Material MtlFlags="524544">
+ <SubMaterials>
+  <Material Name="Base" MtlFlags="524416" Shader="Vegetation" GenMask="400400000" StringGenMask="%MERGED_TEXTURES%TEMP_VEGETATION" SurfaceType="mat_wood" MatTemplate="" Diffuse="0.49411801,0.49411801,0.49411801" Specular="0.26666668,0.26666668,0.26666668" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/natural/trees/jungle_tree_thin/con_palm_pino_trunk_diff.tif"/>
+    <Texture Map="Bumpmap" File="objects/natural/trees/jungle_tree_thin/con_palm_pino_trunk_ddn.tif"/>
+   </Textures>
+   <PublicParams bendDetailLeafAmplitude="0.079999998" FresnelPower="4" bendDetailFrequency="5" bendDetailBranchAmplitude="0.2" FresnelScale="1" FresnelBias="1" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="leafs" MtlFlags="524416" Shader="Vegetation" GenMask="400C01000" StringGenMask="%DETAIL_BENDING%LEAVES%MERGED_TEXTURES%TEMP_VEGETATION" SurfaceType="mat_vegetation" MatTemplate="" Diffuse="0.40982577,0.40982577,0.40982577" Specular="0.025371276,0.025371276,0.025371276" Emissive="0,0,0" Shininess="80" Opacity="1" AlphaTest="0.5">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/natural/bushes/roundleafbush/con_leaves_a_diff.tif"/>
+    <Texture Map="Specular" File="objects/natural/bushes/roundleafbush/con_leaves_a_spec.tif"/>
+    <Texture Map="Bumpmap" File="objects/natural/bushes/roundleafbush/con_leaves_a_ddn.tif"/>
+   </Textures>
+   <PublicParams bendDetailLeafAmplitude="0.5" BackShadowBias="0" FresnelPower="4" bendDetailFrequency="0.30000001" bendDetailBranchAmplitude="0.2" FresnelScale="1" FresnelBias="1" CapOpacityFalloff="1" BackViewDep="1" BackDiffuseMultiplier="0.75" BackDiffuse="0.65490198,0.83137298,0.28235301" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="obstruct" MtlFlags="525440" Shader="Nodraw" GenMask="0" StringGenMask="" SurfaceType="mat_canopy" MatTemplate="" Diffuse="1,0,0" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures />
+  </Material>
+  <Material Name="lianas" MtlFlags="524448" Shader="Vegetation" GenMask="400801000" StringGenMask="%DETAIL_BENDING%LEAVES%TEMP_VEGETATION" SurfaceType="mat_vegetation" MatTemplate="" Diffuse="0.47058827,0.47058827,0.47058827" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="1" AlphaTest="0.5">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/natural/trees/jungle_tree_large/jungle_tree_large_lianas_02.tif"/>
+   </Textures>
+   <PublicParams bendDetailLeafAmplitude="0.079999998" BackShadowBias="0.1" FresnelPower="4" bendDetailFrequency="5" bendDetailBranchAmplitude="0.2" FresnelScale="1" FresnelBias="1" CapOpacityFalloff="1" BackViewDep="0" BackDiffuseMultiplier="0" BackDiffuse="0.60392201,0.81960797,0.109804" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="branch" MtlFlags="524448" Shader="Vegetation" GenMask="400801000" StringGenMask="%DETAIL_BENDING%LEAVES%TEMP_VEGETATION" SurfaceType="mat_vegetation" MatTemplate="" Diffuse="0.48627499,0.48627499,0.48627499" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="1" AlphaTest="0.5">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/natural/trees/jungle_tree_large/branch_a.tif"/>
+   </Textures>
+   <PublicParams bendDetailLeafAmplitude="0.079999998" BackShadowBias="0.89999998" FresnelPower="4" bendDetailFrequency="5" bendDetailBranchAmplitude="0.2" FresnelScale="1" FresnelBias="1" CapOpacityFalloff="1" BackViewDep="0" BackDiffuseMultiplier="0" BackDiffuse="0,0,0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="proxy_trunk" MtlFlags="525440" Shader="Nodraw" GenMask="0" StringGenMask="" SurfaceType="mat_wood" MatTemplate="" Diffuse="1,0,0" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures />
+  </Material>
+ </SubMaterials>
+ <PublicParams FresnelPower="4" GlossFromDiffuseContrast="1" FresnelScale="1" GlossFromDiffuseOffset="0" FresnelBias="1" GlossFromDiffuseAmount="0" GlossFromDiffuseBrightness="0.333" IndirectColor="0.25,0.25,0.25"/>
+</Material>

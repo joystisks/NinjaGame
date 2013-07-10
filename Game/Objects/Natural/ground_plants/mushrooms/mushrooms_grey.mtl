@@ -1,0 +1,7 @@
+<Material MtlFlags="524288" Shader="Vegetation" GenMask="400800000" StringGenMask="%LEAVES%TEMP_VEGETATION" SurfaceType="mat_vegetation" MatTemplate="" Diffuse="0.47058827,0.47058827,0.47058827" Specular="0.41176474,0.41176474,0.41176474" Emissive="0,0,0" Shininess="9.999999" Opacity="1" AlphaTest="0.5">
+ <Textures>
+  <Texture Map="Diffuse" File="objects/natural/ground_plants/mushrooms/mushrooms.tif"/>
+  <Texture Map="Specular" File="objects/natural/ground_plants/mushrooms/mushrooms_spec.tif"/>
+ </Textures>
+ <PublicParams bendDetailLeafAmplitude="0.079999998" BackShadowBias="0.89999998" FresnelPower="4" bendDetailFrequency="5" bendDetailBranchAmplitude="0.2" FresnelScale="1" FresnelBias="1" BackViewDep="0.5" BackDiffuseMultiplier="0.85000002" BackDiffuse="0.56078434,0.56078434,0.56078434" IndirectColor="0.25,0.25,0.25"/>
+</Material>

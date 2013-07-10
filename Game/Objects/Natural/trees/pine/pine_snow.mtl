@@ -1,0 +1,39 @@
+<Material MtlFlags="524544">
+ <SubMaterials>
+  <Material Name="needles" MtlFlags="524416" Shader="Vegetation" GenMask="400801000" StringGenMask="%DETAIL_BENDING%LEAVES%TEMP_VEGETATION" SurfaceType="mat_vegetation" MatTemplate="" Diffuse="0.59243804,0.46474114,0.42590532" Specular="1,1,1" Emissive="0,0,0" Shininess="30" Opacity="1" AlphaTest="0.5">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/natural/trees/pine/tx/pine_leaves_diff.tif"/>
+    <Texture Map="Specular" File="objects/natural/trees/pine/tx/pine_leaves_spec.tif"/>
+    <Texture Map="Bumpmap" File="objects/natural/trees/pine/tx/pine_leaves_ddn.tif"/>
+    <Texture Map="Opacity" File="objects/natural/trees/pine/tx/pine_leaves_sss.tif"/>
+   </Textures>
+   <PublicParams bendDetailLeafAmplitude="0" BackShadowBias="0.13500001" FresnelPower="4" bendDetailFrequency="0.50999999" bendDetailBranchAmplitude="-0.02" FresnelScale="1" FresnelBias="1" CapOpacityFalloff="1" BackViewDep="0.15700001" BackDiffuseMultiplier="2.5" BackDiffuse="0.24279638,0.30663478,0.57315886" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="trunk" MtlFlags="524416" Shader="Vegetation" GenMask="400400000" StringGenMask="%MERGED_TEXTURES%TEMP_VEGETATION" SurfaceType="mat_wood_breakable" MatTemplate="" Diffuse="0.75929958,0.75929958,0.75929958" Specular="0.31118053,0.31118053,0.31118053" Emissive="0,0,0" Shininess="20" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/natural/trees/pine/tx/pine_trunk.tif"/>
+    <Texture Map="Bumpmap" File="objects/natural/trees/pine/tx/pine_trunk_ddn.tif"/>
+   </Textures>
+   <PublicParams bendDetailLeafAmplitude="0.2" FresnelPower="4" bendDetailFrequency="1" bendDetailBranchAmplitude="-0.5" FresnelScale="1" FresnelBias="1" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="bending" MtlFlags="525440" Shader="Nodraw" GenMask="0" StringGenMask="" SurfaceType="mat_wood" MatTemplate="" Diffuse="1,1,1" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures />
+  </Material>
+  <Material Name="lod" MtlFlags="524448" Shader="Vegetation" GenMask="400C00000" StringGenMask="%LEAVES%MERGED_TEXTURES%TEMP_VEGETATION" SurfaceType="mat_default" MatTemplate="" Diffuse="0.5989418,0.5989418,0.5989418" Specular="0,0,0" Emissive="0,0,0" Opacity="1" AlphaTest="0.60000002">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/natural/trees/pine/tx/lod_snow.tif"/>
+   </Textures>
+   <PublicParams bendDetailLeafAmplitude="0.2" BackShadowBias="0" FresnelPower="4" bendDetailFrequency="1" bendDetailBranchAmplitude="-0.5" FresnelScale="1" FresnelBias="1" CapOpacityFalloff="0" BackViewDep="0.5" BackDiffuseMultiplier="0" BackDiffuse="0.56999999,0.75999999,0.37" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="snow" MtlFlags="524418" Shader="Vegetation" GenMask="400803280" StringGenMask="%DETAIL_BENDING%DETAIL_BUMP_MAPPING%DETAIL_TEXTURE_IS_NORMALMAP%DETAIL_TEXTURE_IS_SET%LEAVES%TEMP_VEGETATION" SurfaceType="mat_snow" MatTemplate="" Diffuse="0.58597302,0.58597302,0.58597302" Specular="0.58597302,0.58597302,0.58597302" Emissive="0,0,0" Shininess="255" Opacity="1" AlphaTest="0.5">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/natural/trees/pine/tx/snow_diff.tif"/>
+    <Texture Map="Specular" File="objects/natural/trees/pine/tx/snow_spec.tif"/>
+    <Texture Map="Bumpmap" File="objects/natural/trees/pine/tx/snow_ddn.tif"/>
+    <Texture Map="Detail" File="textures/detail_bumpmaps/concrete_3_ddn.dds"/>
+   </Textures>
+   <PublicParams bendDetailLeafAmplitude="0.017000001" BackShadowBias="0" FresnelPower="0.63999999" bendDetailFrequency="0.5" bendDetailBranchAmplitude="-0.02" DetailBumpTillingU="5" FresnelScale="15" DetailDiffuseScale="0" FresnelBias="0.5" DetailBumpScale="1" CapOpacityFalloff="1" BackViewDep="0.241" BackDiffuseMultiplier="0.30399999" BackDiffuse="0.24279638,0.54799354,1" DetailGlossScale="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+ </SubMaterials>
+ <PublicParams FresnelPower="4" GlossFromDiffuseContrast="1" FresnelScale="1" GlossFromDiffuseOffset="0" FresnelBias="1" GlossFromDiffuseAmount="0" GlossFromDiffuseBrightness="0.333" IndirectColor="0.25,0.25,0.25"/>
+</Material>

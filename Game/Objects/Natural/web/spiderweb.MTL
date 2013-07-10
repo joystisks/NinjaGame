@@ -1,0 +1,23 @@
+<Material MtlFlags="524544">
+ <SubMaterials>
+  <Material Name="_01_web" MtlFlags="524448" Shader="Cloth" GenMask="4000000000" StringGenMask="%WIND_BENDING" SurfaceType="mat_fabric" MatTemplate="" Diffuse="0.35294119,0.35294119,0.35294119" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="0.99000001">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/natural/web/web_2.tif"/>
+   </Textures>
+   <PublicParams AnimAmplitudeWav0="4.9899998" FresnelPower="4" FresnelScale="1" FuzzynessSpread="1" FuzzynessStrength="1.5" FresnelBias="1" FuzzynessSmoothness="1" FuzzynessSaturation="1" DiffuseExponent="0.5" AnimFrequency="0.1" AnimAmplitudeWav2="5.8000002" AnimPhase="1" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="_02_plane" MtlFlags="524448" Shader="Cloth" GenMask="4000000000" StringGenMask="%WIND_BENDING" SurfaceType="mat_fabric" MatTemplate="" Diffuse="0.35294119,0.35294119,0.35294119" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="0.99000001">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/natural/web/line_4.tif"/>
+   </Textures>
+   <PublicParams AnimAmplitudeWav0="5.8899999" FresnelPower="4" FresnelScale="1" FuzzynessSpread="1" FuzzynessStrength="1.5" FresnelBias="1" FuzzynessSmoothness="1" FuzzynessSaturation="1" DiffuseExponent="0.5" AnimFrequency="0.1" AnimAmplitudeWav2="6.79" AnimPhase="1" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="_03_cross" MtlFlags="524448" Shader="Cloth" GenMask="4000000000" StringGenMask="%WIND_BENDING" SurfaceType="mat_fabric" MatTemplate="" Diffuse="0.58823532,0.58823532,0.58823532" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="0.99000001">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/natural/web/line_2.tif"/>
+   </Textures>
+   <PublicParams AnimAmplitudeWav0="6" FresnelPower="4" FresnelScale="1" FuzzynessSpread="1" FuzzynessStrength="1.5" FresnelBias="1" FuzzynessSmoothness="1" FuzzynessSaturation="1" DiffuseExponent="0.5" AnimFrequency="0.1" AnimAmplitudeWav2="7.1799998" AnimPhase="1" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+ </SubMaterials>
+ <PublicParams FresnelPower="4" GlossFromDiffuseContrast="1" FresnelScale="1" GlossFromDiffuseOffset="0" FresnelBias="1" GlossFromDiffuseAmount="0" GlossFromDiffuseBrightness="0.333" IndirectColor="0.25,0.25,0.25"/>
+</Material>

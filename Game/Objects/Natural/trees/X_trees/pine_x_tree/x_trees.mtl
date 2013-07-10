@@ -1,0 +1,11 @@
+<Material MtlFlags="524544">
+ <SubMaterials>
+  <Material Name="Leaf" MtlFlags="524416" Shader="Vegetation" GenMask="C00000000" StringGenMask="%TEMP_VEGETATION%TERRAINHEIGHTADAPTION" SurfaceType="mat_canopy" MatTemplate="" Diffuse="0.36862746,0.36862746,0.40000004" Specular="0,0,0" Emissive="0.60784316,0.60784316,0.60784316" Shininess="13.4" Opacity="1" AlphaTest="0.5">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/natural/trees/x_trees/pine_x_tree/x_trees.tif"/>
+   </Textures>
+   <PublicParams bendDetailLeafAmplitude="0.2" FresnelPower="4" bendDetailFrequency="0.5" bendDetailBranchAmplitude="0.2" FresnelScale="1" FresnelBias="1" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+ </SubMaterials>
+ <PublicParams FresnelPower="4" GlossFromDiffuseContrast="1" FresnelScale="1" GlossFromDiffuseOffset="0" FresnelBias="1" GlossFromDiffuseAmount="0" GlossFromDiffuseBrightness="0.333" IndirectColor="0.25,0.25,0.25"/>
+</Material>
