@@ -1,0 +1,90 @@
+<Material MtlFlags="524544">
+ <SubMaterials>
+  <Material Name="Body_Shader" MtlFlags="524416" Shader="Illum" GenMask="2100094000" StringGenMask="%DISPLACEMENT_MAPPING%ENVIRONMENT_MAP%GLOSS_MAP%TESSELLATION%VERTCOLORS" SurfaceType="mat_flesh" MatTemplate="" Diffuse="0.31118053,0.31118053,0.31118053" Specular="0.71546543,0.71546543,0.71546543" Emissive="0,0,0" Shininess="141" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/characters/humanoid/tx/body_diff.tif"/>
+    <Texture Map="Specular" File="objects/characters/humanoid/tx/body_spec.tif"/>
+    <Texture Map="Bumpmap" File="objects/characters/humanoid/tx/body_ddn.tif"/>
+    <Texture Map="Environment" File="textures/cubemaps/forest/cubemap_forest_b_cm.dds"/>
+   </Textures>
+   <PublicParams SpecMapChannelB="0" TessellationFaceCull="0.75" SpecMapChannelR="0" FresnelPower="4" TessellationFactor="2.7920001" TessellationDispBias="0.5" GlossMapChannelB="0" TessellationHeightScale="0.40000001" SpecMapChannelG="0" FresnelScale="1" FresnelBias="1" TessellationFactorMax="64" TessellationFactorMin="1" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="Eye_Shader" MtlFlags="524448" Shader="Eye" GenMask="40010000" StringGenMask="%ENVIRONMENT_MAP%TEMP_EYES" SurfaceType="mat_flesh" MatTemplate="" Diffuse="0.11129942,0.11129942,0.11129942" Specular="0.53564161,0.53564161,0.53564161" Emissive="0,0,0" Shininess="200" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/characters/humanoid/tx/eyeball.tif"/>
+    <Texture Map="Bumpmap" File="objects/characters/heads/eyes/eyeball_ddn.tif"/>
+    <Texture Map="Environment" File="objects/characters/heads/eyes/eye_reflect.tif"/>
+   </Textures>
+   <PublicParams PupilX="0.5" IrisDepth="0.064999998" PupilDynDilation="2" CorneaOpacity="0.5" FresnelPower="1.691" PupilDilation="0.5" IrisScattering="1" FresnelScale="1" PupilY="0.5" IrisColor="1,1,1" GlintMul="1" FresnelBias="0.80000001" IndirectColor="0.25084025,0.25084025,0.25084025"/>
+  </Material>
+  <Material Name="Gear_Shader" MtlFlags="524416" Shader="Illum" GenMask="2110096080" StringGenMask="%DETAIL_BUMP_MAPPING%DETAIL_TEXTURE_IS_SET%DISPLACEMENT_MAPPING%ENVIRONMENT_MAP%GLOSS_MAP%PN_TESSELLATION%TESSELLATION%VERTCOLORS" SurfaceType="mat_plastic" MatTemplate="" Diffuse="0.31118053,0.31118053,0.31118053" Specular="1,1,1" Emissive="0,0,0" Shininess="128" Opacity="1" GlowAmount="50">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/characters/humanoid/tx/body_diff.tif"/>
+    <Texture Map="Specular" File="objects/characters/humanoid/tx/body_spec.tif"/>
+    <Texture Map="Bumpmap" File="objects/characters/humanoid/tx/body_ddn.tif"/>
+    <Texture Map="Environment" File="textures/cubemaps/forest/cubemap_forest_b_cm.dds"/>
+    <Texture Map="Detail" File="textures/detail_bumpmaps/metal_scratches_detailbump_ddn.dds">
+     <TexMod TileU="25" TileV="25"/>
+    </Texture>
+    <Texture Map="Decal" File="objects/characters/humanoid/tx/glow.tif"/>
+   </Textures>
+   <PublicParams SpecMapChannelB="0" TessellationFaceCull="0.75" SpecMapChannelR="0" FresnelPower="4" TessellationFactor="2" DetailBumpTillingU="3" TessellationDispBias="0.523" GlossMapChannelB="0" TessellationHeightScale="0.2" SpecMapChannelG="0" FresnelScale="3.0599999" DetailDiffuseScale="0" FresnelBias="0.206" DetailBumpScale="0.69999999" TessellationFactorMax="64" DetailGlossScale="0" TessellationFactorMin="11.33" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="Head_Shader" MtlFlags="524416" Shader="Illum" GenMask="2110054000" StringGenMask="%DISPLACEMENT_MAPPING%ENVIRONMENT_MAP%GLOSS_DIFFUSEALPHA%PN_TESSELLATION%TESSELLATION%VERTCOLORS" SurfaceType="mat_flesh" MatTemplate="" Diffuse="0.52344316,0.52344316,0.52344316" Specular="0.41514811,0.41514811,0.41514811" Emissive="0,0,0" Shininess="65" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/characters/humanoid/tx/head_diff.tif"/>
+    <Texture Map="Bumpmap" File="objects/characters/humanoid/tx/head_ddn.tif"/>
+    <Texture Map="Environment" File="textures/cubemaps/forest/cubemap_forest_b_cm.dds"/>
+   </Textures>
+   <PublicParams TessellationFaceCull="0.75" FresnelPower="4" TessellationFactor="3.3699999" TessellationDispBias="0.48100001" TessellationHeightScale="0.13" FresnelScale="1" FresnelBias="1" TessellationFactorMax="64" TessellationFactorMin="1" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="Lense_Shader" MtlFlags="2621568" Shader="Illum" GenMask="100010000" StringGenMask="%ENVIRONMENT_MAP%TESSELLATION" SurfaceType="mat_glass_unbreakable" MatTemplate="" Diffuse="0.056374099,0.18014428,0.04145189" Specular="0.089193508,1,0.1036341" Emissive="0,0,0" Shininess="255" Opacity="0.99000001" GlowAmount="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/characters/humanoid/tx/body_diff.tif"/>
+    <Texture Map="Environment" File="textures/env_maps/env_plastic.dds"/>
+   </Textures>
+   <PublicParams FresnelPower="4" GlossFromDiffuseContrast="1" FresnelScale="1" GlossFromDiffuseOffset="0" FresnelBias="1" GlossFromDiffuseAmount="0" GlossFromDiffuseBrightness="0.333" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="Phys" MtlFlags="525440" Shader="Nodraw" GenMask="0" StringGenMask="" SurfaceType="mat_flesh" MatTemplate="" Diffuse="1,1,1" Specular="1,1,1" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures />
+  </Material>
+  <Material Name="null" MtlFlags="525440" Shader="Nodraw" GenMask="0" StringGenMask="" SurfaceType="mat_default" MatTemplate="" Diffuse="1,1,1" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures />
+  </Material>
+  <Material Name="Fins" MtlFlags="524418" Shader="Illum" GenMask="100090000" StringGenMask="%ENVIRONMENT_MAP%GLOSS_MAP%TESSELLATION" SurfaceType="mat_default" MatTemplate="" Diffuse="0.46474114,0.46474114,0.46474114" Specular="0.32503697,0.32503697,0.32503697" Emissive="0,0,0" Shininess="114" Opacity="1" AlphaTest="0.80000001">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/characters/humanoid/tx/body_diff.tif"/>
+    <Texture Map="Specular" File="objects/characters/humanoid/tx/body_spec.tif"/>
+    <Texture Map="Bumpmap" File="objects/characters/humanoid/tx/body_ddn.tif"/>
+    <Texture Map="Environment" File="textures/cubemaps/forest/cubemap_forest_b_cm.dds"/>
+   </Textures>
+   <PublicParams SpecMapChannelB="0" SpecMapChannelR="0" FresnelPower="4" GlossMapChannelB="0" SpecMapChannelG="0" FresnelScale="1" FresnelBias="1" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="gill_breather" MtlFlags="524416" Shader="Illum" GenMask="2110090000" StringGenMask="%ENVIRONMENT_MAP%GLOSS_MAP%PN_TESSELLATION%TESSELLATION%VERTCOLORS" SurfaceType="mat_plastic" MatTemplate="" Diffuse="0.31118053,0.31118053,0.31118053" Specular="0.25084025,0.25084025,0.25084025" Emissive="0,0,0" Shininess="128" Opacity="1" GlowAmount="50">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/characters/humanoid/tx/body_diff.tif"/>
+    <Texture Map="Specular" File="objects/characters/humanoid/tx/body_spec.tif"/>
+    <Texture Map="Bumpmap" File="objects/characters/humanoid/tx/body_ddn.tif"/>
+    <Texture Map="Environment" File="textures/cubemaps/forest/cubemap_forest_b_cm.dds"/>
+    <Texture Map="Decal" File="objects/characters/humanoid/tx/glow.tif"/>
+   </Textures>
+   <PublicParams SpecMapChannelB="0" TessellationFaceCull="0.75" SpecMapChannelR="0" FresnelPower="4" TessellationFactor="1" GlossMapChannelB="0" SpecMapChannelG="0" FresnelScale="3.0599999" FresnelBias="0.206" TessellationFactorMax="64" TessellationFactorMin="1" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="weapon" MtlFlags="524448" Shader="Illum" GenMask="100092082" StringGenMask="%ALPHAGLOW%DETAIL_BUMP_MAPPING%DETAIL_TEXTURE_IS_SET%ENVIRONMENT_MAP%GLOSS_MAP%TESSELLATION" SurfaceType="" MatTemplate="" Diffuse="0.49361622,0.49361622,0.49361622" Specular="0.12752977,0.12752977,0.12752977" Emissive="0,0,0" Shininess="100" Opacity="1" GlowAmount="5" HeatAmountScaled="23">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/characters/humanoid/tx/weapon.tif" Filter="5"/>
+    <Texture Map="Specular" File="objects/characters/humanoid/tx/weapon_spec.tif" Filter="5"/>
+    <Texture Map="Bumpmap" File="objects/characters/humanoid/tx/weapon_ddn.tif" Filter="5"/>
+    <Texture Map="Environment" File="textures/cubemaps/forest/cubemap_forest_a_cm.dds"/>
+    <Texture Map="Detail" File="textures/detail_bumpmaps/painted_1_ddn.dds">
+     <TexMod TileU="7" TileV="7"/>
+    </Texture>
+    <Texture Map="Decal" File="objects/characters/humanoid/tx/weapon_glow.tif">
+     <TexMod TexMod_UOscillatorType="2" TexMod_UOscillatorRate="1" TexMod_VOscillatorRate="1" TexMod_UOscillatorPhase="1" TexMod_VOscillatorPhase="1" TexMod_UOscillatorAmplitude="0.079999998" TexMod_VOscillatorAmplitude="1"/>
+    </Texture>
+   </Textures>
+   <PublicParams SpecMapChannelB="0" SpecMapChannelR="0" FresnelPower="1" DetailBumpTillingU="3" GlossMapChannelB="0" SpecMapChannelG="0" FresnelScale="1" DetailDiffuseScale="0" AmbientMultiplier="1" FresnelBias="1" DetailBumpScale="0.5" DetailGlossScale="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+ </SubMaterials>
+ <PublicParams FresnelPower="4" GlossFromDiffuseContrast="1" FresnelScale="1" GlossFromDiffuseOffset="0" FresnelBias="1" GlossFromDiffuseAmount="0" GlossFromDiffuseBrightness="0.333" IndirectColor="0.25,0.25,0.25"/>
+</Material>

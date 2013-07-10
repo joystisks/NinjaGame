@@ -1,0 +1,71 @@
+<Material MtlFlags="524544">
+ <SubMaterials>
+  <Material Name="proxy" MtlFlags="525440" Shader="Nodraw" GenMask="0" StringGenMask="" SurfaceType="mat_flesh" MatTemplate="" Diffuse="1,0,0" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="1" vertModifType="2">
+   <Textures />
+   <VertexDeform Type="2" DividerX="0" DividerY="0" DividerZ="0" DividerW="0" NoiseScale="1,1,1">
+    <WaveX Type="1" Amp="0.0099999998" Level="0.0099999998" Phase="2.9000001" Freq="2.2"/>
+    <WaveY Type="1" Amp="0.0099999998" Level="0.0099999998" Phase="1.4" Freq="1.7"/>
+    <WaveW Type="1" Amp="2.5999999" Level="1.9" Phase="1.9" Freq="3.8"/>
+   </VertexDeform>
+  </Material>
+  <Material Name="head" MtlFlags="524416" Shader="Humanskin" GenMask="1100080000" StringGenMask="%GLOSS_MAP%TEMP_SKIN%TESSELLATION" SurfaceType="mat_flesh" MatTemplate="" Diffuse="0.26735809,0.26735809,0.26735809" Specular="0.43681276,0.43681276,0.43681276" Emissive="0,0,0" Shininess="95" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/characters/dragon/tx/dragon_head_diff.tif"/>
+    <Texture Map="Specular" File="objects/characters/dragon/tx/dragon_head_spec.tif"/>
+    <Texture Map="Bumpmap" File="objects/characters/dragon/tx/dragon_head_ddn.tif"/>
+   </Textures>
+   <PublicParams FresnelPower="5" ScatterRadius="8" Melanin="0" FresnelScale="4" RimStrength="0.30000001" FresnelBias="0.34999999" SecondarySpecGloss="56.5" SecondarySpecStrength="0.68000001" IndirectColor="0.25084025,0.25084025,0.25084025"/>
+  </Material>
+  <Material Name="body" MtlFlags="524416" Shader="Humanskin" GenMask="1100080000" StringGenMask="%GLOSS_MAP%TEMP_SKIN%TESSELLATION" SurfaceType="mat_flesh" MatTemplate="" Diffuse="0.26735809,0.26735809,0.26735809" Specular="0.43681276,0.43681276,0.43681276" Emissive="0,0,0" Shininess="44" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/characters/dragon/tx/dragon_body_diff.tif"/>
+    <Texture Map="Specular" File="objects/characters/dragon/tx/dragon_body_spec.tif"/>
+    <Texture Map="Bumpmap" File="objects/characters/dragon/tx/dragon_body_ddn.tif"/>
+   </Textures>
+   <PublicParams FresnelPower="5" ScatterRadius="8" Melanin="0" FresnelScale="4" RimStrength="0.30000001" FresnelBias="0.34999999" SecondarySpecGloss="4.8000002" SecondarySpecStrength="0.68000001" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="eye" MtlFlags="524448" Shader="Eye" GenMask="40000010000" StringGenMask="%ENVIRONMENT_MAP%TEMP_EYES" SurfaceType="mat_flesh" MatTemplate="" Diffuse="0.80455911,0.80455911,0.80455911" Specular="0.7299189,0.7299189,0.7299189" Emissive="0,0,0" Shininess="255" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/characters/dragon/tx/dragon_eye_diff.tif"/>
+    <Texture Map="Bumpmap" File="objects/characters/dragon/tx/dragon_eye_ddn.tif"/>
+    <Texture Map="Environment" File="textures/cubemaps/eye_reflect.dds"/>
+   </Textures>
+   <PublicParams PupilX="0.5" IrisDepth="0.041000001" PupilDynDilation="0" CorneaOpacity="0.219" FresnelPower="1.238" PupilDilation="0" IrisScattering="0.96200001" FresnelScale="1" PupilY="0.5" IrisColor="0.31118053,0.31118053,0.31118053" GlintMul="1" FresnelBias="0.123" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="Head_membrane" MtlFlags="524416" Shader="Vegetation" GenMask="400800000" StringGenMask="%LEAVES%TEMP_VEGETATION" SurfaceType="mat_flesh" MatTemplate="" Diffuse="0.26735809,0.26735809,0.26735809" Specular="0.43681276,0.43681276,0.43681276" Emissive="0,0,0" Shininess="105" Opacity="1" vertModifType="2">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/characters/dragon/tx/dragon_head_diff.tif"/>
+    <Texture Map="Specular" File="objects/characters/dragon/tx/dragon_head_spec.tif"/>
+    <Texture Map="Bumpmap" File="objects/characters/dragon/tx/dragon_head_ddn.tif"/>
+    <Texture Map="Opacity" File="objects/characters/dragon/tx/dragon_head_sss.tif"/>
+   </Textures>
+   <VertexDeform Type="2" DividerX="0" DividerY="0" DividerZ="0" DividerW="0" NoiseScale="1,1,1">
+    <WaveX Type="1" Amp="0.0099999998" Level="0.0099999998" Phase="2.9000001" Freq="2.2"/>
+    <WaveY Type="1" Amp="0.0099999998" Level="0.0099999998" Phase="1.4" Freq="1.7"/>
+    <WaveW Type="1" Amp="2.5999999" Level="1.9" Phase="1.9" Freq="3.8"/>
+   </VertexDeform>
+   <PublicParams bendDetailLeafAmplitude="0" BackShadowBias="0.361" FresnelPower="4" bendDetailFrequency="0" bendDetailBranchAmplitude="0" FresnelScale="1" FresnelBias="1" CapOpacityFalloff="0" BackViewDep="1" BackDiffuseMultiplier="0.61299998" BackDiffuse="1,0.00099237426,0.00099237426" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="wings" MtlFlags="524416" Shader="Vegetation" GenMask="400800000" StringGenMask="%LEAVES%TEMP_VEGETATION" SurfaceType="mat_flesh" MatTemplate="" Diffuse="0.26735809,0.26735809,0.26735809" Specular="0.42590532,0.42590532,0.42590532" Emissive="0,0,0" Shininess="44" Opacity="1" vertModifType="2">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/characters/dragon/tx/dragon_wing_diff.tif"/>
+    <Texture Map="Specular" File="objects/characters/dragon/tx/dragon_wing_spec.tif"/>
+    <Texture Map="Bumpmap" File="objects/characters/dragon/tx/dragon_wing_ddn.tif"/>
+    <Texture Map="Opacity" File="objects/characters/dragon/tx/dragon_wing_sss.tif"/>
+   </Textures>
+   <VertexDeform Type="2" DividerX="0" DividerY="0" DividerZ="0" DividerW="0" NoiseScale="1,1,1">
+    <WaveX Type="1" Amp="0.0099999998" Level="0.0099999998" Phase="2.9000001" Freq="2.2"/>
+    <WaveY Type="1" Amp="0.0099999998" Level="0.0099999998" Phase="1.4" Freq="1.7"/>
+    <WaveW Type="1" Amp="2.5999999" Level="1.9" Phase="1.9" Freq="3.8"/>
+   </VertexDeform>
+   <PublicParams bendDetailLeafAmplitude="0" BackShadowBias="0.27399999" FresnelPower="4" bendDetailFrequency="0" bendDetailBranchAmplitude="0" FresnelScale="1" FresnelBias="1" CapOpacityFalloff="0" BackViewDep="0.76099998" BackDiffuseMultiplier="0.50700003" BackDiffuse="1,0.12752977,0.12752977" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="eye_overlay" MtlFlags="524448" Shader="Eye" GenMask="40000020000" StringGenMask="%EYE_OVERLAY%TEMP_EYES" SurfaceType="mat_flesh" MatTemplate="" Diffuse="1,1,1" Specular="1,1,1" Emissive="0,0,0" Shininess="36" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/characters/dragon/tx/eye_overlay_spec.tif"/>
+   </Textures>
+   <PublicParams FresnelPower="4" DepthBiasScale="0.5" FresnelScale="1" FresnelBias="0.80000001" OcclusionStrength="0.829" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+ </SubMaterials>
+ <PublicParams FresnelPower="4" GlossFromDiffuseContrast="1" FresnelScale="1" GlossFromDiffuseOffset="0" FresnelBias="1" GlossFromDiffuseAmount="0" GlossFromDiffuseBrightness="0.333" IndirectColor="0.25,0.25,0.25"/>
+</Material>

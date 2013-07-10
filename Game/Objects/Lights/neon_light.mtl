@@ -1,0 +1,21 @@
+<Material MtlFlags="524544">
+ <SubMaterials>
+  <Material Name="wall" MtlFlags="524416" Shader="Illum" GenMask="2100080000" StringGenMask="%GLOSS_MAP%TESSELLATION%VERTCOLORS" SurfaceType="mat_metal" MatTemplate="" Diffuse="0.37254903,0.37254903,0.37254903" Specular="0.50543249,0.50543249,0.50543249" Emissive="0,0,0" Shininess="160" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/lights/neon_light_diff.tif"/>
+    <Texture Map="Specular" File="objects/lights/neon_light_spec.tif"/>
+   </Textures>
+   <PublicParams SpecMapChannelB="0" SpecMapChannelR="0" FresnelPower="4" GlossMapChannelB="0" SpecMapChannelG="0" FresnelScale="1" FresnelBias="1" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="glow" MtlFlags="524416" Shader="Illum" GenMask="2100000002" StringGenMask="%ALPHAGLOW%TESSELLATION%VERTCOLORS" SurfaceType="mat_glass" MatTemplate="" Diffuse="0.3921569,0.4666667,0.50196081" Specular="0.43534544,0.43534544,0.43534544" Emissive="0.47044027,0.68002033,0.6523701" Shininess="60" Opacity="1" GlowAmount="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/lights/neon_light_diff.tif"/>
+   </Textures>
+   <PublicParams FresnelPower="4" GlossFromDiffuseContrast="1" FresnelScale="1" GlossFromDiffuseOffset="0" AmbientMultiplier="1" FresnelBias="1" GlossFromDiffuseAmount="0" GlossFromDiffuseBrightness="0.333" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="proxy" MtlFlags="525440" Shader="Nodraw" GenMask="0" StringGenMask="" SurfaceType="mat_plastic" MatTemplate="" Diffuse="1,0,0" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="1">
+   <Textures />
+  </Material>
+ </SubMaterials>
+ <PublicParams FresnelPower="4" GlossFromDiffuseContrast="1" FresnelScale="1" GlossFromDiffuseOffset="0" FresnelBias="1" GlossFromDiffuseAmount="0" GlossFromDiffuseBrightness="0.333" IndirectColor="0.25,0.25,0.25"/>
+</Material>

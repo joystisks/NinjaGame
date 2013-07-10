@@ -1,0 +1,23 @@
+<Material MtlFlags="524544">
+ <SubMaterials>
+  <Material Name="3dtext" MtlFlags="524416" Shader="Illum" GenMask="100090000" StringGenMask="%ENVIRONMENT_MAP%GLOSS_MAP%TESSELLATION" SurfaceType="mat_metal" MatTemplate="" Diffuse="0.50543249,0.50543249,0.50543249" Specular="1,1,1" Emissive="0,0,0" Shininess="255" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="textures/defaults/frost_base.tif"/>
+    <Texture Map="Specular" File="textures/defaults/grey.dds"/>
+    <Texture Map="Bumpmap" File="objects/library/props/3dtext/3dtext_ddn.tif"/>
+    <Texture Map="Environment" File="textures/cubemaps/camera_river_cubemap.dds"/>
+   </Textures>
+   <PublicParams SpecMapChannelB="0" SpecMapChannelR="0" FresnelPower="4" GlossMapChannelB="0" SpecMapChannelG="0" FresnelScale="1" FresnelBias="1" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="numbers" MtlFlags="524416" Shader="Illum" GenMask="100090000" StringGenMask="%ENVIRONMENT_MAP%GLOSS_MAP%TESSELLATION" SurfaceType="mat_metal" MatTemplate="" Diffuse="0.50543249,0.50543249,0.50543249" Specular="1,1,1" Emissive="0,0,0" Shininess="255" Opacity="1">
+   <Textures>
+    <Texture Map="Diffuse" File="textures/defaults/frost_base.dds"/>
+    <Texture Map="Specular" File="textures/defaults/grey.dds"/>
+    <Texture Map="Bumpmap" File="objects/library/props/3dtext/3dtext_b_ddn.tif"/>
+    <Texture Map="Environment" File="textures/cubemaps/camera_river_cubemap.dds"/>
+   </Textures>
+   <PublicParams SpecMapChannelB="0" SpecMapChannelR="0" FresnelPower="4" GlossMapChannelB="0" SpecMapChannelG="0" FresnelScale="1" FresnelBias="1" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+ </SubMaterials>
+ <PublicParams FresnelPower="4" GlossFromDiffuseContrast="1" FresnelScale="0" GlossFromDiffuseOffset="0" FresnelBias="1" GlossFromDiffuseAmount="0" GlossFromDiffuseBrightness="0.333" IndirectColor="0.25,0.25,0.25"/>
+</Material>
